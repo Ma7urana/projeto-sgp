@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maturana\\Desktop\\AtividadePOO\\AtividadePOO.csproj": {}
+    "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\AtividadePOO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maturana\\Desktop\\AtividadePOO\\AtividadePOO.csproj": {
+    "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\AtividadePOO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maturana\\Desktop\\AtividadePOO\\AtividadePOO.csproj",
+        "projectUniqueName": "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\AtividadePOO.csproj",
         "projectName": "AtividadePOO",
-        "projectPath": "C:\\Users\\Maturana\\Desktop\\AtividadePOO\\AtividadePOO.csproj",
-        "packagesPath": "C:\\Users\\Maturana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maturana\\Desktop\\AtividadePOO\\obj\\",
+        "projectPath": "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\AtividadePOO.csproj",
+        "packagesPath": "C:\\Users\\IFRO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Maturana\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\IFRO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -55,7 +59,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
