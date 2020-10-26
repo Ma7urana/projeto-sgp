@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "1biHLm8OjznIb82HD1F8cuCQdvV4z8nphkIAyZAa2pDOtQ0YTtxRzDvX8t87d84trrPCA8yuwduMEeGZunoQig==",
   "success": true,
   "projectFilePath": "C:\\Users\\IFRO\\Documents\\Atvdd POO\\AtividadePOO\\AtividadePOO.csproj",
+=======
+  "dgSpecHash": "1H0wwDSY1h/VB8XQY88Iqwuc0jCemrjKd2JdgyWuW+pFKIhaZflz20n9wQ2yaXDhVmixZN8TFZdzTmTT5nNFnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Atividade Poo\\ AtividadePOO\\AtividadePOO.csproj",
+>>>>>>> MariaFoda
   "expectedPackageFiles": [],
   "logs": []
 }

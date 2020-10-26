@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.exe
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.deps.json
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.runtimeconfig.json
@@ -15,3 +16,21 @@ C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\obj\Debug\netcoreapp3.1\Atividade
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.dll
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.pdb
 C:\Users\IFRO\Documents\Atvdd POO\AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.genruntimeconfig.cache
+=======
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.exe
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.deps.json
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.runtimeconfig.json
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.dll
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\bin\Debug\netcoreapp3.1\AtividadePOO.pdb
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.Logar_Usuario.resources
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.dll
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.pdb
+C:\Users\Usuario\Desktop\Atividade Poo\ AtividadePOO\obj\Debug\netcoreapp3.1\AtividadePOO.genruntimeconfig.cache
+>>>>>>> MariaFoda
