@@ -1,7 +1,10 @@
-﻿namespace AtividadePOO
+﻿using System.Windows.Forms;
+
+namespace AtividadePOO
 {
-    partial class Controle_Geral_Cadastro
+    partial class Controle_Geral_Cadastro : Form
     {
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -40,11 +43,12 @@
             this.button4.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.button4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.button4.Location = new System.Drawing.Point(107, 154);
-            this.button4.Name = "button4";
+            this.button4.Name = "Cadastrar Usuário no Sistema";
             this.button4.Size = new System.Drawing.Size(206, 34);
             this.button4.TabIndex = 0;
-            this.button4.Text = "Cadastrar Usuário no SIstema";
+            this.button4.Text = "Cadastrar Usuário no Sistema";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button6
             // 

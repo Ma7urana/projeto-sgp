@@ -1,4 +1,6 @@
-﻿namespace AtividadePOO
+﻿using System.Drawing;
+
+namespace AtividadePOO
 {
     partial class Exibir_Menu
     {
@@ -29,7 +31,7 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Controle_Cadastro_Gerais = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -38,7 +40,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -52,17 +54,17 @@
             this.button1.Text = "Caixa";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // Controle Cadastro Gerais
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(74, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(171, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Controle Cadastros Gerais";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Controle_Cadastro_Gerais.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Controle_Cadastro_Gerais.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Controle_Cadastro_Gerais.Location = new System.Drawing.Point(74, 154);
+            this.Controle_Cadastro_Gerais.Name = "button2";
+            this.Controle_Cadastro_Gerais.Size = new System.Drawing.Size(171, 37);
+            this.Controle_Cadastro_Gerais.TabIndex = 1;
+            this.Controle_Cadastro_Gerais.Text = "Controle Cadastros Gerais";
+            this.Controle_Cadastro_Gerais.UseVisualStyleBackColor = false;
+            this.Controle_Cadastro_Gerais.Click += new System.EventHandler(this.Controle_Cadastro_Gerais_Click);
             // 
             // button3
             // 
@@ -155,15 +157,19 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // Login
             // 
-            this.button10.ForeColor = System.Drawing.Color.Black;
-            this.button10.Location = new System.Drawing.Point(465, 16);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(94, 31);
-            this.button10.TabIndex = 10;
-            this.button10.Text = "Login";
-            this.button10.UseVisualStyleBackColor = true;
+            this.Login.ForeColor = System.Drawing.Color.Black;
+            this.Login.Location = new System.Drawing.Point(458, 16);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(101, 31);
+            this.Login.TabIndex = 10;
+            this.Login.Text = "Login";
+            this.Login.UseVisualStyleBackColor = true;
+            this.Login.Click += new System.EventHandler(this.Login_Click);
+            this.Login.BackColor = Color.FromArgb(190, 188, 189);
+            
+
             // 
             // Exibir_Menu
             // 
@@ -171,7 +177,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(582, 361);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.Login);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button8);
@@ -180,7 +186,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Controle_Cadastro_Gerais);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.BlanchedAlmond;
             this.Name = "Exibir_Menu";
@@ -194,7 +200,7 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Controle_Cadastro_Gerais;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
@@ -203,7 +209,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button Login;
     }
 }
 
