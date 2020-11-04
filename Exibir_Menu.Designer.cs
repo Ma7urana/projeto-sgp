@@ -64,7 +64,6 @@ namespace AtividadePOO
             this.Controle_Cadastro_Gerais.TabIndex = 1;
             this.Controle_Cadastro_Gerais.Text = "Controle Cadastros Gerais";
             this.Controle_Cadastro_Gerais.UseVisualStyleBackColor = false;
-            this.Controle_Cadastro_Gerais.Click += new System.EventHandler(this.Controle_Cadastro_Gerais_Click);
             // 
             // button3
             // 
@@ -87,7 +86,6 @@ namespace AtividadePOO
             this.button4.TabIndex = 3;
             this.button4.Text = "Controle Geral de Compras";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -143,7 +141,6 @@ namespace AtividadePOO
             this.label1.Size = new System.Drawing.Size(95, 58);
             this.label1.TabIndex = 8;
             this.label1.Text = "SGP";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button9
             // 
@@ -155,7 +152,6 @@ namespace AtividadePOO
             this.button9.TabIndex = 9;
             this.button9.Text = "Cadastre-se";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Login
             // 
@@ -166,7 +162,6 @@ namespace AtividadePOO
             this.Login.TabIndex = 10;
             this.Login.Text = "Login";
             this.Login.UseVisualStyleBackColor = true;
-            this.Login.Click += new System.EventHandler(this.Login_Click);
             this.Login.BackColor = Color.FromArgb(190, 188, 189);
             
 
@@ -176,7 +171,7 @@ namespace AtividadePOO
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(582, 361);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.Login);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label1);
@@ -191,7 +186,6 @@ namespace AtividadePOO
             this.ForeColor = System.Drawing.Color.BlanchedAlmond;
             this.Name = "Exibir_Menu";
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Exibir_Menu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cadastrar_Usuário
 {
-    public partial class Form1 : Form
+    public partial class CadastroUsuário : Form
     {
-        public Form1()
+        public CadastroUsuário()
         {
             InitializeComponent();
         }

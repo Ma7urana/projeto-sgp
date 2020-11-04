@@ -59,18 +59,17 @@ namespace AtividadePOO.Properties {
                 resourceCulture = value;
             }
         }
-<<<<<<< HEAD
         
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icone_cadatrar {
-            get {
+        internal static System.Drawing.Bitmap icone_cadatrar
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("icone cadatrar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-=======
->>>>>>> MariaFoda
     }
 }

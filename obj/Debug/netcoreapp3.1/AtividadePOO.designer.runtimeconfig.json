@@ -6,14 +6,8 @@
       "version": "3.1.0"
     },
     "additionalProbingPaths": [
-<<<<<<< HEAD
-      "C:\\Users\\IFRO\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\IFRO\\.nuget\\packages",
-      "C:\\Microsoft\\Xamarin\\NuGet"
-=======
-      "C:\\Users\\Usuario\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Usuario\\.nuget\\packages"
->>>>>>> MariaFoda
+      "C:\\Users\\Maturana\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Maturana\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

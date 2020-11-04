@@ -18,11 +18,9 @@ namespace AtividadePOO
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
+
             Application.Run(new Exibir_Menu());
-=======
             Application.Run(new Logar_Usuario());
->>>>>>> MariaFoda
         }
        
     }
