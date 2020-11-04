@@ -30,33 +30,33 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroUsuário));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Maximizar = new System.Windows.Forms.PictureBox();
             this.Fechar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
-            this.Maximizar = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtSenhaUsuario = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNomeDeUsuario = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtNomeDeUsuario = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -70,33 +70,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(744, 31);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
-            // Fechar
+            // label1
             // 
-            this.Fechar.BackColor = System.Drawing.Color.Transparent;
-            this.Fechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Fechar.Image = ((System.Drawing.Image)(resources.GetObject("Fechar.Image")));
-            this.Fechar.Location = new System.Drawing.Point(711, 0);
-            this.Fechar.Name = "Fechar";
-            this.Fechar.Size = new System.Drawing.Size(30, 28);
-            this.Fechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Fechar.TabIndex = 2;
-            this.Fechar.TabStop = false;
-            this.Fechar.Click += new System.EventHandler(this.Fechar_Click);
-            // 
-            // Minimizar
-            // 
-            this.Minimizar.BackColor = System.Drawing.Color.Transparent;
-            this.Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(639, 0);
-            this.Minimizar.Name = "Minimizar";
-            this.Minimizar.Size = new System.Drawing.Size(30, 28);
-            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Minimizar.TabIndex = 3;
-            this.Minimizar.TabStop = false;
-            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(216, 24);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Cadastro de Usuário";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Maximizar
             // 
@@ -110,18 +95,29 @@
             this.Maximizar.TabIndex = 4;
             this.Maximizar.TabStop = false;
             // 
-            // label1
+            // Fechar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 4);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(216, 24);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Cadastro de Usuário";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            this.Fechar.BackColor = System.Drawing.Color.Transparent;
+            this.Fechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Fechar.Image = ((System.Drawing.Image)(resources.GetObject("Fechar.Image")));
+            this.Fechar.Location = new System.Drawing.Point(711, 0);
+            this.Fechar.Name = "Fechar";
+            this.Fechar.Size = new System.Drawing.Size(30, 28);
+            this.Fechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Fechar.TabIndex = 2;
+            this.Fechar.TabStop = false;
+            // 
+            // Minimizar
+            // 
+            this.Minimizar.BackColor = System.Drawing.Color.Transparent;
+            this.Minimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
+            this.Minimizar.Location = new System.Drawing.Point(639, 0);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.Size = new System.Drawing.Size(30, 28);
+            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Minimizar.TabIndex = 3;
+            this.Minimizar.TabStop = false;
             // 
             // button1
             // 
@@ -146,13 +142,13 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtSenhaUsuario);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtNomeDeUsuario);
             this.panel2.Controls.Add(this.label2);
@@ -160,7 +156,50 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 405);
             this.panel2.TabIndex = 6;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel2_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(159, 22);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(125, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txtSenhaUsuario
+            // 
+            this.txtSenhaUsuario.Location = new System.Drawing.Point(31, 307);
+            this.txtSenhaUsuario.Name = "txtSenhaUsuario";
+            this.txtSenhaUsuario.Size = new System.Drawing.Size(350, 21);
+            this.txtSenhaUsuario.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(28, 286);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Senha";
+            // 
+            // txtNomeDeUsuario
+            // 
+            this.txtNomeDeUsuario.Location = new System.Drawing.Point(31, 225);
+            this.txtNomeDeUsuario.Name = "txtNomeDeUsuario";
+            this.txtNomeDeUsuario.Size = new System.Drawing.Size(350, 21);
+            this.txtNomeDeUsuario.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(28, 203);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nome de Usuário";
             // 
             // panel3
             // 
@@ -178,7 +217,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 4);
             this.label4.Name = "label4";
@@ -198,7 +237,6 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // pictureBox5
             // 
@@ -211,7 +249,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.PictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -225,54 +262,7 @@
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(28, 203);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nome de Usuário";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
-            // 
-            // txtNomeDeUsuario
-            // 
-            this.txtNomeDeUsuario.Location = new System.Drawing.Point(31, 225);
-            this.txtNomeDeUsuario.Name = "txtNomeDeUsuario";
-            this.txtNomeDeUsuario.Size = new System.Drawing.Size(350, 20);
-            this.txtNomeDeUsuario.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(31, 307);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 286);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Senha";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(159, 22);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(125, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
-            // 
-            // Form1
+            // CadastroUsuário
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -284,22 +274,21 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "CadastroUsuário";
             this.Text = "sS";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Fechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximizar)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,9 +310,10 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.TextBox txtNomeDeUsuario;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSenhaUsuario1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtSenhaUsuario;
     }
 }
 

@@ -38,7 +38,10 @@ namespace AtividadePOO
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-           
+            CadastroProduto cadProd = new CadastroProduto();
+            this.Hide();
+            cadProd.ShowDialog();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
