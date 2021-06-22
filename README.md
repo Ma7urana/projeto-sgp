@@ -3,7 +3,7 @@ Sistema de gerenciamento, criado como parte da avaliação da disciplina Projeto
 do Curso Técnico Em Informática Integrado Ao Ensino Médio (turma 2019-2021, B) do IFRO Campus Ji-Paraná.
 
 ## Cliente
-- Papelaria Teixeira (Ouro Preto, Rondônia).
+- Papelaria Teixeira (Jarú, Rondõnia).
 
 ## Equipe
 - Thamiris Maria (2020 e 2021, github.com/ThamirisMaria);
