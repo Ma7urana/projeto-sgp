@@ -67,5 +67,11 @@ namespace projeto_sgp_WPFversion
             ControleGeralDeRelatorios controleGeralDeRelatorios = new ControleGeralDeRelatorios();
             controleGeralDeRelatorios.ShowDialog();
         }
+
+        private void btnDashboardDeFluxoDeCaixa_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardDeFluxoDeCaixa dashboardDeFluxoDeCaixa = new DashboardDeFluxoDeCaixa();
+            dashboardDeFluxoDeCaixa.ShowDialog();
+        }
     }
 }

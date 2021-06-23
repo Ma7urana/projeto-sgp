@@ -62,7 +62,7 @@
             <Button x:Name="btnControleGeralDeRelatorios" Click="btnControleGeralDeRelatorios_Click" Content="CONTROLE GERAL DE RELATÓRIOS" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
             <Button Content="CONTROLE DE CONTAS A PAGAR" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
             <Button Content="CONTROLE DE CAIXA SEBRAE" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200" Cursor="Hand"/>
-            <Button Content="DASHBOARD DE FLUXO DE CAIXA" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
+            <Button x:Name="btnDashboardDeFluxoDeCaixa" Click="btnDashboardDeFluxoDeCaixa_Click" Content="DASHBOARD DE FLUXO DE CAIXA" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
         </StackPanel>
 
     </Grid>
