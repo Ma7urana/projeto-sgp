@@ -10,28 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para Tela_cancel.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Tela_cancel : Window
     {
-        public MainWindow()
+        public Tela_cancel()
         {
             InitializeComponent();
         }
-
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-            if(this.WindowState == WindowState.Normal)
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
             }
@@ -50,8 +48,14 @@ namespace projeto_sgp_WPFversion
             DragMove();
         }
 
-        private void btnCad_Click(object sender, RoutedEventArgs e)
+        private void No_click(object sender, RoutedEventArgs e)
         {
+            Close();
+        }
+
+        private void yes_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }
