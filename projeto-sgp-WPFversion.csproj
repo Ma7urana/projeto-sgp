@@ -58,6 +58,9 @@
     <Compile Include="ConfirmacaoFinalizarVenda.xaml.cs">
       <DependentUpon>ConfirmacaoFinalizarVenda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MsgDaVenda.xaml.cs">
+      <DependentUpon>MsgDaVenda.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tela_cancel.xaml.cs">
       <DependentUpon>Tela_cancel.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MsgDaVenda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Tela_cancel.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
