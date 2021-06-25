@@ -61,6 +61,7 @@
                 <RadioButton Content="Pix Code" Margin="0 10 0 0 "/>
                 <RadioButton Content="Cartão de Crédito"  Margin="0 10 0 0 "/>
                 <RadioButton Content="Cartão de Debito"  Margin="0 10 0 0 "/>
+                <Border BorderBrush="Black" BorderThickness="1" Height="100"/>
             </StackPanel>
             <TextBox HorizontalAlignment="Left" Height="23" Margin="24,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1A926" BorderBrush="White"/>
             <Label Content="Numero de Parcelas" HorizontalAlignment="Left" Margin="24,384,0,0" VerticalAlignment="Top" Foreground="Black" FontWeight="Bold"/>
