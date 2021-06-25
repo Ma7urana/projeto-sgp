@@ -58,6 +58,9 @@
     <Compile Include="Tela_cancel.xaml.cs">
       <DependentUpon>Tela_cancel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Venda.xaml.cs">
+      <DependentUpon>Venda.xaml</DependentUpon>
+    </Compile>
     <Page Include="Cad_Fornecedor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,6 +90,10 @@
     <Page Include="Tela_cancel.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Venda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
