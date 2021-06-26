@@ -67,6 +67,9 @@
     <Compile Include="Venda.xaml.cs">
       <DependentUpon>Venda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarProduto.xaml.cs">
+      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
+    </Compile>
     <Page Include="Cad_Fornecedor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -106,6 +109,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Venda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CadastrarProduto.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
