@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Cadastrar_funcionario.xaml.cs">
+      <DependentUpon>Cadastrar_funcionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ConfirmacaoFinalizarVenda.xaml.cs">
       <DependentUpon>ConfirmacaoFinalizarVenda.xaml</DependentUpon>
     </Compile>
@@ -67,9 +70,16 @@
     <Compile Include="Venda.xaml.cs">
       <DependentUpon>Venda.xaml</DependentUpon>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Include="CadastrarProduto.xaml.cs">
       <DependentUpon>CadastrarProduto.xaml</DependentUpon>
     </Compile>
+=======
+    <Page Include="Cadastrar_funcionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+>>>>>>> Stashed changes
     <Page Include="Cad_Fornecedor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
