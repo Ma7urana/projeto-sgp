@@ -15,13 +15,40 @@ using System.Windows.Shapes;
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for CadastrarProduto.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CadastrarProduto : Window
     {
-        public Window1()
+        public CadastrarProduto()
         {
             InitializeComponent();
+        }
+
+        private void btnMin_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void btnMax_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Normal)
+            {
+                this.WindowState = WindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = WindowState.Normal;
+            }
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }
