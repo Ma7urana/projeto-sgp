@@ -11,4 +11,4 @@ do Curso Técnico Em Informática Integrado Ao Ensino Médio (turma 2019-2021, B
 - Natália Fernandes (2020 e 2021, github.com/taliaNat007);
 - Maria Eduarda (2020 e 2021, github.com/Eduarda394);
 - Filipe Maciel (2021, github.com/Blue-Akio);
-- Lucas Fernandes (2021).
+- Lucas Fernandes (2021, github.com/biruleicriaasa).
