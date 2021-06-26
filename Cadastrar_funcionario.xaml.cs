@@ -23,5 +23,10 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
         }
+
+        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
+        }
     }
 }
