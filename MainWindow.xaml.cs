@@ -62,12 +62,10 @@ namespace projeto_sgp_WPFversion
         private void btnrelatorio_Click(object sender, RoutedEventArgs e)
         {
         }
-=======
         private void btnCaixaVenda_Click(object sender, RoutedEventArgs e)
         {
             Venda caixaVenda = new Venda();
             caixaVenda.ShowDialog();
         }
->>>>>>> master
             }
 }

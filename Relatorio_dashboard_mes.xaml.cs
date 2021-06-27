@@ -23,6 +23,7 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
         }
+
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -47,6 +48,5 @@ namespace projeto_sgp_WPFversion
         {
             DragMove();
         }
-
     }
 }

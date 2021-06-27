@@ -67,7 +67,7 @@
         </StackPanel>
         <StackPanel Margin="-10,0,158,21" Grid.Row="1">
             <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Button_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
             <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
             <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
         </StackPanel>
