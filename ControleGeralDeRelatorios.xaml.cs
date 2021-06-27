@@ -55,5 +55,29 @@ namespace projeto_sgp_WPFversion
             Relatórios_Vendedores relatórios_Vendedores = new Relatórios_Vendedores();
             relatórios_Vendedores.ShowDialog();
         }
+
+        private void btnRelVendedorValor_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_vendedor_valor relatorio_Vendedor_Valor = new Relatorio_vendedor_valor();
+            relatorio_Vendedor_Valor.ShowDialog();
+        }
+
+        private void btnRelVendedorProduto_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_vendedor_produto relatorio_Vendedor_Produto = new Relatorio_vendedor_produto();
+            relatorio_Vendedor_Produto.ShowDialog();
+        }
+
+        private void btnRelDestaqueMes_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_destaque_mes relatorio_Destaque_Mes = new Relatorio_destaque_mes();
+            relatorio_Destaque_Mes.ShowDialog();
+        }
+
+        private void btnRelDashboardMes_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_dashboard_mes relatorio_Dashboard_Mes = new Relatorio_dashboard_mes();
+            relatorio_Dashboard_Mes.ShowDialog();
+        }
     }
 }
