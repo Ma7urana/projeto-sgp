@@ -55,10 +55,6 @@ namespace projeto_sgp_WPFversion
             ControleGeralDeCadastros controleGeralDeCadastros = new ControleGeralDeCadastros();
             controleGeralDeCadastros.ShowDialog();
         }
-
-<<<<<<< HEAD
-
-
         private void btnrelatorio_Click(object sender, RoutedEventArgs e)
         {
         }
@@ -67,5 +63,5 @@ namespace projeto_sgp_WPFversion
             Venda caixaVenda = new Venda();
             caixaVenda.ShowDialog();
         }
-            }
+    }
 }

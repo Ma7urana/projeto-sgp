@@ -81,7 +81,7 @@
 
         </StackPanel>
         <DataGrid Margin="294,111,25,0" x:Name="Datagridmes" IsReadOnly="true"
-                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3" SelectionChanged="Datagridmes_SelectionChanged_1">
+                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Produto" Width="130"/>
                 <DataGridTextColumn Header="Quantidade" Width="130"/>

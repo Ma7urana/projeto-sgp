@@ -79,7 +79,7 @@
             <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
         </StackPanel>
         <DataGrid Margin="294,74,25,0" x:Name="Datagridmes" IsReadOnly="true"
-                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3" SelectionChanged="Datagridmes_SelectionChanged_1">
+                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Colocção" Width="130"/>
                 <DataGridTextColumn Header="Nome" Width="130"/>

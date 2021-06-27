@@ -23,7 +23,6 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -43,16 +42,9 @@ namespace projeto_sgp_WPFversion
         {
             this.WindowState = WindowState.Minimized;
         }
-=======
->>>>>>> master
-
         private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     }
 }

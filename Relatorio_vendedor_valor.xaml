@@ -80,7 +80,7 @@
         <StackPanel Grid.ColumnSpan="4" Margin="247,44,0,10" Grid.RowSpan="4">
 
         </StackPanel>
-        <DataGrid Grid.ColumnSpan="4" Margin="292,61,42,35" Grid.RowSpan="3" x:Name="Datagridmes" SelectionChanged="Datagridmes_SelectionChanged" />
+        <DataGrid Grid.ColumnSpan="4" Margin="292,61,42,35" Grid.RowSpan="3" x:Name="Datagridmes"/>
 
     </Grid>
 </Window>
