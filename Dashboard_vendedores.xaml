@@ -1,0 +1,85 @@
+﻿<Window x:Class="projeto_sgp_WPFversion.Dashboard_vendedores"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+        mc:Ignorable="d"
+        Title="Menu" Height="500" Width="758" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
+
+    <Grid Background="WhiteSmoke" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="405"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="257*"/>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="206"/>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="auto" MinHeight="59"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+
+        <TextBlock Grid.Row="0" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,0,170" Grid.ColumnSpan="4">Dashboard - Vendedores</TextBlock>
+
+        <Button x:Name="btnClose" Height="39" Width="42" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,0,167" Cursor="Hand" Grid.Column="3">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/close-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,42,168"  Cursor="Hand" RenderTransformOrigin="0.491,0.491" Grid.Column="2" Grid.ColumnSpan="2">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/max-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMin" Height="38" Width="45" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,33,168"  Cursor="Hand" RenderTransformOrigin="4.272,1.209" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/min-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <StackPanel Margin="0,36,163,0" Grid.RowSpan="4" Background="#FF394047">
+            <TextBlock Text="Perfil/foto:" FontSize="15" Foreground="White" />
+            <Image Height="88" Margin="10,0,144,0" Source="images/perfil-funcionario.jpg" />
+            <TextBlock Text="Usuário:" FontSize="15" Foreground="White" />
+            <Label  Content="Delzely Barros" FontSize="15" Foreground="White" Height="35" />
+        </StackPanel>
+        <StackPanel Margin="-10,0,158,21" Grid.Row="1">
+            <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Button_Click"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+        </StackPanel>
+        <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
+            <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" />
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="4" Margin="247,44,0,10" Grid.RowSpan="4">
+
+        </StackPanel>
+
+    </Grid>
+</Window>

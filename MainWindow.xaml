@@ -59,7 +59,7 @@
             <Button Content="CONTROLE DE COMPRAS" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
         </StackPanel>
         <StackPanel Cursor="Hand" Grid.ColumnSpan="1" Grid.Row="1" Grid.Column="1">
-            <Button Content="CONTROLE GERAL DE RELATÓRIOS" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
+            <Button Content="CONTROLE GERAL DE RELATÓRIOS" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200" Click="btnrelatorio_Click"/>
             <Button Content="CONTROLE DE CONTAS A PAGAR" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
             <Button Content="CONTROLE DE CAIXA SEBRAE" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200" Cursor="Hand"/>
             <Button Content="DASHBOARD DE FLUXO DE CAIXA" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_sgp_WPFversion.Dominio.Vendedor;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,28 +11,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para Relatorio_destaque_mes.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Relatorio_destaque_mes : Window
     {
-        public MainWindow()
+        public Relatorio_destaque_mes()
         {
             InitializeComponent();
         }
-
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-            if(this.WindowState == WindowState.Normal)
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
             }
@@ -50,17 +49,19 @@ namespace projeto_sgp_WPFversion
             DragMove();
         }
 
-        private void btnControleGeralDeCadastros_Click(object sender, RoutedEventArgs e)
+        private void Datagridmes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ControleGeralDeCadastros controleGeralDeCadastros = new ControleGeralDeCadastros();
 
-            controleGeralDeCadastros.ShowDialog();
+            List<Vendedor> listaVendedores = new List<Vendedor>();
+            listaVendedores.Add(new Vendedor()
+            {
+                Cliente="João",
+                id = 1,
+                valor= 100000
+              
+            });
+
+            Datagridmes.ItemsSource = listaVendedores;
         }
-
- 
-
-        private void btnrelatorio_Click(object sender, RoutedEventArgs e)
-        {
-
     }
 }

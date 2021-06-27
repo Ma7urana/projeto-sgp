@@ -63,7 +63,8 @@ namespace projeto_sgp_WPFversion
 
         private void Btnconclui(object sender, RoutedEventArgs e)
         {
-        
+            Tela_cad_concluido conc = new Tela_cad_concluido();
+            conc.ShowDialog();
         }
 
         private void BtnCancel(object sender, RoutedEventArgs e)

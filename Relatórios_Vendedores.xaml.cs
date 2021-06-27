@@ -10,36 +10,36 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para Relatórios_Vendedores.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Relatórios_Vendedores : Window
     {
-        public MainWindow()
+        public Relatórios_Vendedores()
         {
             InitializeComponent();
         }
-
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-            if(this.WindowState == WindowState.Normal)
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
             }
             else
             {
                 this.WindowState = WindowState.Normal;
+
             }
         }
+
         private void btnMin_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -50,17 +50,9 @@ namespace projeto_sgp_WPFversion
             DragMove();
         }
 
-        private void btnControleGeralDeCadastros_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ControleGeralDeCadastros controleGeralDeCadastros = new ControleGeralDeCadastros();
 
-            controleGeralDeCadastros.ShowDialog();
         }
-
- 
-
-        private void btnrelatorio_Click(object sender, RoutedEventArgs e)
-        {
-
     }
 }

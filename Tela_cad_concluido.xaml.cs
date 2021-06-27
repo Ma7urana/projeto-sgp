@@ -10,20 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para Tela_cad_concluido.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Tela_cad_concluido : Window
     {
-        public MainWindow()
+        public Tela_cad_concluido()
         {
             InitializeComponent();
         }
+
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
@@ -31,7 +31,7 @@ namespace projeto_sgp_WPFversion
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-            if(this.WindowState == WindowState.Normal)
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
             }
@@ -50,17 +50,9 @@ namespace projeto_sgp_WPFversion
             DragMove();
         }
 
-        private void btnControleGeralDeCadastros_Click(object sender, RoutedEventArgs e)
+        private void yes_Click(object sender, RoutedEventArgs e)
         {
-            ControleGeralDeCadastros controleGeralDeCadastros = new ControleGeralDeCadastros();
-
-            controleGeralDeCadastros.ShowDialog();
+            Close();
         }
-
- 
-
-        private void btnrelatorio_Click(object sender, RoutedEventArgs e)
-        {
-
     }
 }
