@@ -50,5 +50,11 @@ namespace projeto_sgp_WPFversion
         {
             DragMove();
         }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+            ControleGeralDeCadastros ctrlGeral = new ControleGeralDeCadastros();
+            this.Close();
+        }
     }
 }
