@@ -64,7 +64,7 @@
 
         <!-- left side panel -->
         <StackPanel Width="200" Margin="8,18">
-            <Image Source="./images/user_icon.png"
+            <Image Source="images\user_icon.png"
                    Height="120" Width="120"/>
             <Label Content="Username"
                    HorizontalAlignment="Center"
@@ -72,84 +72,147 @@
         </StackPanel>
 
         <!-- right side panel -->
-        <StackPanel Background="#F0F0F2" Margin="8">
-            <StackPanel.Resources>
-                <Style TargetType="TextBox">
-                    <Setter Property="Height" Value="18"/>
-                </Style>
+        <DockPanel Background="#F0F0F2" Margin="8">
+            <DockPanel.Resources>
                 <Style TargetType="StackPanel">
                     <Setter Property="Margin" Value="4,6"/>
+                    <Setter Property="Orientation" Value="Horizontal"/>
                 </Style>
-            </StackPanel.Resources>
+            </DockPanel.Resources>
 
-            <StackPanel HorizontalAlignment="Center"
-                        Margin="0,6,0,12">
-                <TextBox x:Uid="searchbox" Width="240"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Código:"/>
-                <TextBox Width="120" Margin="0,0,90,0"/>
-
-                <Label Content="Data de Inclusão:"/>
-                <TextBox Width="90"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Nome:"/>
-                <TextBox Width="150" Margin="0,0,56,0"/>
-
-                <Label Content="Marca:"/>
-                <TextBox Width="150"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Unidade:"/>
-                <TextBox Width="100" Margin="0,0,70,0"/>
-
-                <Label Content="Fornecedor:"/>
-                <TextBox Width="150"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Preço de Compra:"/>
-                <TextBox Width="80" Margin="0,0,98,0"/>
-
-                <Label Content="Preço de Venda:"/>
-                <TextBox Width="80"/>
-            </StackPanel>
-            <StackPanel Margin="0,60,0,0">
-                <Grid>
-                    <Grid.Resources>
-                        <Style TargetType="Button">
-                            <Setter Property="Margin" Value="12,6"/>
-                            <Setter Property="Background" Value="#CFAB29"/>
-                            <Setter Property="Foreground" Value="White"/>
-                            <Setter Property="BorderBrush" Value="Black"/>
-                            <Setter Property="BorderThickness" Value="2"/>
-                        </Style>
-                    </Grid.Resources>
-                    
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    
+            <Grid DockPanel.Dock="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                
+                <TextBox x:Uid="searchbox"
+                         MinWidth="250" MaxWidth="500"
+                         Margin="40,6"
+                         Grid.Column="0" Grid.Row="0"/>
+                
+                <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="120"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="120"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
-                    <Button Content="Voltar"
-                            Click="back_Click"
-                            Grid.Column="0" Grid.Row="2"/>
+                    <StackPanel HorizontalAlignment="Left"
+                                Grid.Column="0">
+                        <Label Content="Código:"/>
+                        <TextBox MinWidth="100"
+                                 MaxWidth="400"/>
+                    </StackPanel>
 
-                    <Button Content="Salvar"
-                            Grid.Row="0" Grid.Column="2"/>
-                    <Button Content="Excluir"
-                            Grid.Row="1" Grid.Column="2"/>
-                    <Button Content="Avançar"
-                            Grid.Row="2" Grid.Column="2"/>
+                    <StackPanel HorizontalAlignment="Right"
+                                Grid.Column="1">
+                        <Label Content="Data de Inclusão:"/>
+                        <TextBox MinWidth="90" MaxWidth="110"/>
+                    </StackPanel>
                 </Grid>
-            </StackPanel>
-        </StackPanel>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel HorizontalAlignment="Left"
+                                Grid.Column="0">
+                        <Label Content="Nome:"/>
+                        <TextBox MinWidth="150"
+                                 MaxWidth="250"/>
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right"
+                                Grid.Column="1">
+                        <Label Content="Marca:"/>
+                        <TextBox MinWidth="150"
+                                 MaxWidth="250"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel HorizontalAlignment="Left"
+                                Grid.Column="0">
+                        <Label Content="Unidade:"/>
+                        <TextBox MinWidth="80"
+                                 MaxWidth="120"/>
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right"
+                                Grid.Column="1">
+                        <Label Content="Fornecedor:"/>
+                        <TextBox MinWidth="150"
+                                 MaxWidth="250"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel HorizontalAlignment="Left"
+                                Grid.Column="0">
+                        <Label Content="Preço de Compra:"/>
+                        <TextBox MinWidth="80"
+                                 MaxWidth="150"/>
+                    </StackPanel>
+
+                    <StackPanel HorizontalAlignment="Right"
+                                Grid.Column="1">
+                        <Label Content="Preço de Venda:"/>
+                        <TextBox MinWidth="80"
+                                 MaxWidth="100"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <Grid DockPanel.Dock="Bottom">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="80"/>
+                        <Setter Property="Height" Value="20"/>
+                        <Setter Property="Margin" Value="12,6"/>
+                        <Setter Property="Background" Value="#CFAB29"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="BorderThickness" Value="2"/>
+                    </Style>
+                </Grid.Resources>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Content="Voltar"
+                        Click="back_Click"
+                        Grid.Column="0" Grid.Row="2"/>
+
+                <Button Content="Salvar"
+                        Grid.Row="0" Grid.Column="2"/>
+                <Button Content="Excluir"
+                        Grid.Row="1" Grid.Column="2"/>
+                <Button Content="Avançar"
+                        Grid.Row="2" Grid.Column="2"/>
+            </Grid>
+        </DockPanel>
     </DockPanel>
 </Window>
