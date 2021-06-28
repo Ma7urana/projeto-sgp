@@ -10,6 +10,7 @@
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2"
         BorderBrush="Black" WindowState="Normal" Background="#F0EFF2" Cursor="Hand"
         MouseLeftButtonDown="tela_MouseLeftButtonDown">
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -34,7 +35,7 @@
             </Button.Background>
         </Button>
         <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
-                        Click="btnMax_Click" IsEnabled="False" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
+                        Click="btnMax_Click" IsEnabled="True" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="images/max-icon.png"/>
             </Button.Background>
@@ -60,14 +61,44 @@
             <StackPanel>
                 <Button x:Name="btnRelatoriosPorVendedores" Click="btnRelatoriosPorVendedores_Click" Margin="0,15,0,0" Width="290" Height="45" Cursor="Hand" 
                         Background="#F1F1F1" Content="RELATÓRIOS POR VENDEDORES" FontWeight="Normal" FontSize="14"/>
-                
+
                 <Button x:Name="btnRelatoriosPorFuncionarios" Margin="0,30,0,0" Width="290" Height="45" Cursor="Hand" 
                         Background="#F1F1F1" Content="RELATÓRIOS POR FUNCIONÁRIOS" FontWeight="Normal" FontSize="14"/>
-                
+
                 <Button x:Name="btnRelatoriosPorClientes" Margin="0,30,0,0" Width="290" Height="45" Cursor="Hand" 
                         Background="#F1F1F1" Content="RELATÓRIOS POR CLIENTES" FontWeight="Normal" FontSize="14"/>
             </StackPanel>
         </GroupBox>
+
+        <GroupBox Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0"
+                  Width="288" Height="300" 
+                  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="Gray" Background="#ECEBEC" BorderThickness="1">
+
+            <StackPanel>
+                <Button Margin="0,30,0,0" Width="250" Height="35" Content="&lt;Relatório Mais Acessado 1>" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Normal"/>
+                <Button Margin="0,30,0,0" Width="250" Height="35" Content="&lt;Relatório Mais Acessado 2>" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Normal"/>
+                <Button Margin="0,30,0,0" Width="250" Height="35" Content="&lt;Relatório Mais Acessado 3>" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Normal"/>
+                <Button Margin="0,30,0,0" Width="250" Height="35" Content="&lt;Relatório Mais Acessado 4>" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Normal" />
+            </StackPanel>
+
+        </GroupBox>
+
+        <ComboBox Grid.Row="1" Grid.Column="1" Width="200" Height="35" VerticalAlignment="Top" Margin="0,20,0,0" 
+                  IsEditable="True" Text="INSIRA O NOME DO RELATÓRIO" AllowDrop="True" IsTextSearchEnabled="True" TextSearch.TextPath="Content" Foreground="#FFC7C7C7" >
+            <Button x:Name="btnRelVendedorValor" BorderBrush="{x:Null}" Background="{x:Null}" 
+                    Width="195"
+                    Content="VALOR DE VENDAS POR VENDEDOR" Click="btnRelVendedorValor_Click"/>
+            <Button x:Name="btnRelVendedorProduto" BorderBrush="{x:Null}" Background="{x:Null}" 
+                    Width="195"
+                    Content="PRODUTOS VENDIDOS POR VENDEDOR" Click="btnRelVendedorProduto_Click"/>
+            <Button x:Name="btnRelDestaqueMes" BorderBrush="{x:Null}" Background="{x:Null}"  
+                    Width="195"
+                    Content="VENDEDORES DESTAQUE NO MÊS" Click="btnRelDestaqueMes_Click"/>
+            <Button x:Name="btnRelDashboardMes" BorderBrush="{x:Null}" Background="{x:Null}"  
+                    Width="195"
+                    Content="DASHBOARD VENDEDORES DESTAQUE MÊS" Click="btnRelDashboardMes_Click"/>
+        </ComboBox>
 
     </Grid>
 </Window>
