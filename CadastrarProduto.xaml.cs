@@ -56,5 +56,11 @@ namespace projeto_sgp_WPFversion
             ControleGeralDeCadastros ctrlGeral = new ControleGeralDeCadastros();
             this.Close();
         }
+
+        private void save(object sender, RoutedEventArgs e)
+        {
+            Tela_cad_concluido cadConcluido = new Tela_cad_concluido();
+            cadConcluido.ShowDialog();
+        }
     }
 }
