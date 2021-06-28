@@ -8,5 +8,7 @@ namespace projeto_sgp_WPFversion.Dominio.Vendedor
 {
     class Venda
     {
+
+
     }
 }

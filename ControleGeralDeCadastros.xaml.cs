@@ -51,8 +51,20 @@ namespace projeto_sgp_WPFversion
 
         private void btnCadFornecedor_Click(object sender, RoutedEventArgs e)
         {
-            Cad_Fornecedor cfDialog = new Cad_Fornecedor();
-            cfDialog.ShowDialog();
+            Cad_Fornecedor cad_FornecedorDialog = new Cad_Fornecedor();
+            cad_FornecedorDialog.ShowDialog();
+        }
+
+        private void btnCadProduto_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarProduto cad_ProdutoDialog = new CadastrarProduto();
+            cad_ProdutoDialog.ShowDialog();
+        }
+
+        private void btnCadFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            Cadastrar_funcionario cad_FuncionarioDialog = new Cadastrar_funcionario();
+            cad_FuncionarioDialog.ShowDialog();
         }
     }
 }

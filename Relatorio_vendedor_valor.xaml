@@ -67,9 +67,9 @@
         </StackPanel>
         <StackPanel Margin="-10,0,158,21" Grid.Row="1">
             <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Button_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btn_mes_Click"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btnvendedor_Click"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtnValor_Click"/>
         </StackPanel>
         <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
             <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" />
@@ -80,7 +80,15 @@
         <StackPanel Grid.ColumnSpan="4" Margin="247,44,0,10" Grid.RowSpan="4">
 
         </StackPanel>
-        <DataGrid Grid.ColumnSpan="4" Margin="292,61,42,35" Grid.RowSpan="3" x:Name="Datagridmes" SelectionChanged="Datagridmes_SelectionChanged" />
-
+        <DataGrid Margin="294,74,25,0" x:Name="Datagridmes" IsReadOnly="true"
+                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3" SelectionChanged="Datagridmes_SelectionChanged_1">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código" Width="130"/>
+                <DataGridTextColumn Header="Nome" Width="130"/>
+                <DataGridTextColumn Header="Valor" Width="130" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.ColumnSpan="2" Content="Compartilhar" Grid.Column="2" HorizontalAlignment="Left" Margin="179,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="99" Background="LightBlue"/>
+        <Button Content="Imprimir" HorizontalAlignment="Left" Margin="294,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="101" Background="LightBlue" />
     </Grid>
 </Window>

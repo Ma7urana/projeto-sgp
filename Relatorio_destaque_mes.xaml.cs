@@ -51,17 +51,26 @@ namespace projeto_sgp_WPFversion
 
         private void Datagridmes_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+        }
 
-            List<Vendedor> listaVendedores = new List<Vendedor>();
-            listaVendedores.Add(new Vendedor()
-            {
-                Cliente="João",
-                id = 1,
-                valor= 100000
-              
-            });
+  
 
-            Datagridmes.ItemsSource = listaVendedores;
+        private void Btn_mes_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void Btnvendedor_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_vendedor_produto Relatorio_vendedor_produto = new Relatorio_vendedor_produto();
+            Relatorio_vendedor_produto.Show();
+        }
+
+        private void BtnValor_Click(object sender, RoutedEventArgs e)
+        {
+                Relatorio_vendedor_valor Relatorio_vendedor_valor = new Relatorio_vendedor_valor();
+                Relatorio_vendedor_valor.Show();
+            
         }
     }
 }

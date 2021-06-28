@@ -49,10 +49,14 @@
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button x:Name="btnCadFornecedor" Height="26" Width="200" BorderThickness="0" 
-                            Click="btnCadFornecedor_Click"  
-                            Margin="0,0,0,10"  Cursor="Hand">CADASTRAR FORNECEDOR</Button>
-            <Button Height="26" Width="200" BorderThickness="0" Margin="0,0,0,10"  Cursor="Hand">CADASTRAR...</Button>
-            <Button Height="26" Width="200" BorderThickness="0" Margin="0,0,0,10"  Cursor="Hand">CADASTRAR...</Button>
+                    Click="btnCadFornecedor_Click"  
+                    Margin="0,0,0,10"  Cursor="Hand">CADASTRAR FORNECEDOR</Button>
+            <Button x:Name="btnCadProduto" Height="26" Width="200" BorderThickness="0" 
+                    Click="btnCadProduto_Click"
+                    Margin="0,0,0,10"  Cursor="Hand">CADASTRAR PRODUTO</Button>
+            <Button x:Name="btnCadFuncionario" Height="26" Width="200" BorderThickness="0"
+                    Click="btnCadFuncionario_Click"
+                    Margin="0,0,0,10"  Cursor="Hand">CADASTRAR FUNCIOÁRIO</Button>
             <Button Height="26" Width="200" BorderThickness="0" Margin="0,0,0,10"  Cursor="Hand">CADASTRAR...</Button>
         </StackPanel>
     </Grid>
