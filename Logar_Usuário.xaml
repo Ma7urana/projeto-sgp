@@ -1,0 +1,85 @@
+﻿<Window x:Name="tela" x:Class="projeto_sgp_WPFversion.Logar_Usuário"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+        mc:Ignorable="d"
+        Title="Logar_Usuário" Height="636.28" Width="702.374" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2"
+        BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand"
+        MouseLeftButtonDown="tela_MouseLeftButtonDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="700"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center"
+                   TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow">
+           LOGAR USUÁRIO
+        </TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/close-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/max-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnMin" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,90,0"  Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/min-icon.png"/>
+            </Button.Background>
+        </Button>
+
+        <!-- SEU CÓDIGO -->
+       
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="499" Margin="52,50,0,0" Grid.Row="1" Stroke="#FF332E2E" VerticalAlignment="Top" Width="598"/>
+
+
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="185,241,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="348"/>
+        <TextBlock HorizontalAlignment="Left" Margin="185,349,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="31" Width="348"/>
+
+
+        
+        <StackPanel Grid.Column="0" Grid.Row="1" Margin="40,40,40,39" Background="white">
+           
+            <Label Content="Nome:" FontSize="20" Height="80" Margin="70,200,68,200"/>
+            <Label Content="Senha:" FontSize="20" Margin="70,-199" RenderTransformOrigin="0.486,0.435"/>
+
+        </StackPanel>
+
+        
+        
+        <StackPanel Grid.Column="1"  Grid.RowSpan="2">
+
+            <Button Content="Cancelar" Margin="58,530,496,0" Height="50" RenderTransformOrigin="0.491,-0.004" Background="#FFCEAB3B" Foreground="White"/>
+            <Button Content="Prosseguir" Margin="508,-50,58,0" VerticalAlignment="Top" Height="50" Background="#FFCEAB3B" Foreground="White" Click="Button_Click" RenderTransformOrigin="-0.357,1.722"/>
+
+        </StackPanel>
+
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="185,241,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="347"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="185,326,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="347"/>
+
+        <Image Source="images/Perfil-icon.png" Margin="10,67,-10,405" Grid.Row="1">
+            
+        </Image>
+ 
+
+    </Grid>
+</Window>

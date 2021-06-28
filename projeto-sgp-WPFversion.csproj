@@ -55,11 +55,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CadastrarProduto.xaml.cs">
+      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cadastrar_funcionario.xaml.cs">
       <DependentUpon>Cadastrar_funcionario.xaml</DependentUpon>
     </Compile>
     <Compile Include="ConfirmacaoFinalizarVenda.xaml.cs">
       <DependentUpon>ConfirmacaoFinalizarVenda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controlar_Contas_a_Pagar.xaml.cs">
+      <DependentUpon>Controlar_Contas_a_Pagar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Logar_Usuário.xaml.cs">
+      <DependentUpon>Logar_Usuário.xaml</DependentUpon>
     </Compile>
     <Compile Include="dashboard_mais_vendidos.xaml.cs">
       <DependentUpon>dashboard_mais_vendidos.xaml</DependentUpon>
@@ -96,12 +105,13 @@
     <Compile Include="Venda.xaml.cs">
       <DependentUpon>Venda.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CadastrarProduto.xaml.cs">
-      <DependentUpon>CadastrarProduto.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Cadastrar_funcionario.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="CadastrarProduto.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Cadastrar_funcionario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Cad_Fornecedor.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -111,17 +121,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Controlar_Contas_a_Pagar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controlar_Estoque_e_Vendas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ControleGeralDeCadastros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="dashboard_mais_vendidos.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Dashboard_vendedores.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Logar_Usuário.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -177,10 +199,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CadastrarProduto.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -215,8 +233,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\perfil-funcionario.jpg" />
-    <Content Include="images\Relatorio-vendedor-icon.PNG" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\Perfil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Relatorio-vendedor-icon.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
