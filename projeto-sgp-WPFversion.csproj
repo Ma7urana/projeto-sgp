@@ -70,6 +70,9 @@
     <Compile Include="ControleGeralDeRelatorios.xaml.cs">
       <DependentUpon>ControleGeralDeRelatorios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DashboardDeFluxoDeCaixa.xaml.cs">
+      <DependentUpon>DashboardDeFluxoDeCaixa.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Logar_Usuário.xaml.cs">
       <DependentUpon>Logar_Usuário.xaml</DependentUpon>
     </Compile>
@@ -137,6 +140,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ControleGeralDeRelatorios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DashboardDeFluxoDeCaixa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -246,6 +253,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Relatorio-vendedor-icon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\user_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
