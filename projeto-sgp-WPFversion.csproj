@@ -67,6 +67,9 @@
     <Compile Include="Controlar_Contas_a_Pagar.xaml.cs">
       <DependentUpon>Controlar_Contas_a_Pagar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ControleGeralDeRelatorios.xaml.cs">
+      <DependentUpon>ControleGeralDeRelatorios.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Logar_Usuário.xaml.cs">
       <DependentUpon>Logar_Usuário.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="ControleGeralDeCadastros.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControleGeralDeRelatorios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
