@@ -73,5 +73,23 @@ namespace projeto_sgp_WPFversion
             DashboardDeFluxoDeCaixa dashboardDeFluxoDeCaixa = new DashboardDeFluxoDeCaixa();
             dashboardDeFluxoDeCaixa.ShowDialog();
         }
+
+        private void btnControleDeContasAPagar_Click(object sender, RoutedEventArgs e)
+        {
+            Controlar_Contas_a_Pagar controlar_Contas_A_Pagar = new Controlar_Contas_a_Pagar();
+            controlar_Contas_A_Pagar.ShowDialog();
+        }
+
+        private void btnControleDeEstoqueEVendas_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void btnControleDeCaixaSebrae_Click(object sender, RoutedEventArgs e)
+        {
+
+            //System.Diagnostics.Process.Start(@"D:\Projetos .NET\projeto-sgp\Fluxo_de_Caixa_planilha.xlsx");
+            MessageBox.Show("Arquivo indisponível no momento!", "ARQUIVO INDISPONÍVEL", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
     }
 }
