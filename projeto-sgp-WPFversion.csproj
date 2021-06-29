@@ -155,6 +155,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DashboardDeFluxoDeCaixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="dashboard_mais_vendidos.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -281,6 +285,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\Relatorio-vendedor-icon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\user_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

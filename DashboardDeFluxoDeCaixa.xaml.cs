@@ -10,28 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para DashboardDeFluxoDeCaixa.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DashboardDeFluxoDeCaixa : Window
     {
-        public MainWindow()
+        public DashboardDeFluxoDeCaixa()
         {
             InitializeComponent();
         }
 
+        private void TextBlock_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
-            if(this.WindowState == WindowState.Normal)
+            if (this.WindowState == WindowState.Normal)
             {
                 this.WindowState = WindowState.Maximized;
             }
@@ -48,30 +51,6 @@ namespace projeto_sgp_WPFversion
         private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
-        }
-
-        private void btnControleGeralDeCadastros_Click(object sender, RoutedEventArgs e)
-        {
-            ControleGeralDeCadastros controleGeralDeCadastros = new ControleGeralDeCadastros();
-            controleGeralDeCadastros.ShowDialog();
-        }
-
-        private void btnCaixaVenda_Click(object sender, RoutedEventArgs e)
-        {
-            Venda caixaVenda = new Venda();
-            caixaVenda.ShowDialog();
-        }
-
-        private void btnControleGeralDeRelatorios_Click(object sender, RoutedEventArgs e)
-        {
-            ControleGeralDeRelatorios controleGeralDeRelatorios = new ControleGeralDeRelatorios();
-            controleGeralDeRelatorios.ShowDialog();
-        }
-
-        private void btnDashboardDeFluxoDeCaixa_Click(object sender, RoutedEventArgs e)
-        {
-            DashboardDeFluxoDeCaixa dashboardDeFluxoDeCaixa = new DashboardDeFluxoDeCaixa();
-            dashboardDeFluxoDeCaixa.ShowDialog();
         }
     }
 }

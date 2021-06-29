@@ -1,0 +1,186 @@
+﻿<Window x:Class="projeto_sgp_WPFversion.DashboardDeFluxoDeCaixa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+        mc:Ignorable="d"
+        Title="DashboardDeFluxoDeCaixa" Height="400" Width="700" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="1"
+        BorderBrush="Black" WindowState="Normal" Background="#F1F1F3" Cursor="Hand"
+        MouseLeftButtonDown="tela_MouseLeftButtonDown">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center"
+                   TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C"
+                   HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow">
+            DASHBOARD DE FLUXO DE CAIXA
+        </TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/close-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/max-icon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnMin" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,90,0"  Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/min-icon.png"/>
+            </Button.Background>
+        </Button>
+
+        <GroupBox Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"
+                  
+                  Header="PERÍODO" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
+            <GroupBox.HeaderTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding}" Background="#4E555C" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" Margin="10,0,10,10" Foreground="White"/>
+                </DataTemplate>
+            </GroupBox.HeaderTemplate>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBox>MÊS:</TextBox>
+                <ComboBox Width="100" Margin="0,0,10,0" 
+                          IsEditable="True" AllowDrop="True" IsTextSearchEnabled="True" TextSearch.TextPath="Content" 
+                          Foreground="#FFC7C7C7">
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="JANEIRO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="FEVEREIRO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="MARÇO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="ABRIL"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="MAIO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="JUNHO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="JULHO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="AGOSTO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="SETEMBRO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="OUTUBRO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="NOVEMBRO"/>
+
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="DEZEMBRO"/>
+                </ComboBox>
+
+                <TextBox>ANO:</TextBox>
+                <ComboBox Width="100" Margin="0,0,10,0" 
+                          IsEditable="True" AllowDrop="True" IsTextSearchEnabled="True" TextSearch.TextPath="Content" 
+                          Foreground="#FFC7C7C7">
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2021"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2022"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2023"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2024"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2025"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2026"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2027"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2028"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2029"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2030"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2031"/>
+                    
+                    <Button BorderBrush="{x:Null}" Background="{x:Null}" Content="2032"/>
+                </ComboBox>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"
+                  Width="150"
+                  Header="RECEITAS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}" Background="#4E555C" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" Margin="10,0,10,10" Foreground="White"/>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="18">R$0,00</TextBlock>
+            </GroupBox>
+
+            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"
+                  Width="150"
+                  Header="DESPESAS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}" Background="#4E555C" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" Margin="10,0,10,10" Foreground="White"/>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="18">R$0,00</TextBlock>
+            </GroupBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="50,90,50,20">
+            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Center" Margin="8,0,0,0"
+                  Width="250"
+                  Header="LUCRO/PREJUÍSO" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}" Background="#F0AD4E" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" Width="240" Margin="0,0,0,10" Foreground="White"/>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <TextBlock HorizontalAlignment="Center" FontSize="18">R$0,00</TextBlock>
+            </GroupBox>
+            
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="50,90,50,20">
+            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Center" Margin="8,0,0,0"
+                  Width="250"
+                  Header="LUCRATIVIDADE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
+                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
+                <GroupBox.HeaderTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding}" Background="#F0AD4E" HorizontalAlignment="Center" 
+                            VerticalAlignment="Center" Width="240" Margin="0,0,0,10" Foreground="White"/>
+                    </DataTemplate>
+                </GroupBox.HeaderTemplate>
+                <TextBlock HorizontalAlignment="Center" FontSize="18">0%</TextBlock>
+            </GroupBox>
+            
+        </StackPanel>
+    </Grid>
+</Window>

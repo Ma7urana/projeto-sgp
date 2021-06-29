@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="<!-- título da janela -->" Height="400" Width="700" 
         WindowStyle="None"
-        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="1"
         BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand"
         MouseLeftButtonDown="tela_MouseLeftButtonDown">
     <Grid>
@@ -52,30 +52,7 @@
     
     <!-- NÃO SE ESQUEÇA DE ADCIONAR O CÓDGO ABAIXO NO NomeDoArquivoDaJanela.xaml.cs
     
-    private void btnClose_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-        private void btnMax_Click(object sender, RoutedEventArgs e)
-        {
-            if (this.WindowState == WindowState.Normal)
-            {
-                this.WindowState = WindowState.Maximized;
-            }
-            else
-            {
-                this.WindowState = WindowState.Normal;
-            }
-        }
-        private void btnMin_Click(object sender, RoutedEventArgs e)
-        {
-            this.WindowState = WindowState.Minimized;
-        }
-
-        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
-        }private void btnClose_Click(object sender, RoutedEventArgs e)
+        private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
