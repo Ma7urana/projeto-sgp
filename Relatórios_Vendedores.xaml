@@ -66,16 +66,16 @@
             <Label  Content="Delzely Barros" FontSize="15" Foreground="White" Height="35" />
         </StackPanel>
         <StackPanel Margin="-10,0,158,21" Grid.Row="1">
-            <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Button_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" Margin="10,0,0,0" />
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btn_mes_Click"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btnvendedor_Click"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtnValor_Click"/>
         </StackPanel>
         <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
-            <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" Margin="10,0,0,0" />
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtnDashmes_Click"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btndashvendedor_Click"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtndashValor_Click"/>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="4" Margin="247,44,0,10" Grid.RowSpan="4">
             <Image Height="403" Source="images/Relatorio-vendedor-icon.PNG" />

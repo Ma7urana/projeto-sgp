@@ -78,10 +78,21 @@
             <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
             <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
         </StackPanel>
-        <DataGrid Margin="294,74,25,0" x:Name="Datagridmes" IsReadOnly="true"
-                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="3">
+        <StackPanel Grid.ColumnSpan="4" Margin="242,44,25,74" Orientation="Horizontal" >
+            <TextBox TextWrapping="Wrap" Text="Digite nome do Vendedor" Margin="78,20,0,19" TextChanged="TextBox_TextChanged" Width="273"/>
+            <Button  Width="34" Margin="0,20,0,19">
+                <Button.Background>
+
+                    <ImageBrush ImageSource="images/pesquise2.png"/>
+
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+        <DataGrid Margin="294,89,25,44" x:Name="Datagridmes" IsReadOnly="true"
+                      AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="4">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Colocção" Width="130"/>
+                <DataGridTextColumn Header="Colocação" Width="130"/>
                 <DataGridTextColumn Header="Nome" Width="130"/>
                 <DataGridTextColumn Header="Valor" Width="130" />
             </DataGrid.Columns>

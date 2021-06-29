@@ -50,9 +50,41 @@ namespace projeto_sgp_WPFversion
             DragMove();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Btn_mes_Click(object sender, RoutedEventArgs e)
         {
+            Relatorio_destaque_mes Relatorio_destaque_mes = new Relatorio_destaque_mes();
+            Relatorio_destaque_mes.Show();
+        }
 
+        private void Btnvendedor_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_vendedor_produto Relatorio_vendedor_produto = new Relatorio_vendedor_produto();
+            Relatorio_vendedor_produto.Show();
+        }
+
+        private void BtnValor_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_vendedor_valor Relatorio_vendedor_valor = new Relatorio_vendedor_valor();
+            Relatorio_vendedor_valor.Show();
+
+        }
+
+        private void BtnDashmes_Click(object sender, RoutedEventArgs e)
+        {
+            Relatorio_dashboard_mes Relatorio_dashboard_mes = new Relatorio_dashboard_mes();
+            Relatorio_dashboard_mes.Show();
+        }
+
+        private void BtndashValor_Click(object sender, RoutedEventArgs e)
+        {
+            dashboard_mais_vendidos dashboard_mais_vendidos = new dashboard_mais_vendidos();
+            dashboard_mais_vendidos.Show();
+        }
+
+        private void Btndashvendedor_Click(object sender, RoutedEventArgs e)
+        {
+            Dashboard_vendedores Dashboard_vendedores = new Dashboard_vendedores();
+            Dashboard_vendedores.Show();
         }
     }
 }

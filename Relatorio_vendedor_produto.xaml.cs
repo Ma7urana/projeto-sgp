@@ -65,5 +65,10 @@ namespace projeto_sgp_WPFversion
             Relatorio_vendedor_valor.Show();
 
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

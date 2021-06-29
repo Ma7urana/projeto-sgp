@@ -60,10 +60,10 @@
 
             <StackPanel>
                 <Button x:Name="btnRelatoriosPorVendedores" Click="btnRelatoriosPorVendedores_Click" Margin="0,15,0,0" Width="290" Height="45" Cursor="Hand" 
-                        Background="#F1F1F1" Content="RELATÓRIOS POR VENDEDORES" FontWeight="Normal" FontSize="14"/>
+                        Background="#F1F1F1" Content="RELATÓRIOS POR VENDEDORES" FontWeight="Normal" FontSize="14" ContextMenuOpening="btnRelatoriosPorVendedores_click"/>
 
                 <Button x:Name="btnRelatoriosPorFuncionarios" Margin="0,30,0,0" Width="290" Height="45" Cursor="Hand" 
-                        Background="#F1F1F1" Content="RELATÓRIOS POR FUNCIONÁRIOS" FontWeight="Normal" FontSize="14"/>
+                        Background="#F1F1F1" Content="RELATÓRIOS POR FUNCIONÁRIOS" FontWeight="Normal" FontSize="14" Click="btnRelatoriosPorFuncionarios_Click"/>
 
                 <Button x:Name="btnRelatoriosPorClientes" Margin="0,30,0,0" Width="290" Height="45" Cursor="Hand" 
                         Background="#F1F1F1" Content="RELATÓRIOS POR CLIENTES" FontWeight="Normal" FontSize="14"/>
