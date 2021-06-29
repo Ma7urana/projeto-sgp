@@ -1,0 +1,157 @@
+﻿<Window x:Class="projeto_sgp_WPFversion.GerarRelatorioEntradaProdutos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+        mc:Ignorable="d"
+        Title="Gerar Relatório por Produtos" Height="400" Width="700" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2"
+        BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand"
+        MouseLeftButtonDown="tela_MouseLeftButtonDown">
+    <Window.Resources>
+        <Style TargetType="Window">
+            <Setter Property="FontSize" Value="8pt"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top"
+                    Background="#CFAB29">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Content="GERAR RELATÓRIO POR PRODUTO" HorizontalAlignment="Center"
+                       Grid.Column="1"/>
+
+                <StackPanel Grid.Column="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Width" Value="20"/>
+                            <Setter Property="Height" Value="20"/>
+                            <Setter Property="Margin" Value="4,0"/>
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </StackPanel.Resources>
+
+                    <Button Click="btnMin_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="./images/min-icon.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Click="btnMax_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="./images/max-icon.png"/>
+                        </Button.Background>
+                    </Button>
+                    <Button Click="btnClose_Click">
+                        <Button.Background>
+                            <ImageBrush ImageSource="./images/close-icon.png"/>
+                        </Button.Background>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel DockPanel.Dock="Left" Width="220">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition MinHeight="140"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0">
+                    <Image Source="images\user_icon.png"
+                   Height="120" Width="120"/>
+                    <Label Content="Username"
+                   HorizontalAlignment="Center"
+                   Foreground="White"/>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Margin="6">
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#CFAB29"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="White"/>
+                            <Setter Property="BorderThickness" Value="2"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button Content="Gerar Relatório de Entrada de Produtos" Margin="0,4"
+                            Click="entrada"/>
+                    <Button Content="Gerar Relatório de Saída de Produtos"
+                            Click="saida"/>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Grid DockPanel.Dock="Right"
+              Background="#F0F0F2"
+              Margin="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <TextBox MinWidth="140" MaxWidth="450"
+                     Margin="20,8"/>
+
+            <StackPanel Grid.Row="1"
+                        Margin="4">
+                <DataGrid Name="tabelaProdutos"
+                          AutoGenerateColumns="False"
+                          VerticalAlignment="Top">
+                    <DataGrid.Resources>
+                        <Style TargetType="DataGridColumnHeader">
+                            <!--Setter Property="HorizontalAlignment" Value="Center"/-->
+                            <Setter Property="Background" Value="#F7FF98"/>
+                            <Setter Property="Padding" Value="10,0"/>
+                        </Style>
+                    </DataGrid.Resources>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Width="*"/>
+                        <DataGridTextColumn Header="Nome" Width="*"/>
+                        <DataGridTextColumn Header="Quant. Entrada" Width="*"/>
+                        <DataGridTextColumn Header="Data Entrada" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+
+            <Grid Grid.Row="2" Margin="0,110,0,0">
+                <Grid.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Width" Value="80"/>
+                        <Setter Property="Height" Value="20"/>
+                        <Setter Property="Margin" Value="12,6"/>
+                        <Setter Property="Background" Value="#CFAB29"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="Black"/>
+                        <Setter Property="BorderThickness" Value="2"/>
+                    </Style>
+                </Grid.Resources>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Content="Voltar"
+                        Grid.Column="0" HorizontalAlignment="Left"
+                        Click="back"/>
+
+                <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
+                    <Button Content="Compartilhar"/>
+                    <Button Content="Imprimir"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>
