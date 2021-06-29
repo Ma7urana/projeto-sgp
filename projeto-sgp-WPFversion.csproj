@@ -64,11 +64,17 @@
     <Compile Include="ConfirmacaoFinalizarVenda.xaml.cs">
       <DependentUpon>ConfirmacaoFinalizarVenda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Confirmacao_Cadast_Funcionario.xaml.cs">
+      <DependentUpon>Confirmacao_Cadast_Funcionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controlar_Contas_a_Pagar.xaml.cs">
       <DependentUpon>Controlar_Contas_a_Pagar.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControleGeralDeRelatorios.xaml.cs">
       <DependentUpon>ControleGeralDeRelatorios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardDeFluxoDeCaixa.xaml.cs">
+      <DependentUpon>DashboardDeFluxoDeCaixa.xaml</DependentUpon>
     </Compile>
     <Compile Include="GerarRelatorioClientes.xaml.cs">
       <DependentUpon>GerarRelatorioClientes.xaml</DependentUpon>
@@ -138,6 +144,10 @@
     <Page Include="ConfirmacaoFinalizarVenda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Confirmacao_Cadast_Funcionario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Controlar_Contas_a_Pagar.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -1,12 +1,112 @@
-﻿<Window x:Class="projeto_sgp_WPFversion.Controlar_Contas_a_Pagar"
+﻿<Window x:Name="Controlar_Contas_a_Pagar"  x:Class= "projeto_sgp_WPFversion.Controlar_Contas_a_Pagar"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Controlar_Contas_a_Pagar" Height="450" Width="800">
-    <Grid>
-        
+        Title="Menu" Height="500" Width="758" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
+
+    <Grid Background="WhiteSmoke" Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="207"/>
+            <ColumnDefinition Width="152"/>
+            <ColumnDefinition Width="4"/>
+            <ColumnDefinition Width="18"/>
+            <ColumnDefinition Width="173"/>
+            <ColumnDefinition Width="4"/>
+            <ColumnDefinition Width="72"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto" MinHeight="3"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,46,86">Controlar contas a Pagar</TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="5" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,46,82" Cursor="Hand" Grid.ColumnSpan="3">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/close-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="5" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,6,87"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/max-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMin" Height="39" Width="44" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,52,86"  Cursor="Hand" Grid.Column="5" RenderTransformOrigin="-0.533,0.462">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/min-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="98" Margin="10,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+        <StackPanel  Grid.Column="0" Margin="15,41,0,0" VerticalAlignment="Top" Height="94" Grid.RowSpan="2">
+            <TextBlock Text="Cód Cliente:" Height="23" />
+            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged_1"/>
+            <TextBlock Text="Descrição:" Height="23" />
+            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel  Grid.Column="1" Margin="6,41,0,0" VerticalAlignment="Top" Height="96" Grid.RowSpan="2">
+            <TextBlock Height="23" ><Run Text="Nome do Cliente"/><Run Text=""/><Run Text=":"/></TextBlock>
+            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="190" HorizontalAlignment="Left"/>
+            <TextBlock Text="Valor Unitário:" Height="23" />
+            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="190" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged"/>
+        </StackPanel>
+
+        <StackPanel  Grid.Column="2" Margin="5,42,0,0" VerticalAlignment="Top" Height="93" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
+            <TextBlock Height="23" ><Run Text="Código de barras"/><Run Text=":"/></TextBlock>
+            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,-29,1"  Width="143" HorizontalAlignment="Left"/>
+            <TextBlock Text="Desconto em %:" Height="23" />
+            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="143" HorizontalAlignment="Left"/>
+        </StackPanel>
+
+        <StackPanel  Grid.Column="4" Margin="0,42,0,0" VerticalAlignment="Top" Height="98" Grid.RowSpan="2" Grid.ColumnSpan="3">
+            <TextBlock Height="20" ><Run Text="Qtd"/><Run Text=":"/></TextBlock>
+            <TextBox Height="22" Width="100" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="1"/>
+            <TextBlock Height="23" Margin="0,0,-25,0" ><Run Text="Quantidade em Estoque"/><Run Text=":"/></TextBlock>
+            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="181" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="301" Margin="10,23,0,0" Grid.Row="1" Grid.RowSpan="6" VerticalAlignment="Top" Width="692" Grid.ColumnSpan="8" RenderTransformOrigin="0.2,-0.45">
+            <ScrollViewer Margin="9,9,9,44">
+
+            </ScrollViewer>
+
+        </Border>
+
+
+        <Button Content="Prosseguir" Grid.Column="5" HorizontalAlignment="Left" Margin="30,51,0,0" Grid.Row="6" VerticalAlignment="Top" Width="147" Height="29" Background="#FFD5B03C" Foreground="White" Grid.ColumnSpan="2" Click="btnClose_Click"/>
+        <Button x:Name="btnCancelar" Click="btnCancelar_Click"  Content="Cancelar" HorizontalAlignment="Left" Height="28" Margin="24,52,0,0" Grid.Row="6" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" Background="#FFD5B03C" Foreground="White"/>
+
+
     </Grid>
+
+
 </Window>
