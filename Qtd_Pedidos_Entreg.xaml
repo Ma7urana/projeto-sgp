@@ -70,19 +70,54 @@
         <Button x:Name="btn_Avancar" Content="Avançar" Background="#FFB2B2B2" Grid.Column="1" HorizontalAlignment="Left" Margin="415,395,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btn_Imprimir" Content="Imprimir" Background="#FF50AC8F" Grid.Column="1" HorizontalAlignment="Left" Margin="347,431,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="btn_Compartilhar" Content="Compartilhar" Grid.Column="1" Background="#FF50AC8F" HorizontalAlignment="Left" Margin="79,431,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
-        <DataGrid x:Name="Dt_Grid_cdg_Pedido" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="79,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="179" SelectionChanged="DataGrid_SelectionChanged" Background="#FFEAE8CB"/>
-        <DataGrid x:Name="Dt_Grid_situacao" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="258,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" SelectionChanged="DataGrid_SelectionChanged" Background="#FFEAE8CB"/>
-        <Label x:Name="Cdg_pedido" Content="Código Pedido" Grid.Column="1" HorizontalAlignment="Left" Margin="107,23,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130"/>
-        <Label x:Name="Situacao" Content="Situação" Grid.Column="1" HorizontalAlignment="Left" Margin="295,23,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96"/>
-        <DataGrid x:Name="Dt_Grid_qtd_Pedid_Entreg" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="7,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="485" Background="#FFEAE8CB"/>
-        <Label Content="Quantidade de Pedidos Entregue" Grid.Column="1" HorizontalAlignment="Left" Margin="166,158,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label Content="Entregues:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,195,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <DataGrid x:Name="Dt_Grid_acaminho" Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="7,231,0,0" Grid.Row="1" VerticalAlignment="Top" Width="483" Background="#FFEAE8CB"/>
-        <Label Content="À caminho" Grid.Column="1" HorizontalAlignment="Left" Margin="222,238,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label Content="À caminho:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,274,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <DataGrid x:Name="Dt_Grid_qtd_ped_realiz" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="10,305,0,0" Grid.Row="1" VerticalAlignment="Top" Width="480" Background="#FFEAE8CB"/>
-        <Label Content="Quantidade de Pedidos Realizados" Grid.Column="1" HorizontalAlignment="Left" Margin="166,313,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label Content="Qtd. Pedidos:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,352,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+        <DataGrid Name="tb_Situacao_Produtos"
+                          AutoGenerateColumns="False"
+                          VerticalAlignment="Top" Grid.Column="1" Margin="79,0,75,0" Grid.Row="1">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <!--Setter Property="HorizontalAlignment" Value="Center"/-->
+                    <Setter Property="Background" Value="#FFEAE8CB"/>
+                    <Setter Property="Padding" Value="10,0"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Código do Produto" Width="*"/>
+                <DataGridTextColumn Header="Situação" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Name="tb_Relacao_Entregas"
+                          AutoGenerateColumns="False"
+                          VerticalAlignment="Top" Grid.Column="1" Margin="79,166,75,0" Grid.Row="1">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <!--Setter Property="HorizontalAlignment" Value="Center"/-->
+                    <Setter Property="Background" Value="#FFEAE8CB"/>
+                    <Setter Property="Padding" Value="10,0"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Entregue" Width="*"/>
+                <DataGridTextColumn Header="À caminho" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid Name="tb_Qtd_Entregas"
+                          AutoGenerateColumns="False"
+                          VerticalAlignment="Top" Grid.Column="1" Margin="79,279,75,0" Grid.Row="1">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <!--Setter Property="HorizontalAlignment" Value="Center"/-->
+                    <Setter Property="Background" Value="#FFEAE8CB"/>
+                    <Setter Property="Padding" Value="10,0"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Quantidade de Pedidos Realizados" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
         <Separator Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="500"/>
 
     </Grid>
