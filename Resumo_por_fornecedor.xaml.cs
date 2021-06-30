@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Lógica interna para Emissão_de_fichas.xaml
+    /// Lógica interna para Resumo_por_fornecedor.xaml
     /// </summary>
-    public partial class Emissão_de_fichas : Window
+    public partial class Resumo_por_fornecedor : Window
     {
-        public Emissão_de_fichas()
+        public Resumo_por_fornecedor()
         {
             InitializeComponent();
         }

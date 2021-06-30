@@ -58,5 +58,9 @@ namespace projeto_sgp_WPFversion
 
         }
 
+        private void btnEmissaodeFichas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
