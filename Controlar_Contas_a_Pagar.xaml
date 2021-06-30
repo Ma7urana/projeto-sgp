@@ -66,46 +66,6 @@
 
         </Button>
 
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="98" Margin="10,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
-        <StackPanel  Grid.Column="0" Margin="15,41,0,0" VerticalAlignment="Top" Height="94" Grid.RowSpan="2">
-            <TextBlock Text="Cód Cliente:" Height="23" />
-            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
-            <TextBlock Text="Descrição:" Height="23" />
-            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
-        </StackPanel>
-
-        <StackPanel  Grid.Column="1" Margin="6,41,0,0" VerticalAlignment="Top" Height="96" Grid.RowSpan="2">
-            <TextBlock Height="23" ><Run Text="Nome do Cliente"/><Run Text=""/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="190" HorizontalAlignment="Left"/>
-            <TextBlock Text="Valor Unitário:" Height="23" />
-            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="190" HorizontalAlignment="Left"/>
-        </StackPanel>
-
-        <StackPanel  Grid.Column="2" Margin="5,42,0,0" VerticalAlignment="Top" Height="93" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
-            <TextBlock Height="23" ><Run Text="Código de barras"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,-29,1"  Width="143" HorizontalAlignment="Left"/>
-            <TextBlock Text="Desconto em %:" Height="23" />
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="143" HorizontalAlignment="Left"/>
-        </StackPanel>
-
-        <StackPanel  Grid.Column="4" Margin="0,42,0,0" VerticalAlignment="Top" Height="98" Grid.RowSpan="2" Grid.ColumnSpan="3">
-            <TextBlock Height="20" ><Run Text="Qtd"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" Width="100" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="1"/>
-            <TextBlock Height="23" Margin="0,0,-25,0" ><Run Text="Quantidade em Estoque"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="181" HorizontalAlignment="Left"/>
-        </StackPanel>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="301" Margin="10,23,0,0" Grid.Row="1" Grid.RowSpan="6" VerticalAlignment="Top" Width="692" Grid.ColumnSpan="8" RenderTransformOrigin="0.2,-0.45">
-            <ScrollViewer Margin="9,9,9,44">
-
-            </ScrollViewer>
-
-        </Border>
-
-
-        <Button Content="Prosseguir" Grid.Column="5" HorizontalAlignment="Left" Margin="30,51,0,0" Grid.Row="6" VerticalAlignment="Top" Width="147" Height="29" Background="#FFD5B03C" Foreground="White" Grid.ColumnSpan="2" Click="btnClose_Click"/>
-        <Button x:Name="btnCancelar" Click="btnCancelar_Click"  Content="Cancelar" HorizontalAlignment="Left" Height="28" Margin="24,52,0,0" Grid.Row="6" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" Background="#FFD5B03C" Foreground="White"/>
-
-
     </Grid>
 
 

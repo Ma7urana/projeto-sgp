@@ -70,6 +70,9 @@
     <Compile Include="Controlar_Contas_a_Pagar.xaml.cs">
       <DependentUpon>Controlar_Contas_a_Pagar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controlar_Estoque_e_Vendas.xaml.cs">
+      <DependentUpon>Controlar_Estoque_e_Vendas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ControleGeralDeRelatorios.xaml.cs">
       <DependentUpon>ControleGeralDeRelatorios.xaml</DependentUpon>
     </Compile>
@@ -91,9 +94,6 @@
     <Compile Include="GerarRelatorioSituacaoClientes.xaml.cs">
       <DependentUpon>GerarRelatorioSituacaoClientes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Logar_Usuário.xaml.cs">
-      <DependentUpon>Logar_Usuário.xaml</DependentUpon>
-    </Compile>
     <Compile Include="dashboard_mais_vendidos.xaml.cs">
       <DependentUpon>dashboard_mais_vendidos.xaml</DependentUpon>
     </Compile>
@@ -102,6 +102,9 @@
     </Compile>
     <Compile Include="Dominio\Vendedor\Venda.cs" />
     <Compile Include="Dominio\Vendedor\Vendedor.cs" />
+    <Compile Include="Logar_Usuário.xaml.cs">
+      <DependentUpon>Logar_Usuário.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MsgDaVenda.xaml.cs">
       <DependentUpon>MsgDaVenda.xaml</DependentUpon>
     </Compile>
@@ -154,8 +157,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controlar_Estoque_e_Vendas.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ControleGeralDeCadastros.xaml">
       <SubType>Designer</SubType>
