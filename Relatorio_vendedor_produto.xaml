@@ -82,7 +82,7 @@
             <Button  Width="34" Margin="0,20,0,19">
                 <Button.Background>
 
-                    <ImageBrush ImageSource="images/pesquise2.png"/>
+                    <ImageBrush ImageSource="images/pesquise3.png"/>
 
                 </Button.Background>
             </Button>
