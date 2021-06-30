@@ -20,6 +20,36 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <TextBlock x:Name="Cadastrar_Funionario" Grid.Row="0"  Grid.ColumnSpan="3" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-40,2,23" TextWrapping="Wrap" Cursor="Arrow" Text="Cadastrar Funcionário" VerticalAlignment="Stretch"/>
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="2" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-40,5,30" Cursor="Hand">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/close-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="2" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-38,50,30"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/max-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMin" Height="39" Width="45" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-36,93,27"  Cursor="Hand" Grid.Column="2">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/min-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
         <Rectangle Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="111,8,0,0" Stroke="#FFD6C084" VerticalAlignment="Top" Width="716" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Label x:Name="Dados_Pessoais_Copy" Content="Dados Pessoais" HorizontalAlignment="Left" Margin="1,0,0,1" VerticalAlignment="Bottom" Height="23" Width="177" Grid.Column="2"/>
         <Image  Height="75" VerticalAlignment="Top" Width="105" Source="images/perfil-funcionario.jpg" Margin="6,10,612,0" Grid.Row="1" Grid.Column="2" />
@@ -85,7 +115,7 @@
         <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
         <Button x:Name="btn_Editar" Content="Editar" HorizontalAlignment="Left" Margin="10,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF50AC8F"/>
         <Button x:Name="btn_Novo" Content="Novo" HorizontalAlignment="Left" Margin="10,230,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFAB96CB"/>
-        
+
 
 
     </Grid>
