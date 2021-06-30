@@ -60,7 +60,7 @@
 
         </Button>
         <StackPanel Grid.ColumnSpan="4" Margin="242,44,10,100" Orientation="Horizontal" >
-            <TextBox TextWrapping="Wrap" Text="Digite nome do Vendedor" Margin="78,20,0,19" TextChanged="TextBox_TextChanged" Width="273"/>
+            <TextBox TextWrapping="Wrap" Text="Digite nome do Vendedor" Margin="78,20,0,19" Width="273"/>
             <Button  Width="34" Margin="0,20,0,19">
                 <Button.Background>
 

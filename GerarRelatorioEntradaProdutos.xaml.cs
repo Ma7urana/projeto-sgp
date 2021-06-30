@@ -60,5 +60,10 @@ namespace projeto_sgp_WPFversion
             GerarRelatorioSaidaProdutos rsaida = new GerarRelatorioSaidaProdutos();
             rsaida.ShowDialog();
         }
+
+        private void entrada(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
