@@ -49,8 +49,11 @@ namespace projeto_sgp_WPFversion
         {
             this.WindowState = WindowState.Minimized;
         }
+
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
+            this.Hide();
+
             Controlar_Contas_a_Pagar controlar_Contas_A_Pagar = new Controlar_Contas_a_Pagar();
             controlar_Contas_A_Pagar.ShowDialog();
 
