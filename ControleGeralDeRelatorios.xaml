@@ -60,7 +60,7 @@
 
             <StackPanel>
                 <Button x:Name="btnRelatoriosPorVendedores" Click="btnRelatoriosPorVendedores_Click" Margin="0,15,0,0" Width="290" Height="45" Cursor="Hand" 
-                        Background="#F1F1F1" Content="RELATÓRIOS POR VENDEDORES" FontWeight="Normal" FontSize="14" ContextMenuOpening="btnRelatoriosPorVendedores_click"/>
+                        Background="#F1F1F1" Content="RELATÓRIOS POR VENDEDORES" FontWeight="Normal" FontSize="14"/>
 
                 <Button x:Name="btnRelatoriosPorProdutos" Margin="0,30,0,0" Width="290" Height="45" Cursor="Hand" 
                         Background="#F1F1F1" Content="RELATÓRIOS POR PRODUTOS" FontWeight="Normal" FontSize="14" Click="btnRelatoriosPorProdutos_Click"/>
@@ -84,7 +84,16 @@
 
         </GroupBox>
 
-        <ComboBox Grid.Row="1" Grid.Column="1" Width="200" Height="35" VerticalAlignment="Top" Margin="0,20,0,0" 
+        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,20,0,0">PESQUISAR</Label>
+        <TextBox Grid.Row="1" Background="#ffffff" Grid.Column="1" Width="180" Height="30" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,20,0,0"/>
+        <Button x:Name="btnPesquisar" Height="25" Width="25" Grid.Column="1" Grid.Row="1" BorderThickness="1"
+                        VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,22,0,0" Cursor="Hand">
+            <Button.Background>
+                <ImageBrush ImageSource="images/pesquise3.png"/>
+            </Button.Background>
+        </Button>
+        
+        <!--<ComboBox Grid.Row="1" Grid.Column="1" Width="200" Height="35" VerticalAlignment="Top" Margin="0,20,0,0" 
                   IsEditable="True" Text="INSIRA O NOME DO RELATÓRIO" AllowDrop="True" IsTextSearchEnabled="True" TextSearch.TextPath="Content" Foreground="#FFC7C7C7" >
             <Button x:Name="btnRelVendedorValor" BorderBrush="{x:Null}" Background="{x:Null}" 
                     Width="195"
@@ -98,7 +107,7 @@
             <Button x:Name="btnRelDashboardMes" BorderBrush="{x:Null}" Background="{x:Null}"  
                     Width="195"
                     Content="DASHBOARD VENDEDORES DESTAQUE MÊS" Click="btnRelDashboardMes_Click"/>
-        </ComboBox>
+        </ComboBox>-->
 
     </Grid>
 </Window>

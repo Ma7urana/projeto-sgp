@@ -196,8 +196,8 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Emissão_de_fichas.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="GerarRelatorioClientes.xaml">
       <SubType>Designer</SubType>
@@ -266,8 +266,8 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Resumo_por_fornecedor.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Tela_cad_concluido.xaml">
       <SubType>Designer</SubType>
@@ -278,16 +278,16 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Titulos_e_resumos_por_tipo_de_gasto.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Titulos_por_data_de_lancamento.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Titulos_por_data_de_pagamento.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Venda.xaml">
       <SubType>Designer</SubType>
@@ -312,7 +312,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Fluxo_de_Caixa_planilha.xlsx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -343,6 +342,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\pesquise2.png" />
+    <Resource Include="images\pesquise3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
