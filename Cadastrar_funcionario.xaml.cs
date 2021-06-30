@@ -46,5 +46,18 @@ namespace projeto_sgp_WPFversion
         {
             DragMove();
         }
+
+        private void btn_Salvar_Click(object sender, RoutedEventArgs e)
+        {
+            Confirmacao_Cadast_Funcionario conc = new Confirmacao_Cadast_Funcionario();
+            conc.ShowDialog();
+
+        }
+
+        private void btn_Excluir_Click(object sender, RoutedEventArgs e)
+        {
+            Alerta_Cadast_Funcionario cancelar = new Alerta_Cadast_Funcionario();
+            cancelar.ShowDialog();
+        }
     }
 }

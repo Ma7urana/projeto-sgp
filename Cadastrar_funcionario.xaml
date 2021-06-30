@@ -79,10 +79,10 @@
         <CheckBox x:Name="ckb_Nao_Val_Alim" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <CheckBox x:Name="ckb_Sim_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <CheckBox x:Name="ckb_Nao_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button Content="Avançar" Grid.Column="2" HorizontalAlignment="Left" Margin="622,489,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFB2B2B2"/>
+        <Button x:Name="btn_Avancar" Content="Avançar" Grid.Column="2" HorizontalAlignment="Left" Margin="622,489,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFB2B2B2"/>
         <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="538" Margin="0,7,0,-6" Stroke="#FF394047" VerticalAlignment="Top" Width="247" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
-        <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383"/>
-        <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1"/>
+        <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383" Click="btn_Excluir_Click"/>
+        <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
         <Button x:Name="btn_Editar" Content="Editar" HorizontalAlignment="Left" Margin="10,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF50AC8F"/>
         <Button x:Name="btn_Novo" Content="Novo" HorizontalAlignment="Left" Margin="10,230,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFAB96CB"/>
         
