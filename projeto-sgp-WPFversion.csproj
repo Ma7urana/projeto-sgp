@@ -117,6 +117,9 @@
     <Compile Include="MsgDaVenda.xaml.cs">
       <DependentUpon>MsgDaVenda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Qtd_Pedidos_Entreg.xaml.cs">
+      <DependentUpon>Qtd_Pedidos_Entreg.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Relatorio_dashboard_mes.xaml.cs">
       <DependentUpon>Relatorio_dashboard_mes.xaml</DependentUpon>
     </Compile>
@@ -256,6 +259,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MsgDaVenda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Qtd_Pedidos_Entreg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
