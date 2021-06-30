@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Confirmacao_Cadast_Funcionario" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel HorizontalAlignment="Left" Height="219" VerticalAlignment="Top" Width="492" Background="Black"/>
+        <StackPanel HorizontalAlignment="Left" Height="199" Margin="10,10,0,0" VerticalAlignment="Top" Width="472" Background="WhiteSmoke"/>
+        <Label Content="Cadastro Realizado com Sucesso!" HorizontalAlignment="Left" Margin="166,90,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="393,170,0,0" VerticalAlignment="Top" Width="76" Background="#FFD1A926" FontFamily="Arial"/>
     </Grid>
 </Window>
