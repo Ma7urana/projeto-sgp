@@ -70,7 +70,7 @@
         <StackPanel Grid.Column="1"  Grid.RowSpan="2">
 
             <Button x:Name="btnCancelar"  Content="Cancelar" Margin="64,530,496,0" Height="50" RenderTransformOrigin="0.491,-0.004" Background="#FFCEAB3B" Foreground="White" Click="btnCancelar_Click"/>
-            <Button Content="Prosseguir" Margin="508,-50,58,0" VerticalAlignment="Top" Height="50" Background="#FFCEAB3B" Foreground="White" Click="btnClose_Click" RenderTransformOrigin="-0.357,1.722"/>
+            <Button x:Name="btnProsseguir" Content="Prosseguir" Margin="508,-50,58,0" VerticalAlignment="Top" Height="50" Background="#FFCEAB3B" Foreground="White" Click="btnProsseguir_Click" RenderTransformOrigin="-0.357,1.722"/>
 
         </StackPanel>
 

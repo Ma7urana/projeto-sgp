@@ -63,6 +63,10 @@ namespace projeto_sgp_WPFversion
 
         }
 
-
+        private void btnProsseguir_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
+        }
     }
 }
