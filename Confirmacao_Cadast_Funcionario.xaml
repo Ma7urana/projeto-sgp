@@ -19,9 +19,9 @@
         </Grid.ColumnDefinitions>
         <StackPanel HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="515" Background="Black" Margin="-5,4,-51,-40" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
         <StackPanel HorizontalAlignment="Left" Height="190" Margin="21,25,-25,-13" VerticalAlignment="Top" Width="463" Background="WhiteSmoke" Grid.ColumnSpan="4" Grid.RowSpan="2">
-            <Rectangle Fill="B" Height="183" Stroke="Black" Margin="10,0"/>
+            <Rectangle Fill="WhiteSmoke" Height="183" Stroke="Black" Margin="10,0"/>
         </StackPanel>
-        <Label Content="Cadastro Realizado com Sucesso!" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Label Content="Cadastro Realizado com Sucesso!" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Rectangle Fill="#FFD1A926" HorizontalAlignment="Left" Height="31" Margin="-6,-27,-51,0" Stroke="Black" VerticalAlignment="Top" Width="516" Grid.ColumnSpan="4"/>
         <Label Content="Confirmação" HorizontalAlignment="Left" Margin="2,-25,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="101" Foreground="#FFF9F1F1" FontSize="14" FontWeight="Bold"/>
     </Grid>

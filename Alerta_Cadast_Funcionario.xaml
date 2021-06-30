@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Alerta_Cadast_Funcionario" Height="450" Width="800">
+        Title="Alerta_Cadast_Funcionario" Height="268.008" Width="511.167">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="324*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="515" Background="Black" Margin="-5,4,-51,-40" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+        <StackPanel HorizontalAlignment="Left" Height="190" Margin="21,25,-25,-13" VerticalAlignment="Top" Width="463" Background="WhiteSmoke" Grid.ColumnSpan="4" Grid.RowSpan="2">
+            <Rectangle Fill="WhiteSmoke" Height="183" Stroke="Black" Margin="10,0"/>
+        </StackPanel>
+        <Label Content="Deseja Excluir o Cadastro?" HorizontalAlignment="Left" Margin="18,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="#FFD1A926" HorizontalAlignment="Left" Height="31" Margin="-6,-27,-51,0" Stroke="Black" VerticalAlignment="Top" Width="516" Grid.ColumnSpan="4"/>
+        <Label Content="Alerta" HorizontalAlignment="Left" Margin="2,-25,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="101" Foreground="#FFF9F1F1" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="Sim" Content="Sim" HorizontalAlignment="Left" Margin="186,21,0,0" VerticalAlignment="Top" Width="97" Height="35" Background="#FFD5B03C" Foreground="White" FontSize="14" Click="yes_Click" Grid.Column="3" Grid.Row="1" />
+        <Button x:Name="Não" Content="Não" Grid.Column="1" HorizontalAlignment="Left" Margin="10,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="35" Background="#FFD5B03C" Foreground="White" FontSize="14" Click="No_click" Grid.ColumnSpan="2" />
     </Grid>
 </Window>
