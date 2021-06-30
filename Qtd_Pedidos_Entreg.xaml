@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Qtd_Pedidos_Entreg" Height="539.281" Width="802.303"
+        Title="Qtd_Pedidos_Entreg" Height="501.253" Width="798.681"
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FFFFFF" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
 
@@ -20,7 +20,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock x:Name="Controle_Compras" Grid.Row="0"  Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-30,0,23" TextWrapping="Wrap" Cursor="Arrow" Text="Controle de Compras" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="Controle_Compras" Grid.Row="0"  Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-30,0,23" TextWrapping="Wrap" Cursor="Arrow" Text="Quantidade de Pedidos Entregue" VerticalAlignment="Stretch"/>
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
                         Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-33,0,23" Cursor="Hand">
 
@@ -52,7 +52,7 @@
 
         </Button>
 
-        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="530" Margin="0,7,0,0" Stroke="#FF394047" VerticalAlignment="Top" Width="298" Grid.RowSpan="2"/>
+        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="490" Margin="0,7,0,0" Stroke="#FF394047" VerticalAlignment="Top" Width="298" Grid.RowSpan="2"/>
         <Image HorizontalAlignment="Left" Height="76" Margin="10,15,0,0" Source="images/perfil-funcionario.jpg" VerticalAlignment="Top" Width="101" Grid.RowSpan="2"/>
         <Label Content="Usuário: Delzely Barros" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="122,0,0,0" Foreground="#FFF9F9F9" Width="147" Height="26"/>
         <Label Content="Perfíl/Foto" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="30,69,0,0" Foreground="#FFF9F9F9" Width="67" Height="26"/>
@@ -63,9 +63,27 @@
         <Button x:Name="Rel_Falt_Prodt_Estoq" Content="Falta de Produto no Estoque" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,207,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
         <Button x:Name="Rel_Relac_Entrd" Content="Relação de Entrada" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,236,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
         <Button x:Name="Cons_Posi_Pedidos" Content="Posição de Pedido" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,331,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Cons_Qtd_Ped_Entrg" Content="Quantidade de Pedidos Entregue" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
+        <Button x:Name="Cons_Qtd_Ped_Entrg" Content="Quantidade de Pedidos Entregue" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20" Click="Cons_Qtd_Ped_Entrg_Click"/>
         <Button x:Name="Cons_Comp_Anuais" Content="Compras Anuais" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,410,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
         <Label Content="Consultas:" HorizontalAlignment="Left" Margin="4,292,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="65"/>
+        <Button x:Name="btn_Retroceder" Content="Retroceder" Background="#FFB2B2B2" Grid.Column="1" HorizontalAlignment="Left" Margin="10,395,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Avancar" Content="Avançar" Background="#FFB2B2B2" Grid.Column="1" HorizontalAlignment="Left" Margin="415,395,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Imprimir" Content="Imprimir" Background="#FF50AC8F" Grid.Column="1" HorizontalAlignment="Left" Margin="347,431,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btn_Compartilhar" Content="Compartilhar" Grid.Column="1" Background="#FF50AC8F" HorizontalAlignment="Left" Margin="79,431,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <DataGrid x:Name="Dt_Grid_cdg_Pedido" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="79,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="179" SelectionChanged="DataGrid_SelectionChanged" Background="#FFEAE8CB"/>
+        <DataGrid x:Name="Dt_Grid_situacao" Grid.Column="1" HorizontalAlignment="Left" Height="118" Margin="258,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="164" SelectionChanged="DataGrid_SelectionChanged" Background="#FFEAE8CB"/>
+        <Label x:Name="Cdg_pedido" Content="Código Pedido" Grid.Column="1" HorizontalAlignment="Left" Margin="107,23,0,0" Grid.Row="1" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="Situacao" Content="Situação" Grid.Column="1" HorizontalAlignment="Left" Margin="295,23,0,0" Grid.Row="1" VerticalAlignment="Top" Width="96"/>
+        <DataGrid x:Name="Dt_Grid_qtd_Pedid_Entreg" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="7,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="485" Background="#FFEAE8CB"/>
+        <Label Content="Quantidade de Pedidos Entregue" Grid.Column="1" HorizontalAlignment="Left" Margin="166,158,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Entregues:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,195,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Dt_Grid_acaminho" Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="7,231,0,0" Grid.Row="1" VerticalAlignment="Top" Width="483" Background="#FFEAE8CB"/>
+        <Label Content="À caminho" Grid.Column="1" HorizontalAlignment="Left" Margin="222,238,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="À caminho:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,274,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <DataGrid x:Name="Dt_Grid_qtd_ped_realiz" Grid.Column="1" HorizontalAlignment="Left" Height="35" Margin="10,305,0,0" Grid.Row="1" VerticalAlignment="Top" Width="480" Background="#FFEAE8CB"/>
+        <Label Content="Quantidade de Pedidos Realizados" Grid.Column="1" HorizontalAlignment="Left" Margin="166,313,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="Qtd. Pedidos:" Grid.Column="1" HorizontalAlignment="Left" Margin="25,352,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Separator Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="0,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="500"/>
 
     </Grid>
 </Window>
