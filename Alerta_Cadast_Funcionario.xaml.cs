@@ -23,5 +23,15 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
         }
+
+        private void yes_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void No_click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
