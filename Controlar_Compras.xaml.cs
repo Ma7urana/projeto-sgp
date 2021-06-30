@@ -46,5 +46,11 @@ namespace projeto_sgp_WPFversion
         {
             Close();
         }
+
+        private void Cons_Qtd_Ped_Entrg_Click(object sender, RoutedEventArgs e)
+        {
+            Qtd_Pedidos_Entreg conc = new Qtd_Pedidos_Entreg();
+            conc.ShowDialog();
+        }
     }
 }
