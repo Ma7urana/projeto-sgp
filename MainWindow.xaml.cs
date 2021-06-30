@@ -27,7 +27,7 @@ namespace projeto_sgp_WPFversion
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
@@ -82,7 +82,8 @@ namespace projeto_sgp_WPFversion
 
         private void btnControleDeEstoqueEVendas_Click(object sender, RoutedEventArgs e)
         {
-            
+            Controlar_Estoque_e_Vendas controlar_Estoque_E_Vendas = new Controlar_Estoque_e_Vendas();
+            controlar_Estoque_E_Vendas.ShowDialog();
         }
 
         private void btnControleDeCaixaSebrae_Click(object sender, RoutedEventArgs e)

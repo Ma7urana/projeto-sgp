@@ -65,6 +65,7 @@ namespace projeto_sgp_WPFversion
 
         private void btnProsseguir_Click(object sender, RoutedEventArgs e)
         {
+            Hide();
             MainWindow mainWindow = new MainWindow();
             mainWindow.ShowDialog();
         }
