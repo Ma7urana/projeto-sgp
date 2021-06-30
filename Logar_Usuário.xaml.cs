@@ -17,16 +17,11 @@ namespace projeto_sgp_WPFversion
     /// <summary>
     /// Lógica interna para Logar_Usuário.xaml
     /// </summary>
-    public partial class Logar_Usuário : Window
+    public partial class Logar_Usuario : Window
     {
-        public Logar_Usuário()
+        public Logar_Usuario()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -59,6 +54,20 @@ namespace projeto_sgp_WPFversion
         private void btnMin_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            Tela_cancel tela_Cancel = new Tela_cancel();
+            tela_Cancel.ShowDialog();
+
+        }
+
+        private void btnProsseguir_Click(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.ShowDialog();
         }
     }
 }

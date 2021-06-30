@@ -27,7 +27,7 @@ namespace projeto_sgp_WPFversion
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            Close();
+            this.Close();
         }
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
@@ -66,6 +66,31 @@ namespace projeto_sgp_WPFversion
         {
             ControleGeralDeRelatorios controleGeralDeRelatorios = new ControleGeralDeRelatorios();
             controleGeralDeRelatorios.ShowDialog();
+        }
+
+        private void btnDashboardDeFluxoDeCaixa_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardDeFluxoDeCaixa dashboardDeFluxoDeCaixa = new DashboardDeFluxoDeCaixa();
+            dashboardDeFluxoDeCaixa.ShowDialog();
+        }
+
+        private void btnControleDeContasAPagar_Click(object sender, RoutedEventArgs e)
+        {
+            Controlar_Contas_a_Pagar controlar_Contas_A_Pagar = new Controlar_Contas_a_Pagar();
+            controlar_Contas_A_Pagar.ShowDialog();
+        }
+
+        private void btnControleDeEstoqueEVendas_Click(object sender, RoutedEventArgs e)
+        {
+            Controlar_Estoque_e_Vendas controlar_Estoque_E_Vendas = new Controlar_Estoque_e_Vendas();
+            controlar_Estoque_E_Vendas.ShowDialog();
+        }
+
+        private void btnControleDeCaixaSebrae_Click(object sender, RoutedEventArgs e)
+        {
+
+            //System.Diagnostics.Process.Start(@"D:\Projetos .NET\projeto-sgp\Fluxo_de_Caixa_planilha.xlsx");
+            MessageBox.Show("Arquivo indisponível no momento!", "ARQUIVO INDISPONÍVEL", MessageBoxButton.OK, MessageBoxImage.Information);
         }
     }
 }

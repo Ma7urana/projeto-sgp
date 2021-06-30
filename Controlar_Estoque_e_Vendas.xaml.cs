@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Lógica interna para Controlar_Contas_a_Pagar.xaml
+    /// Lógica interna para Controlar_Estoque_e_Vendas.xaml
     /// </summary>
-    public partial class Controlar_Contas_a_Pagar : Window
+    public partial class Controlar_Estoque_e_Vendas : Window
     {
-        public Controlar_Contas_a_Pagar()
+        public Controlar_Estoque_e_Vendas()
         {
             InitializeComponent();
         }
-
         private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
@@ -57,6 +56,5 @@ namespace projeto_sgp_WPFversion
             tela_Cancel.ShowDialog();
 
         }
-
     }
 }

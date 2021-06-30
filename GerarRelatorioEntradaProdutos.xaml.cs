@@ -15,25 +15,19 @@ using System.Windows.Shapes;
 namespace projeto_sgp_WPFversion
 {
     /// <summary>
-    /// Lógica interna para Controlar_Contas_a_Pagar.xaml
+    /// Interaction logic for GerarRelatorioEntradaProdutos.xaml
     /// </summary>
-    public partial class Controlar_Contas_a_Pagar : Window
+    public partial class GerarRelatorioEntradaProdutos : Window
     {
-        public Controlar_Contas_a_Pagar()
+        public GerarRelatorioEntradaProdutos()
         {
             InitializeComponent();
-        }
-
-        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            DragMove();
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
-
         private void btnMax_Click(object sender, RoutedEventArgs e)
         {
             if (this.WindowState == WindowState.Normal)
@@ -45,18 +39,31 @@ namespace projeto_sgp_WPFversion
                 this.WindowState = WindowState.Normal;
             }
         }
-
         private void btnMin_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
 
-        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Tela_cancel tela_Cancel = new Tela_cancel();
-            tela_Cancel.ShowDialog();
-
+            DragMove();
         }
 
+        private void back(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        
+        private void saida(object sender, RoutedEventArgs e)
+        {
+            GerarRelatorioSaidaProdutos rsaida = new GerarRelatorioSaidaProdutos();
+            rsaida.ShowDialog();
+        }
+
+        private void entrada(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -79,5 +79,16 @@ namespace projeto_sgp_WPFversion
             Relatorio_dashboard_mes relatorio_Dashboard_Mes = new Relatorio_dashboard_mes();
             relatorio_Dashboard_Mes.ShowDialog();
         }
+
+        private void btnRelatoriosPorVendedores_click(object sender, ContextMenuEventArgs e)
+        {
+            Relatórios_Vendedores Relatórios_Vendedores = new Relatórios_Vendedores();
+            Relatórios_Vendedores.ShowDialog();
+        }
+
+        private void btnRelatoriosPorFuncionarios_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

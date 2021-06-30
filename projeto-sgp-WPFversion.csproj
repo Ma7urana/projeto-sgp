@@ -64,8 +64,14 @@
     <Compile Include="ConfirmacaoFinalizarVenda.xaml.cs">
       <DependentUpon>ConfirmacaoFinalizarVenda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Confirmacao_Cadast_Funcionario.xaml.cs">
+      <DependentUpon>Confirmacao_Cadast_Funcionario.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controlar_Contas_a_Pagar.xaml.cs">
       <DependentUpon>Controlar_Contas_a_Pagar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controlar_Estoque_e_Vendas.xaml.cs">
+      <DependentUpon>Controlar_Estoque_e_Vendas.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControleGeralDeRelatorios.xaml.cs">
       <DependentUpon>ControleGeralDeRelatorios.xaml</DependentUpon>
@@ -73,8 +79,20 @@
     <Compile Include="DashboardDeFluxoDeCaixa.xaml.cs">
       <DependentUpon>DashboardDeFluxoDeCaixa.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Logar_Usuário.xaml.cs">
-      <DependentUpon>Logar_Usuário.xaml</DependentUpon>
+    <Compile Include="GerarRelatorioClientes.xaml.cs">
+      <DependentUpon>GerarRelatorioClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GerarRelatorioClientesDestaques.xaml.cs">
+      <DependentUpon>GerarRelatorioClientesDestaques.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GerarRelatorioEntradaProdutos.xaml.cs">
+      <DependentUpon>GerarRelatorioEntradaProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GerarRelatorioSaidaProdutos.xaml.cs">
+      <DependentUpon>GerarRelatorioSaidaProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GerarRelatorioSituacaoClientes.xaml.cs">
+      <DependentUpon>GerarRelatorioSituacaoClientes.xaml</DependentUpon>
     </Compile>
     <Compile Include="dashboard_mais_vendidos.xaml.cs">
       <DependentUpon>dashboard_mais_vendidos.xaml</DependentUpon>
@@ -84,6 +102,9 @@
     </Compile>
     <Compile Include="Dominio\Vendedor\Venda.cs" />
     <Compile Include="Dominio\Vendedor\Vendedor.cs" />
+    <Compile Include="Logar_Usuário.xaml.cs">
+      <DependentUpon>Logar_Usuário.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MsgDaVenda.xaml.cs">
       <DependentUpon>MsgDaVenda.xaml</DependentUpon>
     </Compile>
@@ -127,13 +148,17 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Confirmacao_Cadast_Funcionario.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Controlar_Contas_a_Pagar.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Controlar_Estoque_e_Vendas.xaml">
-      <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ControleGeralDeCadastros.xaml">
       <SubType>Designer</SubType>
@@ -154,6 +179,26 @@
     <Page Include="Dashboard_vendedores.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GerarRelatorioClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GerarRelatorioClientesDestaques.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GerarRelatorioEntradaProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GerarRelatorioSaidaProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GerarRelatorioSituacaoClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Logar_Usuário.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -232,6 +277,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Fluxo_de_Caixa_planilha.xlsx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -256,6 +302,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\pesquise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\pesquise2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
