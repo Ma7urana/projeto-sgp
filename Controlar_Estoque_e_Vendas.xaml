@@ -33,7 +33,7 @@
 
 
 
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,46,86">Controlar ESstoque e Vendas</TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,46,86">Controlar Estoque e Vendas</TextBlock>
 
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="5" BorderThickness="0"
                         Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,46,82" Cursor="Hand" Grid.ColumnSpan="3">
