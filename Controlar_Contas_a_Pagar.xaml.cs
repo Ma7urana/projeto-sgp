@@ -60,7 +60,34 @@ namespace projeto_sgp_WPFversion
 
         private void btnEmissaodeFichas_Click(object sender, RoutedEventArgs e)
         {
+            Emissão_de_fichas emissão_De_Fichas = new Emissão_de_fichas();
+            emissão_De_Fichas.ShowDialog();
 
+        }
+
+        private void btnResumoporfornecedor_Click(object sender, RoutedEventArgs e)
+        {
+            Resumo_por_fornecedor resumo_Por_Fornecedor = new Resumo_por_fornecedor();
+            resumo_Por_Fornecedor.ShowDialog();
+        }
+
+        private void btnTitulospordatadelançamento_Click(object sender, RoutedEventArgs e)
+        {
+            Titulos_por_data_de_lancamento titulos_Por_Data_De_Lancamento = new Titulos_por_data_de_lancamento();
+            titulos_Por_Data_De_Lancamento.ShowDialog();
+
+        }
+
+        private void btnTituloseresumosportipodegasto_Click(object sender, RoutedEventArgs e)
+        {
+            Titulos_e_resumos_por_tipo_de_gasto titulos_E_Resumos_Por_Tipo_De_Gasto = new Titulos_e_resumos_por_tipo_de_gasto();
+            titulos_E_Resumos_Por_Tipo_De_Gasto.ShowDialog();
+        }
+
+        private void Titulospagospordatadepagamento_Click(object sender, RoutedEventArgs e)
+        {
+            Titulos_por_data_de_pagamento titulos_Por_Data_De_Pagamento = new Titulos_por_data_de_pagamento();
+            titulos_Por_Data_De_Pagamento.ShowDialog();
         }
     }
 }

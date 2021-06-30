@@ -1,12 +1,93 @@
-﻿<Window x:Class="projeto_sgp_WPFversion.Titulos_por_data_de_pagamento"
+﻿<Window x:Class= "projeto_sgp_WPFversion.Titulos_por_data_de_pagamento"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Titulos_por_data_de_pagamento" Height="450" Width="800">
-    <Grid>
-        
+        Title="Menu" Height="500" Width="758" 
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
+
+    <Grid Background="WhiteSmoke" Margin="10,20,20,20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="207"/>
+            <ColumnDefinition Width="138"/>
+            <ColumnDefinition Width="232"/>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition Width="45"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="auto" MinHeight="3"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,36,86">Títulos por data de pagamento</TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="3" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,40,82" Cursor="Hand" Grid.ColumnSpan="5">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/close-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="3" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,5,87"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/max-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMin" Height="39" Width="44" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,48,86"  Cursor="Hand" Grid.Column="3" RenderTransformOrigin="-0.533,0.462">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/min-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+
+        <!-- SEU CÓDIGO -->
+
+        <DataGrid Margin="0,36,36,57" Grid.RowSpan="7" Grid.ColumnSpan="8">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Data"/>
+                <DataGridTextColumn Header="Contas"/>
+                <DataGridTextColumn Header="Fornecedor"/>
+                <DataGridTextColumn Header="Núm.Doc"/>
+                <DataGridTextColumn Header="Vencimento"/>
+                <DataGridTextColumn Header="Valor"/>
+                <DataGridTextColumn Header="Forma"/>
+                <DataGridTextColumn Header="Situação"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Salvar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="116,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="104" Grid.Column="3" Height="23"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="10,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="101" Grid.Column="3" RenderTransformOrigin="0.293,0.522" Height="23"/>
+        <Button Content="Excluir" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="36,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="107" Grid.Column="2" Height="23" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnVoltar" Click="btnVoltar_Click" Content="Voltar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="10,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Height="23"/>
+
+
+
     </Grid>
+
+
 </Window>
