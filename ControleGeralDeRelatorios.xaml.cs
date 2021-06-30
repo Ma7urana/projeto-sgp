@@ -86,9 +86,16 @@ namespace projeto_sgp_WPFversion
             Relatórios_Vendedores.ShowDialog();
         }
 
-        private void btnRelatoriosPorFuncionarios_Click(object sender, RoutedEventArgs e)
+        private void btnRelatoriosPorProdutos_Click(object sender, RoutedEventArgs e)
         {
+            GerarRelatorioEntradaProdutos gerarRelatorioEntradaProdutos = new GerarRelatorioEntradaProdutos();
+            gerarRelatorioEntradaProdutos.ShowDialog();
+        }
 
+        private void btnRelatoriosPorClientes_Click(object sender, RoutedEventArgs e)
+        {
+            GerarRelatorioClientes gerarRelatorioClientes = new GerarRelatorioClientes();
+            gerarRelatorioClientes.ShowDialog();
         }
     }
 }
