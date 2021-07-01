@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Cadastrar_funcionario" Height="549.182" Width="973.343"
+        Title="Cadastrar_funcionario" Height="580" Width="973.343"
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FFFFFF" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
-    <Grid Margin="0,0,-4,6">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
@@ -19,9 +19,10 @@
             <ColumnDefinition Width="112"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock x:Name="Cadastrar_Funionario" Grid.Row="0"  Grid.ColumnSpan="3" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-40,2,23" TextWrapping="Wrap" Cursor="Arrow" Text="Cadastrar Funcionário" VerticalAlignment="Stretch"/>
+        <TextBlock x:Name="Cadastrar_Funionario" Grid.Row="0"  Grid.ColumnSpan="3" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" 
+                   Height="30" TextWrapping="Wrap" Cursor="Arrow" Text="Cadastrar Funcionário" VerticalAlignment="Stretch"/>
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="2" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-40,5,30" Cursor="Hand">
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
 
             <Button.Background>
 
@@ -31,7 +32,7 @@
 
         </Button>
         <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="2" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-38,50,30"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
 
             <Button.Background>
 
@@ -41,7 +42,7 @@
 
         </Button>
         <Button x:Name="btnMin" Height="39" Width="45" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-36,93,27"  Cursor="Hand" Grid.Column="2">
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,93,0"  Cursor="Hand" Grid.Column="2">
 
             <Button.Background>
 
@@ -50,9 +51,8 @@
             </Button.Background>
 
         </Button>
-        <Rectangle Grid.Column="1" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="111,8,0,0" Stroke="#FFD6C084" VerticalAlignment="Top" Width="716" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
-        <Label x:Name="Dados_Pessoais_Copy" Content="Dados Pessoais" HorizontalAlignment="Left" Margin="1,0,0,1" VerticalAlignment="Bottom" Height="23" Width="177" Grid.Column="2"/>
-        <Image  Height="75" VerticalAlignment="Top" Width="105" Source="images/perfil-funcionario.jpg" Margin="6,10,612,0" Grid.Row="1" Grid.Column="2" />
+        <Label x:Name="Dados_Pessoais_Copy" Content="Dados Pessoais" HorizontalAlignment="Left" Margin="1,0,0,1" VerticalAlignment="Top" Height="23" Width="177" Grid.Column="2" Grid.Row="1"/>
+        <Image  Height="75" VerticalAlignment="Top" Width="105" Source="images/perfil-funcionario.jpg" Margin="6,30,612,0" Grid.Row="1" Grid.Column="2" />
         <Label Content="Nome:" Grid.Column="2" HorizontalAlignment="Left" Margin="110,2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="CPF:" Grid.Column="2" HorizontalAlignment="Left" Margin="111,27,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="RG:" Grid.Column="2" HorizontalAlignment="Left" Margin="111,51,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -65,7 +65,7 @@
         <TextBox x:Name="xt_dtNascimento" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="464,33,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
         <Label Content="Sexo:" Grid.Column="2" HorizontalAlignment="Left" Margin="341,55,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbb_Sexo" Grid.Column="2" HorizontalAlignment="Left" Margin="384,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
-        <Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,90,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
+        <Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
         <Rectangle Grid.Column="2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="88" Margin="111,117,0,0" Grid.Row="1" Stroke="#FFD6C084" VerticalAlignment="Top" Width="298"/>
         <Label Content="Endereço:" Grid.Column="2" HorizontalAlignment="Left" Margin="122,90,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Rua:" Grid.Column="2" HorizontalAlignment="Left" Margin="116,117,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -110,7 +110,7 @@
         <CheckBox x:Name="ckb_Sim_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <CheckBox x:Name="ckb_Nao_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Button x:Name="btn_Avancar" Content="Avançar" Grid.Column="2" HorizontalAlignment="Left" Margin="622,489,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFB2B2B2"/>
-        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="538" Margin="0,7,0,-6" Stroke="#FF394047" VerticalAlignment="Top" Width="247" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="538" Margin="0,7,0,-6" Stroke="#FF394047" VerticalAlignment="Top" Width="247" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383" Click="btn_Excluir_Click"/>
         <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
         <Button x:Name="btn_Editar" Content="Editar" HorizontalAlignment="Left" Margin="10,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF50AC8F"/>
