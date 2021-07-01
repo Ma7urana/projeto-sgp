@@ -5,26 +5,58 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Alerta_Cadast_Funcionario" Height="268.008" Width="511.167">
-    <Grid>
+        Title="Alerta_Cadast_Funcionario" Height="300" Width="700"
+        WindowStyle="None"
+        ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
+
+    <Grid Margin="0,0,-4,-4">
         <Grid.RowDefinitions>
-            <RowDefinition Height="58*"/>
-            <RowDefinition Height="43*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="39*"/>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="53*"/>
-            <ColumnDefinition Width="324*"/>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="350"/>
         </Grid.ColumnDefinitions>
-        <StackPanel HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="515" Background="Black" Margin="-5,4,-51,-40" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
-        <StackPanel HorizontalAlignment="Left" Height="190" Margin="21,25,-25,-13" VerticalAlignment="Top" Width="463" Background="WhiteSmoke" Grid.ColumnSpan="4" Grid.RowSpan="2">
-            <Rectangle Fill="WhiteSmoke" Height="183" Stroke="Black" Margin="10,0"/>
-        </StackPanel>
-        <Label Content="Deseja Excluir o Cadastro?" HorizontalAlignment="Left" Margin="18,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="18" Grid.Column="2" Grid.ColumnSpan="2"/>
-        <Rectangle Fill="#FFD1A926" HorizontalAlignment="Left" Height="31" Margin="-6,-27,-51,0" Stroke="Black" VerticalAlignment="Top" Width="516" Grid.ColumnSpan="4"/>
-        <Label Content="Alerta" HorizontalAlignment="Left" Margin="2,-25,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="101" Foreground="#FFF9F1F1" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="Sim" Content="Sim" HorizontalAlignment="Left" Margin="186,21,0,0" VerticalAlignment="Top" Width="97" Height="35" Background="#FFD5B03C" Foreground="White" FontSize="14" Click="yes_Click" Grid.Column="3" Grid.Row="1" />
-        <Button x:Name="Não" Content="Não" Grid.Column="1" HorizontalAlignment="Left" Margin="10,21,0,0" Grid.Row="1" VerticalAlignment="Top" Width="100" Height="35" Background="#FFD5B03C" Foreground="White" FontSize="14" Click="No_click" Grid.ColumnSpan="2" />
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow"></TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/close-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMax" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMax_Click" HorizontalAlignment="Right" Margin="0,-4,50,266"  Cursor="Hand" Grid.RowSpan="2">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/max-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+        <Button x:Name="btnMin" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,90,0"  Cursor="Hand">
+
+            <Button.Background>
+
+                <ImageBrush ImageSource="images/min-icon.png"/>
+
+            </Button.Background>
+
+        </Button>
+
+        <Rectangle Grid.ColumnSpan="2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="208"  Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="564" Margin="66,35,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="157,68,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Tem certeza que dejesa Excluir?" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="390" Height="59" FontSize="26"/>
+        <Button x:Name="Sim" Content="Sim" HorizontalAlignment="Left" Margin="157,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="60" Background="#FFD5B03C" Foreground="White" FontSize="25" Click="yes_Click" />
+        <Button x:Name="Não" Content="Não" Grid.Column="1" HorizontalAlignment="Left" Margin="47,151,0,0" Grid.Row="1" VerticalAlignment="Top" Width="150" Height="60" Background="#FFD5B03C" Foreground="White" FontSize="25" Click="No_click" />
+
     </Grid>
 </Window>
