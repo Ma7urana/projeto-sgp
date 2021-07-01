@@ -38,7 +38,6 @@ namespace projeto_sgp_WPFversion
             else
             {
                 this.WindowState = WindowState.Normal;
-
             }
         }
 
@@ -51,6 +50,11 @@ namespace projeto_sgp_WPFversion
         {
             Qtd_Pedidos_Entreg conc = new Qtd_Pedidos_Entreg();
             conc.ShowDialog();
+        }
+
+        private void tela_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

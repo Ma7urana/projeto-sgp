@@ -22,7 +22,7 @@
 
         <TextBlock x:Name="Controle_Compras" Grid.Row="0"  Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-30,0,23" TextWrapping="Wrap" Cursor="Arrow" Text="Quantidade de Pedidos Entregue" VerticalAlignment="Stretch"/>
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-33,0,23" Cursor="Hand">
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-33,0,15" Cursor="Hand">
 
             <Button.Background>
 

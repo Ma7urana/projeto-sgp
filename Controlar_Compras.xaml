@@ -16,12 +16,13 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="298"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="510"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock x:Name="Controle_Compras" Grid.Row="0"  Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" Margin="-2,-30,0,23" TextWrapping="Wrap" Cursor="Arrow" Text="Controle de Compras" VerticalAlignment="Stretch"/>
-        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="4" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,46,82" Cursor="Hand">
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow">CONTROLE DE COMPRAS</TextBlock>
+
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
 
             <Button.Background>
 
@@ -30,8 +31,8 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="4" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-2,86,86"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
 
             <Button.Background>
 
@@ -40,8 +41,8 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnMin" Height="39" Width="45" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-32,124,23"  Cursor="Hand" Grid.Column="1">
+        <Button x:Name="btnMin" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,90,0"  Cursor="Hand">
 
             <Button.Background>
 
@@ -51,11 +52,11 @@
 
         </Button>
 
-        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="530" Margin="0,7,0,0" Stroke="#FF394047" VerticalAlignment="Top" Width="298" Grid.RowSpan="2"/>
-        <Image HorizontalAlignment="Left" Height="76" Margin="10,15,0,0" Source="images/perfil-funcionario.jpg" VerticalAlignment="Top" Width="101" Grid.RowSpan="2"/>
-        <Label Content="Usuário: Delzely Barros" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="122,0,0,0" Foreground="#FFF9F9F9" Width="147" Height="26"/>
-        <Label Content="Perfíl/Foto" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="30,69,0,0" Foreground="#FFF9F9F9" Width="67" Height="26"/>
-        <Separator HorizontalAlignment="Left" Height="11" Margin="0,92,0,0" Grid.Row="1" VerticalAlignment="Top" Width="298"/>
+        <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="530" Stroke="#FF394047" VerticalAlignment="Top" Width="298" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="76" Margin="10,15,0,0" Source="images/perfil-funcionario.jpg" VerticalAlignment="Top" Width="101" Grid.Row="1"/>
+        <Label Content="Usuário: Delzely Barros" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="122,10,0,0" Foreground="#FFF9F9F9" Width="147" Height="26"/>
+        <Label Content="Perfíl/Foto" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="30,85,0,0" Foreground="#FFF9F9F9" Width="67" Height="26"/>
+        <Separator HorizontalAlignment="Left" Height="11" Margin="0,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="298"/>
         <Label Content="Relatórios:" HorizontalAlignment="Left" Margin="4,113,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="65"/>
         <Button x:Name="Rel_Ped_Fornecedor" Content="Pedido por Fornecedor" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
         <Button x:Name="Rel_Geral_Pedidos" Content="Geral de Pedidos" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,179,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>

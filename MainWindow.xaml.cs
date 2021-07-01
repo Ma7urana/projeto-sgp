@@ -92,5 +92,11 @@ namespace projeto_sgp_WPFversion
             //System.Diagnostics.Process.Start(@"D:\Projetos .NET\projeto-sgp\Fluxo_de_Caixa_planilha.xlsx");
             MessageBox.Show("Arquivo indisponível no momento!", "ARQUIVO INDISPONÍVEL", MessageBoxButton.OK, MessageBoxImage.Information);
         }
+
+        private void btnControleDeCompras_Click(object sender, RoutedEventArgs e)
+        {
+            Controlar_Compras controlar_Compras = new Controlar_Compras();
+            controlar_Compras.ShowDialog();
+        }
     }
 }
