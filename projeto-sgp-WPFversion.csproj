@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -85,6 +85,7 @@
     <Compile Include="DashboardDeFluxoDeCaixa.xaml.cs">
       <DependentUpon>DashboardDeFluxoDeCaixa.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataBase\Conexao.cs" />
     <Compile Include="Emissão_de_fichas.xaml.cs">
       <DependentUpon>Emissão_de_fichas.xaml</DependentUpon>
     </Compile>
@@ -109,11 +110,12 @@
     <Compile Include="Dashboard_vendedores.xaml.cs">
       <DependentUpon>Dashboard_vendedores.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Dominio\Vendedor\Venda.cs" />
+    <Compile Include="Models\Venda.cs" />
     <Compile Include="Dominio\Vendedor\Vendedor.cs" />
     <Compile Include="Logar_Usuário.xaml.cs">
       <DependentUpon>Logar_Usuário.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Funcionario.cs" />
     <Compile Include="MsgDaVenda.xaml.cs">
       <DependentUpon>MsgDaVenda.xaml</DependentUpon>
     </Compile>
@@ -365,6 +367,9 @@
     <Resource Include="images\compras.png" />
     <Content Include="images\pesquise2.png" />
     <Resource Include="images\pesquise3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

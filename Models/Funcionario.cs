@@ -4,11 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace projeto_sgp_WPFversion.Dominio.Vendedor
+namespace projeto_sgp_WPFversion.Models
 {
-    class Venda
+    class Funcionario
     {
-
-
     }
 }
