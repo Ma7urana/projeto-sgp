@@ -1,4 +1,5 @@
-﻿using System;
+﻿using projeto_sgp_WPFversion.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,15 @@ namespace projeto_sgp_WPFversion
         public MainWindow()
         {
             InitializeComponent();
+
+            try
+            {
+                var conexao = new Conexao();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
