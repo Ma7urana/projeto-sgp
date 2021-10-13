@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
  using MySql.Data.MySqlClient;
 
 namespace projeto_sgp_WPFversion.DataBase
@@ -31,6 +32,21 @@ namespace projeto_sgp_WPFversion.DataBase
                 connection.Open();
             }
             catch
+            {
+                throw;
+            }
+        }
+
+        public MySqlCommand Query()
+        {
+            try
+            {
+                command = connection.CreateCommand();
+                command.CommandType = CommandType.Text;
+
+                return command;
+            }
+            catch (Exception)
             {
                 throw;
             }
