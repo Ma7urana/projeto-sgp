@@ -7,29 +7,29 @@ using projeto_sgp_WPFversion.Interface;
 
 namespace projeto_sgp_WPFversion.Models
 {
-    class FuncionarioDAO : IDAO<Funcionario>
+    class ProdutoDAO : IDAO<Produto>
     {
-        public void Delete(Funcionario t)
+        public void Delete(Produto t)
         {
             throw new NotImplementedException();
         }
 
-        public Funcionario GetById(int id)
+        public Produto GetById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Insert(Funcionario t)
+        public void Insert(Produto t)
         {
             throw new NotImplementedException();
         }
 
-        public List<Funcionario> List()
+        public List<Produto> List()
         {
             throw new NotImplementedException();
         }
 
-        public void Update(Funcionario t)
+        public void Update(Produto t)
         {
             throw new NotImplementedException();
         }

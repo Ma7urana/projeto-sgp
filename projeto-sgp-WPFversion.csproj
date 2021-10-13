@@ -153,12 +153,17 @@
     <Compile Include="Dashboard_vendedores.xaml.cs">
       <DependentUpon>Dashboard_vendedores.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interface\IDAO.cs" />
+    <Compile Include="Models\FuncionarioDAO.cs" />
+    <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\ProdutoDAO.cs" />
     <Compile Include="Models\Venda.cs" />
     <Compile Include="Dominio\Vendedor\Vendedor.cs" />
     <Compile Include="Logar_Usuário.xaml.cs">
       <DependentUpon>Logar_Usuário.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Funcionario.cs" />
+    <Compile Include="Models\VendaDAO.cs" />
     <Compile Include="MsgDaVenda.xaml.cs">
       <DependentUpon>MsgDaVenda.xaml</DependentUpon>
     </Compile>
