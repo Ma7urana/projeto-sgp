@@ -15,14 +15,19 @@ cep_end  varchar(10)
 );
 
 create table Funcionario (
-id_Func int not null primary key auto_increment,
-rg_func varchar (10),
-cpf_func varchar (8),
-nome_func varchar (100),
-sexo_func varchar (20),
-dat_nasc_func date,
-ctps_func varchar (10),
-pis_pasep_func varchar (10),
+id_func int not null primary key auto_increment,
+nome_func varchar (200), 
+email_func varchar (300), 
+cpf_func varchar (8), 
+rg_func varchar (10), 
+data_nascimento_func date, 
+sexo_func varchar (20), 
+cargo_func varchar (100), 
+departamento_func varchar (100), 
+data_admissao_func date, 
+data_demissao_func date, 
+vale_alimentacao_func char (1), 
+vale_transporte_func char (1),
 id_End_fk int not null, 
 foreign key (id_End_fk) references Endereco (id_End)
 );
