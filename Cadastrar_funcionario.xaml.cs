@@ -24,6 +24,7 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
         }
+
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
@@ -71,6 +72,11 @@ namespace projeto_sgp_WPFversion
 
                 Confirmacao_Cadast_Funcionario conc = new Confirmacao_Cadast_Funcionario();
                 conc.ShowDialog();
+
+                var result = MessageBox.Show("Deseja cadastrar outro funcionário?", "Continuar?",MessageBoxButton.YesNo, MessageBoxImage.Question);
+                if (result == MessageBoxResult.No)
+                    this.Close();
+
             }
             catch(Exception ex)
             {
@@ -82,6 +88,24 @@ namespace projeto_sgp_WPFversion
         {
             Alerta_Cadast_Funcionario cancelar = new Alerta_Cadast_Funcionario();
             cancelar.ShowDialog();
+        }
+
+        private void ClearInputs()
+        {
+            txt_Nome.Text = "";
+            txt_Email.Text = "";
+            txt_CPF.Text = "";
+            txt_RG.Text = "";
+            dp_dtNascimento.SelectedDate = null;
+            cbb_Sexo.Text = "";
+            cbb_Cargo.Text = "";
+            cbb_Departamento.Text = "";
+            dp_dtAdmissao.SelectedDate = null;
+            dp_dtDemissao.SelectedDate = null;
+            rbtn_Sim_Val_Alim.IsChecked = false;
+            rbtn_Sim_Val_Transp.IsChecked = false;
+            rbtn_Nao_Val_Alim.IsChecked = false;
+            rbtn_Nao_Val_Transp.IsChecked = false;
         }
     }
 }
