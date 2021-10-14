@@ -16,7 +16,7 @@ namespace projeto_sgp_WPFversion.Models
 
         public string CPF { get; set; }
 
-        public string RC { get; set; }
+        public string RG { get; set; }
 
         public DateTime DataNascimento { get; set; }
 
@@ -30,8 +30,8 @@ namespace projeto_sgp_WPFversion.Models
 
         public DateTime DataDemissao { get; set; }
 
-        public bool ValeAlimentacao { get; set; }
+        public char ValeAlimentacao { get; set; }
 
-        public bool ValeTransporte { get; set; }
+        public char ValeTransporte { get; set; }
     }
 }

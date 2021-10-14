@@ -62,7 +62,6 @@
         <Label Content="E-mail:" Grid.Column="2" HorizontalAlignment="Left" Margin="379,3,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <TextBox x:Name="txt_Email" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="422,6,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="291"/>
         <Label Content="Data de nascimento:" Grid.Column="2" HorizontalAlignment="Left" Margin="341,29,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="xt_dtNascimento" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="464,33,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="89"/>
         <Label Content="Sexo:" Grid.Column="2" HorizontalAlignment="Left" Margin="341,55,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbb_Sexo" Grid.Column="2" HorizontalAlignment="Left" Margin="384,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
         <Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
@@ -90,8 +89,6 @@
         <Label Content="Data de Demissão:" Grid.Column="2" HorizontalAlignment="Left" Margin="8,440,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbb_Cargo" Grid.Column="2" HorizontalAlignment="Left" Margin="57,367,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
         <ComboBox x:Name="cbb_Departamento" Grid.Column="2" HorizontalAlignment="Left" Margin="110,393,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
-        <TextBox x:Name="txt_dtAdimissao" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="122,417,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
-        <TextBox x:Name="txt_dtDemissao" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="119,443,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
         <Separator Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="254,348,0,0" Grid.Row="1" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
@@ -105,16 +102,19 @@
         <Label Content="Benefícios" Grid.Column="2" HorizontalAlignment="Left" Margin="323,330,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Alimentação:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,364,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Trasnporte:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,398,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <CheckBox x:Name="ckb_Sim_Val_Alim" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <CheckBox x:Name="ckb_Nao_Val_Alim" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <CheckBox x:Name="ckb_Sim_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <CheckBox x:Name="ckb_Nao_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtn_Sim_Val_Alim" GroupName="rbtn_Val_Alim" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,372,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="rbtn_Sim_Val_Alim_Checked"/>
+        <RadioButton x:Name="rbtn_Nao_Val_Alim" GroupName="rbtn_Val_Alim" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtn_Sim_Val_Transp" GroupName="rbtn_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbtn_Nao_Val_Transp" GroupName="rbtn_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Button x:Name="btn_Avancar" Content="Avançar" Grid.Column="2" HorizontalAlignment="Left" Margin="622,489,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFB2B2B2"/>
         <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="538" Margin="0,7,0,-6" Stroke="#FF394047" VerticalAlignment="Top" Width="247" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383" Click="btn_Excluir_Click"/>
         <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
         <Button x:Name="btn_Editar" Content="Editar" HorizontalAlignment="Left" Margin="10,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF50AC8F"/>
         <Button x:Name="btn_Novo" Content="Novo" HorizontalAlignment="Left" Margin="10,230,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFAB96CB"/>
+        <DatePicker x:Name="dp_dtNascimento" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="464,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+        <DatePicker x:Name="dp_dtAdmissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,417,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+        <DatePicker x:Name="dp_dtDemissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,445,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
 
 
 

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using projeto_sgp_WPFversion.Models;
 
 namespace projeto_sgp_WPFversion
 {
@@ -49,9 +50,32 @@ namespace projeto_sgp_WPFversion
 
         private void btn_Salvar_Click(object sender, RoutedEventArgs e)
         {
-            Confirmacao_Cadast_Funcionario conc = new Confirmacao_Cadast_Funcionario();
-            conc.ShowDialog();
+            try
+            {
+                Funcionario funcionario = new Funcionario();
+                funcionario.Nome = txt_Nome.Text;
+                funcionario.Email = txt_Email.Text;
+                funcionario.CPF = txt_CPF.Text;
+                funcionario.RG = txt_RG.Text;
+                funcionario.DataNascimento = (DateTime)dp_dtNascimento.SelectedDate;
+                funcionario.Sexo = cbb_Sexo.Text;
+                funcionario.Cargo = cbb_Cargo.Text;
+                funcionario.Departamento = cbb_Departamento.Text;
+                funcionario.DataAdimissao = (DateTime)dp_dtAdmissao.SelectedDate;
+                funcionario.DataDemissao = (DateTime)dp_dtDemissao.SelectedDate;
+                funcionario.ValeAlimentacao = 'v';
+                funcionario.ValeTransporte = 'v';
 
+                FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+                funcionarioDAO.Insert(funcionario);
+
+                Confirmacao_Cadast_Funcionario conc = new Confirmacao_Cadast_Funcionario();
+                conc.ShowDialog();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Não foi possível realizar o cadastro.", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void btn_Excluir_Click(object sender, RoutedEventArgs e)

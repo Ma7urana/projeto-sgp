@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using projeto_sgp_WPFversion.Models;
 
 namespace projeto_sgp_WPFversion
 {
@@ -25,6 +26,8 @@ namespace projeto_sgp_WPFversion
         {
             InitializeComponent();
 
+            Loaded += MainWindow_Loaded;
+
             try
             {
                 var conexao = new Conexao();
@@ -33,6 +36,29 @@ namespace projeto_sgp_WPFversion
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            /*try
+            {
+                Funcionario funcionario = new Funcionario();
+                funcionario.Nome = txt_Nome.Text;
+                funcionario.Email = txt_Email.Text;
+                funcionario.CPF = txt_CPF.Text;
+                funcionario.RG = txt_RG.Text;
+                funcionario.DataNascimento = (DateTime)dp_dtNascimento.SelectedDate;
+                funcionario.Sexo = cbb_Sexo.Text;
+                funcionario.Cargo = cbb_Cargo.Text;
+                funcionario.Departamento = cbb_Departamento.Text;
+                funcionario.DataAdimissao = (DateTime)dp_dtAdmissao.SelectedDate;
+                funcionario.DataDemissao = (DateTime)dp_dtDemissao.SelectedDate;
+                funcionario.ValeAlimentacao = rbtn_Sim_Val_Alim.IsChecked.ToString;
+                funcionario.ValeTransporte = rbtn_Sim_Val_Transp.IsChecked.ToString;
+
+                FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+                funcionarioDAO.Insert(funcionario);
+            }*/
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
