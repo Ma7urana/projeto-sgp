@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,13 +11,12 @@ namespace projeto_sgp_WPFversion.Models
 {
     class VendaDAO : IDAO<Venda>
     {
-        private static Conexao conn;
+        private static Conexao con;
 
         public VendaDAO()
         {
-            conn = new Conexao();
+            con = new Conexao();
         }
-
         public void Delete(Venda t)
         {
             throw new NotImplementedException();
@@ -30,7 +29,36 @@ namespace projeto_sgp_WPFversion.Models
 
         public void Insert(Venda t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var query = con.Query();
+
+                query.CommandText = "INSERT INTO funcionario (Id_Vend, Data_Vend, Subtotal_Vend, Desconto_Vend, Valor_A_Ser_Pago_Vend, Valor_Recebido_Vend, Troco_Vend, Id_cli_fk, id_func_fk) " +
+                    "VALUES (@data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
+
+                query.Parameters.AddWithValue("@data_", t.Data.ToString("yyyy-MM-dd"));
+                query.Parameters.AddWithValue("@subTotal", t.SubTotal);
+                query.Parameters.AddWithValue("@desconto", t.Desconto);
+                query.Parameters.AddWithValue("@valor_a_ser_pago", t.ValorASerPago);
+                query.Parameters.AddWithValue("@valor_recebido", t.ValorRecebido);
+                query.Parameters.AddWithValue("@troco", t.Troco);
+                query.Parameters.AddWithValue("@funcionario", t.Funcionario);
+                query.Parameters.AddWithValue("@cliente", t.Cliente);
+
+                var result = query.ExecuteNonQuery();
+
+                if (result == 0)
+                    throw new Exception("Não foi possível inserir a venda. Verifique e tente novamente.");
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.close();
+            }
         }
 
         public List<Venda> List()
@@ -39,7 +67,7 @@ namespace projeto_sgp_WPFversion.Models
             {
                 List<Venda> vendas = new List<Venda>();
 
-                var query = conn.Query();
+                var query = con.Query();
                 query.CommandText = "SELECT * FROM venda";
 
                 MySqlDataReader reader = query.ExecuteReader();

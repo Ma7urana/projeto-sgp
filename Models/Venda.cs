@@ -9,19 +9,23 @@ namespace projeto_sgp_WPFversion.Models
     class Venda
     {
         public int Id { get; set; }
-        
+
         public DateTime Data { get; set; }
 
-        public float Subtotal { get; set; }
+        public int Funcionario { get; set; }
 
-        public float Desconto { get; set; }
+        public int Cliente { get; set; }
 
-        public float Troco { get; set; }
+        public int CPFCliente { get; set; }
 
-        public float ValorTotal { get; set; }
+        public double SubTotal { get; set; }
 
-        public string FormaPagamento { get; set; }
+        public double Desconto { get; set; }
 
-        public int Parcelas { get; set; } 
+        public double ValorASerPago { get; set; }
+
+        public double ValorRecebido { get; set; }
+
+        public double Troco { get; set; }
     }
 }

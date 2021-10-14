@@ -205,8 +205,8 @@
     <Compile Include="Titulos_por_data_de_pagamento.xaml.cs">
       <DependentUpon>Titulos_por_data_de_pagamento.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Venda.xaml.cs">
-      <DependentUpon>Venda.xaml</DependentUpon>
+    <Compile Include="Cadastrar_Venda.xaml.cs">
+      <DependentUpon>Cadastrar_Venda.xaml</DependentUpon>
     </Compile>
     <Page Include="Alerta_Cadast_Funcionario.xaml">
       <SubType>Designer</SubType>
@@ -362,7 +362,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Venda.xaml">
+    <Page Include="Cadastrar_Venda.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
