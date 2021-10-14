@@ -76,7 +76,7 @@ namespace projeto_sgp_WPFversion
 
         private void btnCaixaVenda_Click(object sender, RoutedEventArgs e)
         {
-            Venda caixaVenda = new Venda();
+            Cadastrar_Venda caixaVenda = new Cadastrar_Venda();
             caixaVenda.ShowDialog();
         }
 

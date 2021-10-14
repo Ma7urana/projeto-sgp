@@ -78,12 +78,10 @@ namespace projeto_sgp_WPFversion.Models
                     {
                         Id = reader.GetInt32("Id_vend"),
                         Data = reader.GetDateTime("Data_Vend"),
-                        Subtotal = reader.GetFloat("Subtotal_Vend"),
+                        SubTotal = reader.GetFloat("Subtotal_Vend"),
                         Desconto = reader.GetFloat("Desconto_Vend"),
                         Troco = reader.GetFloat("Troco_Vend"),
-                        ValorTotal = reader.GetFloat("Valor_Total_Vend"),
-                        FormaPagamento = reader.GetString("FormaPag_Vend"),
-                        Parcelas = reader.GetInt32("Qtd_parcelas_Vend")
+                        ValorASerPago = reader.GetFloat("Valor_Total_Vend")
                     });
                 }
 
@@ -95,7 +93,7 @@ namespace projeto_sgp_WPFversion.Models
             }
             finally
             {
-                conn.close();
+                con.close();
             }
         }
 
