@@ -102,7 +102,7 @@
         <Label Content="Benefícios" Grid.Column="2" HorizontalAlignment="Left" Margin="323,330,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Alimentação:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,364,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Trasnporte:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,398,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <RadioButton x:Name="rbtn_Sim_Val_Alim" GroupName="rbtn_Val_Alim" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,372,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="rbtn_Sim_Val_Alim_Checked"/>
+        <RadioButton x:Name="rbtn_Sim_Val_Alim" GroupName="rbtn_Val_Alim" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtn_Nao_Val_Alim" GroupName="rbtn_Val_Alim" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtn_Sim_Val_Transp" GroupName="rbtn_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtn_Nao_Val_Transp" GroupName="rbtn_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
