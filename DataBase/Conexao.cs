@@ -52,7 +52,7 @@ namespace projeto_sgp_WPFversion.DataBase
             }
         }
 
-        public void close()
+        public void Close()
         {
             connection.Close();
         }
