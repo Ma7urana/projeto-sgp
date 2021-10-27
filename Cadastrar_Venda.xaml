@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="WindowVenda" Height="500" Width="822">
+        Title="WindowVenda" Height="500" Width="822" WindowStartupLocation="CenterScreen">
     <Grid Margin="0,0,2,2">
         <StackPanel Background="Black" Margin="0,0,390,0">
             <Label Content="Label"/>
