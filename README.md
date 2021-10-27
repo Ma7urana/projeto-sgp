@@ -9,9 +9,9 @@ do Curso Técnico Em Informática Integrado Ao Ensino Médio (turma 2019-2021, B
 
 ## Equipe
 
-- [Thamiris Maria](github.com/ThamirisMaria)
-- [Gabriel Maturana](github.com/maturanei)
-- [Natália Fernandes](github.com/taliaNat007)
-- [Maria Eduarda](github.com/Eduarda394)
-- [Filipe Maciel](github.com/Blue-Akio)
-- [Lucas Fernandes](github.com/biruleicriaasa)
+- [Thamiris Maria](https://github.com/ThamirisMaria)
+- [Gabriel Maturana](https://github.com/maturanei)
+- [Natália Fernandes](https://github.com/taliaNat007)
+- [Maria Eduarda](https://github.com/Eduarda394)
+- [Filipe Maciel](https://github.com/Blue-Akio)
+- [Lucas Fernandes](https://github.com/biruleicriaasa)
