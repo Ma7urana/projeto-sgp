@@ -39,7 +39,10 @@ namespace projeto_sgp_WPFversion.Models
                 ";
 
                 query.Parameters.AddWithValue("@nome", t.Nome);
-
+                query.Parameters.AddWithValue("@preco_compra", t.PrecoCompra);
+                query.Parameters.AddWithValue("@preco_venda", t.PrecoVenda);
+                query.Parameters.AddWithValue("@quantidade", t.Quantidade);
+                query.Parameters.AddWithValue("@fornecedor_id", t.FornecedorId);
 
                 var result = query.ExecuteNonQuery();
             }
