@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="DashboardDeFluxoDeCaixa" Height="400" Width="700" 
+        Title="DashboardDeFluxoDeCaixa" Height="169" Width="700" 
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="1"
         BorderBrush="Black" WindowState="Normal" Background="#F1F1F3" Cursor="Hand"
@@ -47,7 +47,7 @@
             </Button.Background>
         </Button>
 
-        <GroupBox Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0"
+        <GroupBox Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="24,10,0,0"
                   
                   Header="PERÍODO" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                   FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
@@ -151,36 +151,8 @@
             </GroupBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Margin="50,90,50,20">
-            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Center" Margin="8,0,0,0"
-                  Width="250"
-                  Header="LUCRO/PREJUÍSO" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
-                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
-                <GroupBox.HeaderTemplate>
-                    <DataTemplate>
-                        <Button Content="{Binding}" Background="#F0AD4E" HorizontalAlignment="Center" 
-                            VerticalAlignment="Center" Width="240" Margin="0,0,0,10" Foreground="White"/>
-                    </DataTemplate>
-                </GroupBox.HeaderTemplate>
-                <TextBlock HorizontalAlignment="Center" FontSize="18">R$0,00</TextBlock>
-            </GroupBox>
-            
-        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="50,90,50,20"/>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" Margin="50,90,50,20">
-            <GroupBox VerticalAlignment="Top" HorizontalAlignment="Center" Margin="8,0,0,0"
-                  Width="250"
-                  Header="LUCRATIVIDADE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
-                  FontWeight="Bold" BorderBrush="{x:Null}" Background="#FFFFFF" BorderThickness="0">
-                <GroupBox.HeaderTemplate>
-                    <DataTemplate>
-                        <Button Content="{Binding}" Background="#F0AD4E" HorizontalAlignment="Center" 
-                            VerticalAlignment="Center" Width="240" Margin="0,0,0,10" Foreground="White"/>
-                    </DataTemplate>
-                </GroupBox.HeaderTemplate>
-                <TextBlock HorizontalAlignment="Center" FontSize="18">0%</TextBlock>
-            </GroupBox>
-            
-        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" Margin="50,90,50,20"/>
     </Grid>
 </Window>

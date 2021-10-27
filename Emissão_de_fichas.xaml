@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Menu" Height="500" Width="758" 
+        Title="Menu" Height="500" Width="924" 
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
 
     <Grid Background="WhiteSmoke" Margin="10,20,20,20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="133"/>
             <ColumnDefinition Width="207"/>
             <ColumnDefinition Width="138"/>
             <ColumnDefinition Width="232"/>
@@ -33,10 +33,10 @@
 
 
 
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,36,86">Emissão de Fichas</TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="-10,-23,-140,109">Emissão de Fichas</TextBlock>
 
-        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="3" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,40,82" Cursor="Hand" Grid.ColumnSpan="5">
+        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="7" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-24,-138,106" Cursor="Hand">
 
             <Button.Background>
 
@@ -45,8 +45,8 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="3" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,5,87"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="7" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-23,-96,107"  Cursor="Hand" RenderTransformOrigin="4.737,0.553">
 
             <Button.Background>
 
@@ -56,7 +56,7 @@
 
         </Button>
         <Button x:Name="btnMin" Height="39" Width="44" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,48,86"  Cursor="Hand" Grid.Column="3" RenderTransformOrigin="-0.533,0.462">
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-23,-55,106"  Cursor="Hand" Grid.Column="7" RenderTransformOrigin="-0.533,0.462">
 
             <Button.Background>
 
@@ -68,7 +68,7 @@
 
         <!-- SEU CÓDIGO -->
 
-        <DataGrid Margin="0,36,36,57" Grid.RowSpan="7" Grid.ColumnSpan="8">
+        <DataGrid Margin="16,36,-98,57" Grid.RowSpan="7" Grid.ColumnSpan="8">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Data      "/>
                 <DataGridTextColumn Header="Contas            "/>
@@ -81,9 +81,9 @@
                 <DataGridTextColumn Header="Situação         "/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Salvar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="116,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="104" Grid.Column="3" Height="23"/>
-        <Button Content="Editar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="10,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="101" Grid.Column="3" RenderTransformOrigin="0.293,0.522" Height="23"/>
-        <Button Content="Excluir" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="36,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="107" Grid.Column="2" Height="23" Grid.ColumnSpan="2"/>
+        <Button Content="Salvar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="54,67,-112,0" Grid.Row="6" VerticalAlignment="Top" Width="104" Grid.Column="7" Height="23"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="192,67,-3,0" Grid.Row="6" VerticalAlignment="Top" Width="101" Grid.Column="3" RenderTransformOrigin="0.293,0.522" Height="23" Grid.ColumnSpan="5"/>
+        <Button Content="Excluir" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="79,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="107" Grid.Column="3" Height="23"/>
         <Button x:Name="btnVoltar" Click="btnVoltar_Click" Content="Voltar" HorizontalAlignment="Left" Background="#FFCEAB3B" Foreground="White" Margin="10,67,0,0" Grid.Row="6" VerticalAlignment="Top" Width="120" Height="23"/>
 
 

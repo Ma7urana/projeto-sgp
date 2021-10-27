@@ -65,17 +65,17 @@
             <TextBlock Text="Usuário:" FontSize="15" Foreground="White" />
             <Label  Content="Delzely Barros" FontSize="15" Foreground="White" Height="35" />
         </StackPanel>
-        <StackPanel Margin="-10,0,158,21" Grid.Row="1">
+        <StackPanel Margin="-10,0,158,10" Grid.Row="1">
             <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" Margin="10,0,0,0" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btn_mes_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btnvendedor_Click"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtnValor_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btn_mes_Click" Height="27"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="Btnvendedor_Click" Height="26"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Click="BtnValor_Click" Height="27"/>
         </StackPanel>
-        <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
+        <StackPanel Margin="-12,130,165,-15" Grid.RowSpan="3" Grid.Row="1">
             <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" Margin="10,0,0,0" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Height="26"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Height="24"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" Height="26"/>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="4" Margin="242,44,10,100" Orientation="Horizontal" >
             <TextBox TextWrapping="Wrap" Text="Digite nome do Vendedor" Margin="78,20,0,19" TextChanged="TextBox_TextChanged" Width="273"/>

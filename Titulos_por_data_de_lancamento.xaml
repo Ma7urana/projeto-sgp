@@ -36,7 +36,7 @@
         <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,36,86">Títulos por data de lançamento</TextBlock>
 
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="3" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,40,82" Cursor="Hand" Grid.ColumnSpan="5">
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,32,82" Cursor="Hand" Grid.ColumnSpan="5">
 
             <Button.Background>
 
@@ -46,7 +46,7 @@
 
         </Button>
         <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="3" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,5,87"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-1,19,85"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
 
             <Button.Background>
 
@@ -56,7 +56,7 @@
 
         </Button>
         <Button x:Name="btnMin" Height="39" Width="44" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,48,86"  Cursor="Hand" Grid.Column="3" RenderTransformOrigin="-0.533,0.462">
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-1,58,84"  Cursor="Hand" Grid.Column="3" RenderTransformOrigin="-0.533,0.462">
 
             <Button.Background>
 

@@ -65,23 +65,23 @@
             <TextBlock Text="Usuário:" FontSize="15" Foreground="White" />
             <Label  Content="Delzely Barros" FontSize="15" Foreground="White" Height="35" />
         </StackPanel>
-        <StackPanel Margin="-10,0,158,21" Grid.Row="1">
+        <StackPanel Margin="-10,190,158,21" Grid.RowSpan="2">
             <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btn_mes_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btnvendedor_Click"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnValor_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btn_mes_Click" Height="30"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btnvendedor_Click" Height="29"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnValor_Click" Height="26"/>
         </StackPanel>
-        <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
+        <StackPanel Margin="-10,124,163,0" Grid.RowSpan="3" Grid.Row="1">
             <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnDashmes_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btndashvendedor_Click"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtndashValor_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnDashmes_Click" Height="24"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btndashvendedor_Click" Height="23"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtndashValor_Click" Height="27"/>
         </StackPanel>
         <DataGrid Margin="294,89,25,44" x:Name="Datagridmes" IsReadOnly="true"
                       AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" Grid.ColumnSpan="4" Grid.RowSpan="4">
-    
+
         </DataGrid>
-        <Button Grid.ColumnSpan="2" Content="Compartilhar" Grid.Column="2" HorizontalAlignment="Left" Margin="179,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="99" Background="LightBlue"/>
+        <Button Grid.ColumnSpan="2" Content="Compartilhar" Grid.Column="2" HorizontalAlignment="Left" Margin="153,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="125" Background="LightBlue"/>
         <Button Content="Imprimir" HorizontalAlignment="Left" Margin="294,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="101" Background="LightBlue" />
 
 
