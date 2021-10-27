@@ -18,7 +18,7 @@ namespace projeto_sgp_WPFversion.DataBase
 
         private static string password = "root";
 
-        private static string dbname = "FAD";
+        private static string dbname = "sgp";
 
         private static MySqlConnection connection;
 
@@ -28,7 +28,7 @@ namespace projeto_sgp_WPFversion.DataBase
         {
             try
             {
-                connection = new MySqlConnection($"server={host}; user={user}; database={dbname}; port={port}");
+                connection = new MySqlConnection($"server={host}; port={port}; user={user}; password={password}; database={dbname}");
                 connection.Open();
             }
             catch
