@@ -16,7 +16,7 @@ namespace projeto_sgp_WPFversion.Models
 
         public int Cliente { get; set; }
 
-        public int CPFCliente { get; set; }
+        public int TelefoneCliente { get; set; }
 
         public double SubTotal { get; set; }
 
