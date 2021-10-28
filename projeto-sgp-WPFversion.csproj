@@ -416,7 +416,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\compras.png" />
-    <Content Include="DataBase\AtividadeBDDS.sql" />
     <Content Include="images\pesquise2.png" />
     <Resource Include="images\pesquise3.png" />
   </ItemGroup>
