@@ -54,14 +54,15 @@ namespace projeto_sgp_WPFversion.Models
                 if (result == 0)
                     throw new Exception("Não foi possível inserir o funcionário. Verifique e tente novamente");
 
-            } catch (Exception e)
+            }
+            catch (Exception e)
             {
                 throw e;
-            } finally
-            {
-                con.close();
             }
-
+            finally
+            {
+                con.Close();
+            }
         }
 
         public List<Funcionario> List()
