@@ -94,12 +94,8 @@ namespace projeto_sgp_WPFversion
             {
                 var daoVendaProduto = new VendaDAO();
 
-                dg_VendaProdutos.ItemsSource = daoVendaProduto.ListProd();
+                dg_VendaProdutos.ItemsSource = daoVendaProduto.ListVendaProd();
 
-                //foreach (var vendaProduto in daoVendaProduto.ListProd())
-                //{
-                //    MessageBox.Show(vendaProduto.Nome + " Preço: " + vendaProduto.PrecoVenda);
-                //}
             }
             catch (Exception ex)
             {

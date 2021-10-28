@@ -183,6 +183,12 @@
     <Compile Include="Qtd_Pedidos_Entreg.xaml.cs">
       <DependentUpon>Qtd_Pedidos_Entreg.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ReadProdutos.xaml.cs">
+      <DependentUpon>ReadProdutos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReadVendas.xaml.cs">
+      <DependentUpon>ReadVendas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Relatorio_dashboard_mes.xaml.cs">
       <DependentUpon>Relatorio_dashboard_mes.xaml</DependentUpon>
     </Compile>
@@ -330,6 +336,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Qtd_Pedidos_Entreg.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReadProdutos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReadVendas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

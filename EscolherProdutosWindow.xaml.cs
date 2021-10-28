@@ -29,7 +29,7 @@ namespace projeto_sgp_WPFversion
 
         private void EscolherProdutosWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadList();
+            LoadListEscolherProduto();
         }
 
         private void btn_Finalizar_Click(object sender, RoutedEventArgs e)
@@ -37,13 +37,13 @@ namespace projeto_sgp_WPFversion
             this.Close();
         }
 
-        private void LoadList()
+        private void LoadListEscolherProduto()
         {
             try
             {
-                var daoVendaProduto = new VendaDAO();
+                var daoEscolherProduto = new VendaDAO();
 
-                dg_EscolherProdutos.ItemsSource = daoVendaProduto.ListProd();
+                dg_EscolherProdutos.ItemsSource = daoEscolherProduto.ListProd();
 
                 //foreach (var vendaProduto in daoVendaProduto.ListProd())
                 //{

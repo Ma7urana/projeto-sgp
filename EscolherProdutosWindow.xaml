@@ -19,7 +19,7 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Nome do produto" Binding="{Binding Nome}"/>
-                <DataGridTextColumn Header="Quantidade" Binding="{Binding Quantidade}"/>
+                <DataGridTextColumn Header="Estoque" Binding="{Binding Quantidade}"/>
                 <DataGridTextColumn Header="Marca" Binding="{Binding Marca}"/>
                 <DataGridTextColumn Header="Valor" Binding="{Binding Valor, ConverterCulture='pt-BR', StringFormat=C}"/>
 
