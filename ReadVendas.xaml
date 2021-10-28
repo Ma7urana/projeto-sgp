@@ -13,10 +13,10 @@
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal" 
         TextOptions.TextRenderingMode="Auto"
-        FontFamily="{DynamicResource MaterialDesignFont}" Height="456" Width="760">
+        FontFamily="{DynamicResource MaterialDesignFont}" Height="456" Width="860">
 
     <Grid>
-        <DataGrid x:Name="dg_ReadVendas" IsReadOnly="False" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="456" VerticalAlignment="Top" Width="760" FontFamily="Arial">
+        <DataGrid x:Name="dg_ReadVendas" IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="456" VerticalAlignment="Top" Width="850" FontFamily="Arial" Margin="5,9,0,-9">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Data" Binding="{Binding Data}"/>
@@ -25,7 +25,7 @@
                 <DataGridTextColumn Header="Valor Recebido" Binding="{Binding ValorRecebido, ConverterCulture='pt-BR', StringFormat=C}"/>
                 <DataGridTextColumn Header="Troco" Binding="{Binding Troco, ConverterCulture='pt-BR', StringFormat=C}"/>
                 <DataGridTextColumn Header="Cliente" Binding="{Binding Cliente}"/>
-                <DataGridTextColumn Header="Func" Binding="{Binding Func}"/>
+                <DataGridTextColumn Header="Func" Binding="{Binding Funcionario}"/>
 
                 <DataGridTemplateColumn Header="Ações">
                     <DataGridTemplateColumn.CellTemplate>
