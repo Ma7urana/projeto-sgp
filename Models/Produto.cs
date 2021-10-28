@@ -10,6 +10,8 @@ namespace projeto_sgp_WPFversion.Models
     {
         public uint Id { get; set; }
         public string Nome { get; set; }
+        public DateTime DataInclusao { get; set; }
+        public string Marca { get; set; }
         public float PrecoCompra { get; set; }
         public float PrecoVenda { get; set; }
         public uint Quantidade { get; set; }

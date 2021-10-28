@@ -10,7 +10,7 @@ create table enderecos (
 	bairro varchar(40),
 	cep varchar(8),
 	estado varchar(40),
-	municipio varchar(40)
+	municipio varchar(40),
 	primary key (id)
 );
 
@@ -93,7 +93,7 @@ create table vendas (
 create table produtos (
 	id int auto_increment,
 	nome varchar(100),
-	data date,
+	data_inclusao date,
 	marca varchar(40),
 	preco_venda float,
 	preco_compra float,

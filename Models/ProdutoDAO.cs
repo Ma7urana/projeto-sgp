@@ -39,6 +39,8 @@ namespace projeto_sgp_WPFversion.Models
                 ";
 
                 query.Parameters.AddWithValue("@nome", t.Nome);
+                query.Parameters.AddWithValue("@data_inclusao", t.DataInclusao.ToString("dd-MM-yyyy"));
+                query.Parameters.AddWithValue("@marca", t.Marca);
                 query.Parameters.AddWithValue("@preco_compra", t.PrecoCompra);
                 query.Parameters.AddWithValue("@preco_venda", t.PrecoVenda);
                 query.Parameters.AddWithValue("@quantidade", t.Quantidade);
@@ -73,6 +75,8 @@ namespace projeto_sgp_WPFversion.Models
                     {
                         Id = reader.GetUInt32("id"),
                         Nome = reader.GetString("nome"),
+                        DataInclusao = reader.GetDateTime("data_inclusao"),
+                        Marca = reader.GetString("marca"),
                         PrecoCompra = reader.GetFloat("preco_compra"),
                         PrecoVenda = reader.GetFloat("preco_venda"),
                         Quantidade = reader.GetUInt32("quantidade"),
