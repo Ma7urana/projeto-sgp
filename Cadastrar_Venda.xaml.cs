@@ -34,7 +34,7 @@ namespace projeto_sgp_WPFversion
                 venda.Data = (DateTime)dp_data.SelectedDate;
                 venda.Funcionario = Convert.ToInt32(txt_IdFuncionario.Text);
                 venda.Cliente = Convert.ToInt32(txt_IdCliente.Text);
-                venda.SubTotal = Convert.ToDouble(txt_SubTotal.Text);
+                venda.Subtotal = Convert.ToDouble(txt_SubTotal.Text);
                 venda.Desconto = Convert.ToDouble(txt_Desconto.Text);
                 venda.ValorASerPago = Convert.ToDouble(txt_ValorASerPago.Text);
                 venda.ValorRecebido = Convert.ToDouble(txt_ValorRecebido.Text);

@@ -37,7 +37,7 @@ namespace projeto_sgp_WPFversion.Models
                     "VALUES (NULL, @data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
 
                 query.Parameters.AddWithValue("@data_", t.Data.ToString("yyyy-MM-dd"));
-                query.Parameters.AddWithValue("@subTotal", t.SubTotal);
+                query.Parameters.AddWithValue("@subTotal", t.Subtotal);
                 query.Parameters.AddWithValue("@desconto", t.Desconto);
                 query.Parameters.AddWithValue("@valor_a_ser_pago", t.ValorASerPago);
                 query.Parameters.AddWithValue("@valor_recebido", t.ValorRecebido);
@@ -76,13 +76,24 @@ namespace projeto_sgp_WPFversion.Models
                 {
                     vendas.Add(new Venda()
                     {
-                        Id = reader.GetInt32("Id_Vend"),
-                        Data = reader.GetDateTime("Data_Vend"),
-                        SubTotal = reader.GetFloat("Subtotal_Vend"),
-                        Desconto = reader.GetFloat("Desconto_Vend"),
-                        Troco = reader.GetFloat("Troco_Vend"),
-                        ValorASerPago = reader.GetFloat("Valor_Total_Vend")
+                        Id = reader.GetInt32("id"),
+                        Data = reader.GetDateTime("data"),
+                        Subtotal = reader.GetFloat("subtotal"),
+                        Desconto = reader.GetFloat("desconto"),
+                        ValorASerPago = reader.GetFloat("valor_recebido"),
+                        Troco = reader.GetFloat("troco"),
+                        Cliente = reader.GetInt32("cliente_id"),
+                        Funcionario = reader.GetInt32("funcionario_id")
                     });
+                    //vendas.Add(new Venda()
+                    //{
+                    //    Id = reader.GetInt32("Id_Vend"),
+                    //    Data = reader.GetDateTime("Data_Vend"),
+                    //    SubTotal = reader.GetFloat("Subtotal_Vend"),
+                    //    Desconto = reader.GetFloat("Desconto_Vend"),
+                    //    Troco = reader.GetFloat("Troco_Vend"),
+                    //    ValorASerPago = reader.GetFloat("Valor_Total_Vend")
+                    //});
                 }
 
                 return vendas;

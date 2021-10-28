@@ -18,7 +18,7 @@ namespace projeto_sgp_WPFversion.Models
 
         public int TelefoneCliente { get; set; }
 
-        public double SubTotal { get; set; }
+        public double Subtotal { get; set; }
 
         public double Desconto { get; set; }
 
