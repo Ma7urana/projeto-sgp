@@ -23,6 +23,7 @@ namespace projeto_sgp_WPFversion
         public Cadastrar_Venda()
         {
             InitializeComponent();
+            Loaded += VendaListWindow_Loaded;
         }
 
         private void btn_FinalizarVenda_Click(object sender, RoutedEventArgs e)
@@ -76,6 +77,34 @@ namespace projeto_sgp_WPFversion
             txt_TrocoDoCliente.Text = "";
         }
 
-        
+        private void VendaListWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadList();
+        }
+
+        private void btn_EscolherProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            EscolherProdutosWindow escolherProdutosWindow = new EscolherProdutosWindow();
+            escolherProdutosWindow.ShowDialog();
+        }
+
+        private void LoadList()
+        {
+            try
+            {
+                var daoVendaProduto = new VendaDAO();
+
+                dg_VendaProdutos.ItemsSource = daoVendaProduto.ListProd();
+
+                //foreach (var vendaProduto in daoVendaProduto.ListProd())
+                //{
+                //    MessageBox.Show(vendaProduto.Nome + " Preço: " + vendaProduto.PrecoVenda);
+                //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Exceção", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
     }
 }

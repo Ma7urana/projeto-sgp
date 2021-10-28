@@ -68,7 +68,7 @@ namespace projeto_sgp_WPFversion.Models
                 List<Venda> vendas = new List<Venda>();
 
                 var query = con.Query();
-                query.CommandText = "SELECT * FROM venda";
+                query.CommandText = "SELECT * FROM vendas";
 
                 MySqlDataReader reader = query.ExecuteReader();
 
@@ -86,6 +86,77 @@ namespace projeto_sgp_WPFversion.Models
                 }
 
                 return vendas;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Produto> ListProd()
+        {
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+
+                var query = con.Query();
+                query.CommandText = "SELECT * FROM produtos";
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    produtos.Add(new Produto
+                    {
+                        Id = reader.GetUInt32("id"),
+                        Nome = reader.GetString("nome"),
+                        Marca = reader.GetString("preco_compra"),
+                        PrecoVenda = reader.GetFloat("preco_venda"),
+                        Quantidade = reader.GetUInt32("quantidade")
+                    });
+                }
+
+                return produtos;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Produto> ListVendaProd()
+        {
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+                
+
+                //var query = con.Query();
+                //query.CommandText = "SELECT * FROM produtos";
+
+                //MySqlDataReader reader = query.ExecuteReader();
+
+                //while (reader.Read())
+                //{
+                //    produtos.Add(new Produto
+                //    {
+                //        Id = reader.GetUInt32("id"),
+                //        Nome = reader.GetString("nome"),
+                //        Marca = reader.GetString("preco_compra"),
+                //        PrecoVenda = reader.GetFloat("preco_venda"),
+                //        Quantidade = reader.GetUInt32("quantidade")
+                //    });
+                //}
+
+                return produtos;
             }
             catch (Exception e)
             {

@@ -140,6 +140,9 @@
     <Compile Include="Emissão_de_fichas.xaml.cs">
       <DependentUpon>Emissão_de_fichas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EscolherProdutosWindow.xaml.cs">
+      <DependentUpon>EscolherProdutosWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GerarRelatorioClientes.xaml.cs">
       <DependentUpon>GerarRelatorioClientes.xaml</DependentUpon>
     </Compile>
@@ -275,6 +278,10 @@
     <Page Include="Emissão_de_fichas.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="EscolherProdutosWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GerarRelatorioClientes.xaml">
       <SubType>Designer</SubType>
