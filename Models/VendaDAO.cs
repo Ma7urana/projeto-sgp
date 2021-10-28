@@ -33,8 +33,8 @@ namespace projeto_sgp_WPFversion.Models
             {
                 var query = con.Query();
 
-                query.CommandText = "INSERT INTO funcionario (Id_Vend, Data_Vend, Subtotal_Vend, Desconto_Vend, Valor_A_Ser_Pago_Vend, Valor_Recebido_Vend, Troco_Vend, Id_cli_fk, id_func_fk) " +
-                    "VALUES (@data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
+                query.CommandText = "INSERT INTO venda (Id_Vend, Data_Vend, Subtotal_Vend, Desconto_Vend, Valor_A_Ser_Pago_Vend, Valor_Recebido_Vend, Troco_Vend, Id_cli_fk, id_func_fk) " +
+                    "VALUES (NULL, @data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
 
                 query.Parameters.AddWithValue("@data_", t.Data.ToString("yyyy-MM-dd"));
                 query.Parameters.AddWithValue("@subTotal", t.SubTotal);
@@ -57,7 +57,7 @@ namespace projeto_sgp_WPFversion.Models
             }
             finally
             {
-                con.close();
+                con.Close();
             }
         }
 
@@ -76,7 +76,7 @@ namespace projeto_sgp_WPFversion.Models
                 {
                     vendas.Add(new Venda()
                     {
-                        Id = reader.GetInt32("Id_vend"),
+                        Id = reader.GetInt32("Id_Vend"),
                         Data = reader.GetDateTime("Data_Vend"),
                         SubTotal = reader.GetFloat("Subtotal_Vend"),
                         Desconto = reader.GetFloat("Desconto_Vend"),
@@ -93,7 +93,7 @@ namespace projeto_sgp_WPFversion.Models
             }
             finally
             {
-                con.close();
+                con.Close();
             }
         }
 

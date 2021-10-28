@@ -59,7 +59,7 @@ namespace projeto_sgp_WPFversion.Models
                 throw e;
             } finally
             {
-                con.close();
+                con.Close();
             }
 
         }

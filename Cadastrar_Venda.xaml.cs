@@ -31,8 +31,8 @@ namespace projeto_sgp_WPFversion
             {
                 Venda venda = new Venda();
                 venda.Data = (DateTime)dp_data.SelectedDate;
-                venda.Funcionario = 1;
-                venda.Cliente = 1;
+                venda.Funcionario = Convert.ToInt32(txt_IdFuncionario.Text);
+                venda.Cliente = Convert.ToInt32(txt_IdCliente.Text);
                 venda.SubTotal = Convert.ToDouble(txt_SubTotal.Text);
                 venda.Desconto = Convert.ToDouble(txt_Desconto.Text);
                 venda.ValorASerPago = Convert.ToDouble(txt_ValorASerPago.Text);
@@ -44,15 +44,38 @@ namespace projeto_sgp_WPFversion
 
                 MessageBox.Show("Venda inserida com sucesso", "Sucesso!", MessageBoxButton.OK, MessageBoxImage.Information);
 
-                var result = MessageBox.Show("Deseja cadastrar outro funcionário?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                var result = MessageBox.Show("Deseja inserir outra venda?", "Continuar?", MessageBoxButton.YesNo, MessageBoxImage.Question);
                 if (result == MessageBoxResult.No)
                     this.Close();
+                else
+                    ClearInputs();
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Não foi possível realizar o cadastro.", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "Não foi possível realizar a venda.", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void btn_Cancelar_Click(object sender, RoutedEventArgs e)
+        {
+            var result = MessageBox.Show("Tem certeza que deseja cancelar?", "Confirmar cancelamento?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+                this.Close();
+        }
+
+        private void ClearInputs()
+        {
+            dp_data.SelectedDate = null;
+            txt_IdFuncionario.Text = "";
+            txt_IdCliente.Text = "";
+            txt_SubTotal.Text = "";
+            txt_Desconto.Text = "";
+            txt_ValorASerPago.Text = "";
+            txt_ValorRecebido.Text = "";
+            txt_TrocoDoCliente.Text = "";
+        }
+
+        
     }
 }

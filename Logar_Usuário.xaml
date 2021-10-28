@@ -54,7 +54,7 @@
 
 
         <TextBox HorizontalAlignment="Left" Height="32" Margin="185,241,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="348"/>
-        <TextBlock HorizontalAlignment="Left" Margin="185,349,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="31" Width="348"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="185,349,0,0" Grid.Row="1" VerticalAlignment="Top" Height="31" Width="348"/>
 
 
 
@@ -75,7 +75,7 @@
         </StackPanel>
 
         <TextBox HorizontalAlignment="Left" Height="32" Margin="185,241,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="347"/>
-        <TextBox HorizontalAlignment="Left" Height="37" Margin="185,326,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="347"/>
+        <PasswordBox HorizontalAlignment="Left" Height="37" Margin="185,326,0,0" Grid.Row="1" VerticalAlignment="Top" Width="347"/>
 
         <Image Source="images/Perfil-icon.png" Margin="52,66,36,410" Grid.Row="1">
 
