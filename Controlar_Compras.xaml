@@ -58,13 +58,13 @@
         <Label Content="Perfíl/Foto" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Margin="30,85,0,0" Foreground="#FFF9F9F9" Width="67" Height="26"/>
         <Separator HorizontalAlignment="Left" Height="11" Margin="0,100,0,0" Grid.Row="1" VerticalAlignment="Top" Width="298"/>
         <Label Content="Relatórios:" HorizontalAlignment="Left" Margin="4,113,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="65"/>
-        <Button x:Name="Rel_Ped_Fornecedor" Content="Pedido por Fornecedor" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,153,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Rel_Geral_Pedidos" Content="Geral de Pedidos" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,179,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Rel_Falt_Prodt_Estoq" Content="Falta de Produto no Estoque" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,207,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Rel_Relac_Entrd" Content="Relação de Entrada" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,236,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Cons_Posi_Pedidos" Content="Posição de Pedido" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,331,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Cons_Qtd_Ped_Entrg" Click="Cons_Qtd_Ped_Entrg_Click" Content="Quantidade de Pedidos Entregue" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,370,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
-        <Button x:Name="Cons_Comp_Anuais" Content="Compras Anuais" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,410,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="20"/>
+        <Button x:Name="Rel_Ped_Fornecedor" Content="Pedido por Fornecedor" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,143,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="30"/>
+        <Button x:Name="Rel_Geral_Pedidos" Content="Geral de Pedidos" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,179,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="29"/>
+        <Button x:Name="Rel_Falt_Prodt_Estoq" Content="Falta de Produto no Estoque" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,217,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="30"/>
+        <Button x:Name="Rel_Relac_Entrd" Content="Relação de Entrada" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,254,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="26"/>
+        <Button x:Name="Cons_Posi_Pedidos" Content="Posição de Pedido" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,331,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="34"/>
+        <Button x:Name="Cons_Qtd_Ped_Entrg" Click="Cons_Qtd_Ped_Entrg_Click" Content="Quantidade de Pedidos Entregue" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,374,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="31"/>
+        <Button x:Name="Cons_Comp_Anuais" Content="Compras Anuais" Foreground="White" Background="#FFD5B03C" HorizontalAlignment="Left" Margin="30,414,0,0" Grid.Row="1" VerticalAlignment="Top" Width="239" Height="30"/>
         <Label Content="Consultas:" HorizontalAlignment="Left" Margin="4,292,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Height="26" Width="65"/>
         <Image Grid.Column="1" Source="images/compras.png" HorizontalAlignment="Left" Height="459" Margin="62,24,0,0" Grid.Row="1" VerticalAlignment="Top" Width="393"/>
 

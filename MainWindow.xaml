@@ -5,12 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Menu" Height="400" Width="700" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Light"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto" 
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Menu" Height="600" Width="1000" 
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
-    <Grid>
+    <Grid HorizontalAlignment="Left" Width="996">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="31"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
@@ -19,10 +26,10 @@
             <ColumnDefinition Width="350"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow">MENU</TextBlock>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,-2,-296,0">MENU</TextBlock>
 
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="1" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-5,-292,561" Cursor="Hand" Grid.RowSpan="2">
 
             <Button.Background>
 
@@ -32,7 +39,7 @@
 
         </Button>
         <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,50,0"  Cursor="Hand">
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,-252,561"  Cursor="Hand" Grid.RowSpan="2">
 
             <Button.Background>
 
@@ -42,7 +49,7 @@
 
         </Button>
         <Button x:Name="btnMin" Height="38" Width="38" Grid.Column="1" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,90,0"  Cursor="Hand">
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,-212,561"  Cursor="Hand" Grid.RowSpan="2">
 
             <Button.Background>
 
@@ -51,18 +58,18 @@
             </Button.Background>
 
         </Button>
-        
-        <StackPanel  Cursor="Hand" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" Margin="1,0,349,0">
-            <Button x:Name="btnCaixaVenda" Click="btnCaixaVenda_Click" Content="CAIXA - VENDA" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
-            <Button x:Name="btnControleGeralDeCadastros" Click="btnControleGeralDeCadastros_Click" Content="CONTROLE GERAL DE CADASTROS" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
-            <Button x:Name="btnControleDeEstoqueEVendas" Click="btnControleDeEstoqueEVendas_Click" Content="CONTROLE DE ESTOQUE E VENDAS" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
-            <Button x:Name="btnControleDeCompras" Click="btnControleDeCompras_Click"  Content="CONTROLE DE COMPRAS" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
+
+        <StackPanel  Cursor="Hand" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" Margin="100,77,250,172" RenderTransformOrigin="1.121,0.569">
+            <Button x:Name="btnCaixaVenda" Click="btnCaixaVenda_Click" Content="VENDA" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
+            <Button x:Name="btnControleGeralDeCadastros" Click="btnControleGeralDeCadastros_Click" Content="CONTROLE GERAL DE CADASTROS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
+            <Button x:Name="btnControleDeEstoqueEVendas" Click="btnControleDeEstoqueEVendas_Click" Content="CONTROLE DE ESTOQUE E VENDAS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
+            <Button x:Name="btnControleDeCompras" Click="btnControleDeCompras_Click"  Content="CONTROLE DE COMPRAS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
         </StackPanel>
-        <StackPanel Cursor="Hand" Grid.ColumnSpan="1" Grid.Row="1" Grid.Column="1">
-            <Button x:Name="btnControleGeralDeRelatorios" Click="btnControleGeralDeRelatorios_Click" Content="CONTROLE GERAL DE RELATÓRIOS" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
-            <Button x:Name="btnControleDeContasAPagar" Click="btnControleDeContasAPagar_Click" Content="CONTROLE DE CONTAS A PAGAR" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
-            <Button x:Name="btnControleDeCaixaSebrae" Click="btnControleDeCaixaSebrae_Click" Content="CONTROLE DE CAIXA SEBRAE" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200" Cursor="Hand"/>
-            <Button x:Name="btnDashboardDeFluxoDeCaixa" Click="btnDashboardDeFluxoDeCaixa_Click" Content="DASHBOARD DE FLUXO DE CAIXA" HorizontalAlignment="Right" Margin="60,50,80,0" VerticalAlignment="Top" Height="26" Width="200"/>
+        <StackPanel Cursor="Hand" Grid.ColumnSpan="1" Grid.Column="1" Margin="187,77,-186,134" Grid.Row="1" RenderTransformOrigin="1.292,0.494">
+            <Button x:Name="btnControleGeralDeRelatorios" Click="btnControleGeralDeRelatorios_Click" Content="CONTROLE GERAL DE RELATÓRIOS" HorizontalAlignment="Right" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="351"/>
+            <Button x:Name="btnControleDeContasAPagar" Click="btnControleDeContasAPagar_Click" Content="CONTROLE DE CONTAS A PAGAR" HorizontalAlignment="Right" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="351"/>
+            <Button x:Name="btnControleDeCaixaSebrae" Click="btnControleDeCaixaSebrae_Click" Content="CONTROLE DE CAIXA SEBRAE" HorizontalAlignment="Right" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="351" Cursor="Hand"/>
+            <Button x:Name="btnDashboardDeFluxoDeCaixa" Click="btnDashboardDeFluxoDeCaixa_Click" Content="DASHBOARD DE FLUXO DE CAIXA" HorizontalAlignment="Right" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="351"/>
         </StackPanel>
 
     </Grid>
