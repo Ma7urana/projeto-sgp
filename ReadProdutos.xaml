@@ -16,7 +16,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}" Height="456" Width="760">
 
     <Grid>
-        <DataGrid x:Name="dg_EscolherProdutos" IsReadOnly="False" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="456" VerticalAlignment="Top" Width="760" FontFamily="Arial">
+        <DataGrid x:Name="dg_ReadProdutos" IsReadOnly="False" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="456" VerticalAlignment="Top" Width="760" FontFamily="Arial">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Data" Binding="{Binding Data}"/>
