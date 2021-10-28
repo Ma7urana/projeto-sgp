@@ -79,7 +79,7 @@ namespace projeto_sgp_WPFversion
 
         private void VendaListWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            LoadList();
+            LoadListVendaProduto();
         }
 
         private void btn_EscolherProdutos_Click(object sender, RoutedEventArgs e)
@@ -88,7 +88,7 @@ namespace projeto_sgp_WPFversion
             escolherProdutosWindow.ShowDialog();
         }
 
-        private void LoadList()
+        private void LoadListVendaProduto()
         {
             try
             {
