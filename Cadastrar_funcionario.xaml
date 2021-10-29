@@ -8,7 +8,7 @@
         Title="Cadastrar_funcionario" Height="580" Width="973.343"
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FFFFFF" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
-    <Grid>
+     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
