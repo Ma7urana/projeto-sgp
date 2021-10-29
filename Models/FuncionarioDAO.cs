@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using projeto_sgp_WPFversion.Interface;
 using projeto_sgp_WPFversion.DataBase;
+using MySql.Data.MySqlClient; 
 
 namespace projeto_sgp_WPFversion.Models
 {
@@ -66,7 +67,46 @@ namespace projeto_sgp_WPFversion.Models
 
         public List<Funcionario> List()
         {
-            throw new NotImplementedException();
+            try 
+            { 
+                List<Funcionario> list = new List<Funcionario>(); 
+                var Query = con.Query(); 
+                Query.CommandText = "SELECT * FROM Funcionario"; 
+ 
+                MySqlDataReader reader = Query.ExecuteReader(); 
+ 
+                while (reader.Read()) 
+                { 
+                    list.Add(new Funcionario() 
+                    { 
+                        Id = reader.GetInt32("id"), 
+                        Nome = reader.GetString("nome"), 
+                        Email = reader.GetString("email"), 
+                        CPF = reader.GetString("cpf"), 
+                        RG = reader.GetString("rg"), 
+                        DataNascimento = reader.GetDateTime("data_nascimento"), 
+                        Sexo = reader.GetString("sexo"), 
+                        Cargo = reader.GetString("cargo"), 
+                        Departamento = reader.GetString("departamento"), 
+                        DataAdimissao = reader.GetDateTime("data_admissao"), 
+                        DataDemissao = reader.GetDateTime("data_demissao"), 
+                        ValeAlimentacao = reader.GetChar("vale_alimentacao"), 
+                        ValeTransporte = reader.GetChar("vale_transporte"), 
+                        Endereco = reader.GetInt32("endereco_id"), 
+                        Salario = reader.GetFloat("salario") 
+                    }); 
+                } 
+                return list; 
+ 
+            } 
+            catch (Exception e) 
+            { 
+                throw e; 
+            } 
+            finally 
+            { 
+                con.Close(); 
+            } 
         }
 
         public void Update(Funcionario t)
