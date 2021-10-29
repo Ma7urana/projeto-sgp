@@ -53,6 +53,8 @@
         </Button>
         <Label x:Name="Dados_Pessoais_Copy" Content="Dados Pessoais" HorizontalAlignment="Left" Margin="1,0,0,1" VerticalAlignment="Top" Height="23" Width="177" Grid.Column="2" Grid.Row="1"/>
         <Image  Height="75" VerticalAlignment="Top" Width="105" Source="images/perfil-funcionario.jpg" Margin="6,30,612,0" Grid.Row="1" Grid.Column="2" />
+		<Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
+
         <Label Content="Nome:" Grid.Column="2" HorizontalAlignment="Left" Margin="110,2,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="CPF:" Grid.Column="2" HorizontalAlignment="Left" Margin="111,27,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="RG:" Grid.Column="2" HorizontalAlignment="Left" Margin="111,51,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -64,7 +66,7 @@
         <Label Content="Data de nascimento:" Grid.Column="2" HorizontalAlignment="Left" Margin="341,29,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Sexo:" Grid.Column="2" HorizontalAlignment="Left" Margin="341,55,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <ComboBox x:Name="cbb_Sexo" Grid.Column="2" HorizontalAlignment="Left" Margin="384,60,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
-        <Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
+		
         <Rectangle Grid.Column="2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="88" Margin="111,117,0,0" Grid.Row="1" Stroke="#FFD6C084" VerticalAlignment="Top" Width="298"/>
         <Label Content="Endereço:" Grid.Column="2" HorizontalAlignment="Left" Margin="122,90,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Rua:" Grid.Column="2" HorizontalAlignment="Left" Margin="116,117,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -74,6 +76,7 @@
         <TextBox x:Name="txt_Numero" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="156,151,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
         <TextBox x:Name="txt_Bairro" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="159,182,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="213"/>
         <Rectangle Grid.Column="2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="25" Margin="0,231,0,0" Grid.Row="1" Stroke="#FFD6C084" VerticalAlignment="Top" Width="713"/>
+		
         <Label Content="Dados Empresariais" Grid.Column="2" HorizontalAlignment="Left" Margin="5,230,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Empresa:" Grid.Column="2" HorizontalAlignment="Left" Margin="5,261,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="CTPS:" Grid.Column="2" HorizontalAlignment="Left" Margin="5,287,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -82,13 +85,15 @@
         <TextBox x:Name="txt_CTPS" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="44,292,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125"/>
         <TextBox x:Name="txt_PIS" Grid.Column="2" HorizontalAlignment="Left" Height="17" Margin="239,292,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="125"/>
         <Rectangle Grid.Column="2" Fill="#FFFFFF" HorizontalAlignment="Left" Height="25" Margin="1,331,0,0" Grid.Row="1" Stroke="#FFD6C084" VerticalAlignment="Top" Width="713"/>
+		
         <Label Content="Dados Empresariais" Grid.Column="2" HorizontalAlignment="Left" Margin="5,330,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Cargo:" Grid.Column="2" HorizontalAlignment="Left" Margin="8,364,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Departamento:" Grid.Column="2" HorizontalAlignment="Left" Margin="8,389,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Data de Adimissão:" Grid.Column="2" HorizontalAlignment="Left" Margin="8,415,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Data de Demissão:" Grid.Column="2" HorizontalAlignment="Left" Margin="8,440,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cbb_Cargo" Grid.Column="2" HorizontalAlignment="Left" Margin="57,367,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
-        <ComboBox x:Name="cbb_Departamento" Grid.Column="2" HorizontalAlignment="Left" Margin="110,393,0,0" Grid.Row="1" VerticalAlignment="Top" Width="119" Height="17"/>
+        <DatePicker x:Name="dp_dtAdmissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,417,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+        <DatePicker x:Name="dp_dtDemissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,445,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+		
         <Separator Grid.Column="2" HorizontalAlignment="Left" Height="100" Margin="254,348,0,0" Grid.Row="1" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
@@ -99,6 +104,7 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
+		
         <Label Content="Benefícios" Grid.Column="2" HorizontalAlignment="Left" Margin="323,330,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Alimentação:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,364,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Vale Trasnporte:" Grid.Column="2" HorizontalAlignment="Left" Margin="323,398,0,0" Grid.Row="1" VerticalAlignment="Top"/>
@@ -106,15 +112,12 @@
         <RadioButton x:Name="rbtn_Nao_Val_Alim" GroupName="rbtn_Val_Alim" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,372,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtn_Sim_Val_Transp" GroupName="rbtn_Val_Transp" Content="Sim" Grid.Column="2" HorizontalAlignment="Left" Margin="442,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <RadioButton x:Name="rbtn_Nao_Val_Transp" GroupName="rbtn_Val_Transp" Content="Não" Grid.Column="2" HorizontalAlignment="Left" Margin="534,403,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Avancar" Content="Avançar" Grid.Column="2" HorizontalAlignment="Left" Margin="622,489,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFB2B2B2"/>
+		
         <Rectangle Fill="#FF394047" HorizontalAlignment="Left" Height="538" Margin="0,7,0,-6" Stroke="#FF394047" VerticalAlignment="Top" Width="247" Grid.ColumnSpan="2" Grid.Row="1"/>
         <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383" Click="btn_Excluir_Click"/>
         <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
-        <Button x:Name="btn_Editar" Content="Editar" HorizontalAlignment="Left" Margin="10,181,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF50AC8F"/>
         <Button x:Name="btn_Novo" Content="Novo" HorizontalAlignment="Left" Margin="10,230,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFAB96CB"/>
-        <DatePicker x:Name="dp_dtNascimento" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="464,29,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
-        <DatePicker x:Name="dp_dtAdmissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,417,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
-        <DatePicker x:Name="dp_dtDemissao" Grid.Column="2" HorizontalAlignment="Left" Height="21" Margin="124,445,0,0" Grid.Row="1" VerticalAlignment="Top" Width="139"/>
+       
 
 
 
