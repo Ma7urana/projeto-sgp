@@ -60,7 +60,7 @@
         </Button>
 
         <StackPanel  Cursor="Hand" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="0" Margin="100,77,250,172" RenderTransformOrigin="1.121,0.569">
-            <Button x:Name="btnCaixaVenda" Click="btnCaixaVenda_Click" Content="VENDA" HorizontalAlignment="Left" Margin="80,50,60,0" VerticalAlignment="Top" Height="26" Width="200"/>
+            <Button x:Name="btnCaixaVenda" Click="btnCaixaVenda_Click" Content="VENDA" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
             <Button x:Name="btnControleGeralDeCadastros" Click="btnControleGeralDeCadastros_Click" Content="CONTROLE GERAL DE CADASTROS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
             <Button x:Name="btnControleDeEstoqueEVendas" Click="btnControleDeEstoqueEVendas_Click" Content="CONTROLE DE ESTOQUE E VENDAS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
             <Button x:Name="btnControleDeCompras" Click="btnControleDeCompras_Click"  Content="CONTROLE DE COMPRAS" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top" Height="26" Width="352"/>
