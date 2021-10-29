@@ -165,6 +165,9 @@
       <DependentUpon>Dashboard_vendedores.xaml</DependentUpon>
     </Compile>
     <Compile Include="Interface\IDAO.cs" />
+    <Compile Include="Models\Compra.cs" />
+    <Compile Include="Models\CompraDAO.cs" />
+    <Compile Include="Models\CompraItem.cs" />
     <Compile Include="Models\Fornecedor.cs" />
     <Compile Include="Models\FornecedorDAO.cs" />
     <Compile Include="Models\FuncionarioDAO.cs" />
