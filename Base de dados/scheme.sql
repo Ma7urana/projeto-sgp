@@ -10,7 +10,7 @@ create table enderecos (
 	bairro varchar(40),
 	cep varchar(8),
 	estado varchar(40),
-	municipio varchar(40)
+	municipio varchar(40),
 	primary key (id)
 );
 
@@ -22,7 +22,7 @@ create table funcionarios (
 	rg varchar(10),
 	data_nascimento date,
 	sexo varchar(20),
-	cargo varchar(30),
+        cargo varchar (30),
 	departamento varchar(30),
 	data_admissao date,
 	data_demissao date,
@@ -30,7 +30,8 @@ create table funcionarios (
 	vale_transporte enum('V', 'F'),
 	endereco_id int not null,
 	foreign key (endereco_id) references enderecos (id),
-	primary key (id)
+	primary key (id),
+	salario float	
 );
 
 create table clientes (
@@ -93,7 +94,7 @@ create table vendas (
 create table produtos (
 	id int auto_increment,
 	nome varchar(100),
-	data date,
+	data_inclusao date,
 	marca varchar(40),
 	preco_venda float,
 	preco_compra float,

@@ -5,38 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_sgp_WPFversion"
         mc:Ignorable="d"
-        Title="Menu" Height="500" Width="758" 
+        Title="Menu" Height="500" Width="1000" 
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FF394047" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
 
     <Grid Background="WhiteSmoke" Margin="20">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="130"/>
-            <ColumnDefinition Width="207"/>
-            <ColumnDefinition Width="152"/>
-            <ColumnDefinition Width="4"/>
-            <ColumnDefinition Width="18"/>
-            <ColumnDefinition Width="173"/>
-            <ColumnDefinition Width="4"/>
-            <ColumnDefinition Width="72"/>
+            <ColumnDefinition Width="763"/>
 
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="122"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="auto" MinHeight="3"/>
-            <RowDefinition/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition/>
+            <RowDefinition Height="456"/>
         </Grid.RowDefinitions>
 
 
 
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="8" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,46,86">Controlar Estoque e Vendas</TextBlock>
+        <TextBlock Grid.Row="0" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None"  FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Arrow" Margin="0,0,-195,420">Controlar Estoque e Vendas</TextBlock>
 
-        <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="5" BorderThickness="0"
-                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,46,82" Cursor="Hand" Grid.ColumnSpan="3">
+        <Button x:Name="btnClose" Height="40" Width="40" BorderThickness="0"
+                        Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,-194,416" Cursor="Hand">
 
             <Button.Background>
 
@@ -45,8 +32,8 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnMax" Height="38" Width="38" Grid.Column="5" BorderThickness="0"
-                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,6,87"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
+        <Button x:Name="btnMax" Height="38" Width="38" BorderThickness="0"
+                        Click="btnMax_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,1,-156,417"  Cursor="Hand" RenderTransformOrigin="0.491,0.491">
 
             <Button.Background>
 
@@ -56,7 +43,7 @@
 
         </Button>
         <Button x:Name="btnMin" Height="39" Width="44" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,-3,52,86"  Cursor="Hand" Grid.Column="5" RenderTransformOrigin="-0.533,0.462">
+                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,1,-112,416"  Cursor="Hand" RenderTransformOrigin="-0.533,0.462">
 
             <Button.Background>
 
@@ -66,7 +53,12 @@
 
         </Button>
 
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="98" Margin="10,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
+        <Button x:Name="btnReadVendas" Content="Vendas" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="147" Height="29" Background="#FFD5B03C" Foreground="White" Click="btnReadVendas_Click"/>
+        <Button x:Name="btnReadProdutos" Click="btnReadProdutos_Click"  Content="Estoque" HorizontalAlignment="Left" Height="29" Margin="158,41,0,0" VerticalAlignment="Top" Width="148" Background="#FFD5B03C" Foreground="White"/>
+
+        <Frame x:Name="fr_EstoqueVendas" NavigationUIVisibility="Hidden" Margin="0,70,-185,0"/>
+
+        <!--<Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="98" Margin="10,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="8" Grid.RowSpan="2"/>
         <StackPanel  Grid.Column="0" Margin="15,41,0,0" VerticalAlignment="Top" Height="94" Grid.RowSpan="2">
             <TextBlock Text="Cód Cliente:" Height="23" />
             <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
@@ -103,7 +95,7 @@
 
 
         <Button Content="Prosseguir" Grid.Column="5" HorizontalAlignment="Left" Margin="30,51,0,0" Grid.Row="6" VerticalAlignment="Top" Width="147" Height="29" Background="#FFD5B03C" Foreground="White" Grid.ColumnSpan="2" Click="btnClose_Click"/>
-        <Button x:Name="btnCancelar" Click="btnCancelar_Click"  Content="Cancelar" HorizontalAlignment="Left" Height="28" Margin="24,52,0,0" Grid.Row="6" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" Background="#FFD5B03C" Foreground="White"/>
+        <Button x:Name="btnCancelar" Click="btnCancelar_Click"  Content="Cancelar" HorizontalAlignment="Left" Height="28" Margin="24,52,0,0" Grid.Row="6" VerticalAlignment="Top" Width="148" Grid.ColumnSpan="2" Background="#FFD5B03C" Foreground="White"/>-->
 
 
     </Grid>

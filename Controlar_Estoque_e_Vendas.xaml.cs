@@ -56,5 +56,15 @@ namespace projeto_sgp_WPFversion
             tela_Cancel.ShowDialog();
 
         }
+
+        private void btnReadVendas_Click(object sender, RoutedEventArgs e)
+        {
+            this.fr_EstoqueVendas.NavigationService.Navigate(new ReadVendas());
+        }
+
+        private void btnReadProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            this.fr_EstoqueVendas.NavigationService.Navigate(new ReadProdutos());
+        }
     }
 }

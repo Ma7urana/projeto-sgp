@@ -1,0 +1,46 @@
+﻿<Window x:Class="projeto_sgp_WPFversion.EscolherProdutosWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+      mc:Ignorable="d"
+      Title="EscolherProdutosWindow" WindowStartupLocation="CenterScreen"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}" Height="286.047" Width="524.943">
+
+    <Grid>
+        <DataGrid x:Name="dg_EscolherProdutos" IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="206" VerticalAlignment="Top" Width="516" FontFamily="Arial">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Nome do produto" Binding="{Binding Nome}"/>
+                <DataGridTextColumn Header="Estoque" Binding="{Binding Quantidade}"/>
+                <DataGridTextColumn Header="Marca" Binding="{Binding Marca}"/>
+                <DataGridTextColumn Header="Valor" Binding="{Binding Valor, ConverterCulture='pt-BR', StringFormat=C}"/>
+
+                <DataGridTemplateColumn Header="Ações">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox x:Name="btn_SelecionarProduto" Style="{StaticResource MaterialDesignActionCheckBox}" Click="btn_SelecionarProduto_Click"
+                                          ToolTip="Selecionar Produto" Margin="0 0 5 0"/>
+                                <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
+                                        Content="{materialDesign:PackIcon Kind=Delete}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" Height="33" VerticalAlignment="Bottom" Margin="173,0,168,6" RenderTransformOrigin="0.497,-0.779">
+            <Button x:Name="btn_Finalizar" Content="Finalizar" MinWidth="150" Margin="10,0,150,1" Click="btn_Finalizar_Click" Width="155"/>
+        </StackPanel>
+    </Grid>
+</Window>

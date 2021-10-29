@@ -107,13 +107,14 @@
                                 Grid.Column="0">
                         <Label Content="Código:"/>
                         <TextBox MinWidth="100"
-                                 MaxWidth="400"/>
+                                 MaxWidth="400"
+                                 IsReadOnly="True"/>
                     </StackPanel>
 
                     <StackPanel HorizontalAlignment="Right"
                                 Grid.Column="1">
                         <Label Content="Data de Inclusão:"/>
-                        <TextBox MinWidth="90" MaxWidth="110"/>
+                        <DatePicker x:Name="txtData" DisplayDate="10/26/2021"/>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Row="2">
@@ -125,14 +126,14 @@
                     <StackPanel HorizontalAlignment="Left"
                                 Grid.Column="0">
                         <Label Content="Nome:"/>
-                        <TextBox MinWidth="150"
+                        <TextBox x:Name="txtNome" MinWidth="150"
                                  MaxWidth="250"/>
                     </StackPanel>
 
                     <StackPanel HorizontalAlignment="Right"
                                 Grid.Column="1">
                         <Label Content="Marca:"/>
-                        <TextBox MinWidth="150"
+                        <TextBox x:Name="txtMarca" MinWidth="150"
                                  MaxWidth="250"/>
                     </StackPanel>
                 </Grid>
@@ -145,14 +146,14 @@
                     <StackPanel HorizontalAlignment="Left"
                                 Grid.Column="0">
                         <Label Content="Unidade:"/>
-                        <TextBox MinWidth="80"
+                        <TextBox x:Name="txtQuantidade" MinWidth="80"
                                  MaxWidth="120"/>
                     </StackPanel>
 
                     <StackPanel HorizontalAlignment="Right"
                                 Grid.Column="1">
                         <Label Content="Fornecedor:"/>
-                        <TextBox MinWidth="150"
+                        <TextBox x:Name="txtFornecedor" MinWidth="150"
                                  MaxWidth="250"/>
                     </StackPanel>
                 </Grid>
@@ -165,14 +166,14 @@
                     <StackPanel HorizontalAlignment="Left"
                                 Grid.Column="0">
                         <Label Content="Preço de Compra:"/>
-                        <TextBox MinWidth="80"
+                        <TextBox x:Name="txtPrecoCompra" MinWidth="80"
                                  MaxWidth="150"/>
                     </StackPanel>
 
                     <StackPanel HorizontalAlignment="Right"
                                 Grid.Column="1">
                         <Label Content="Preço de Venda:"/>
-                        <TextBox MinWidth="80"
+                        <TextBox x:Name="txtPrecoVenda" MinWidth="80"
                                  MaxWidth="100"/>
                     </StackPanel>
                 </Grid>
@@ -206,9 +207,9 @@
                         Click="back_Click"
                         Grid.Column="0" Grid.Row="2"/>
 
-                <Button Content="Salvar"
+                <Button x:Name="btnSalvar" Content="Salvar"
                         Grid.Row="0" Grid.Column="2"
-                        Click="save"/>
+                        Click="salvar"/>
                 <Button Content="Excluir"
                         Grid.Row="1" Grid.Column="2"/>
                 <Button Content="Avançar"

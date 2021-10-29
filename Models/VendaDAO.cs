@@ -33,11 +33,11 @@ namespace projeto_sgp_WPFversion.Models
             {
                 var query = con.Query();
 
-                query.CommandText = "INSERT INTO funcionario (Id_Vend, Data_Vend, Subtotal_Vend, Desconto_Vend, Valor_A_Ser_Pago_Vend, Valor_Recebido_Vend, Troco_Vend, Id_cli_fk, id_func_fk) " +
-                    "VALUES (@data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
+                query.CommandText = "INSERT INTO venda (Id_Vend, Data_Vend, Subtotal_Vend, Desconto_Vend, Valor_A_Ser_Pago_Vend, Valor_Recebido_Vend, Troco_Vend, Id_cli_fk, id_func_fk) " +
+                    "VALUES (NULL, @data_, @subTotal, @desconto, @valor_a_ser_pago, @valor_recebido, @troco, @funcionario, @cliente)";
 
                 query.Parameters.AddWithValue("@data_", t.Data.ToString("yyyy-MM-dd"));
-                query.Parameters.AddWithValue("@subTotal", t.SubTotal);
+                query.Parameters.AddWithValue("@subTotal", t.Subtotal);
                 query.Parameters.AddWithValue("@desconto", t.Desconto);
                 query.Parameters.AddWithValue("@valor_a_ser_pago", t.ValorASerPago);
                 query.Parameters.AddWithValue("@valor_recebido", t.ValorRecebido);
@@ -57,7 +57,7 @@ namespace projeto_sgp_WPFversion.Models
             }
             finally
             {
-                con.close();
+                con.Close();
             }
         }
 
@@ -68,7 +68,7 @@ namespace projeto_sgp_WPFversion.Models
                 List<Venda> vendas = new List<Venda>();
 
                 var query = con.Query();
-                query.CommandText = "SELECT * FROM venda";
+                query.CommandText = "SELECT * FROM vendas";
 
                 MySqlDataReader reader = query.ExecuteReader();
 
@@ -76,13 +76,24 @@ namespace projeto_sgp_WPFversion.Models
                 {
                     vendas.Add(new Venda()
                     {
-                        Id = reader.GetInt32("Id_vend"),
-                        Data = reader.GetDateTime("Data_Vend"),
-                        SubTotal = reader.GetFloat("Subtotal_Vend"),
-                        Desconto = reader.GetFloat("Desconto_Vend"),
-                        Troco = reader.GetFloat("Troco_Vend"),
-                        ValorASerPago = reader.GetFloat("Valor_Total_Vend")
+                        Id = reader.GetInt32("id"),
+                        Data = reader.GetDateTime("data"),
+                        Subtotal = reader.GetFloat("subtotal"),
+                        Desconto = reader.GetFloat("desconto"),
+                        ValorASerPago = reader.GetFloat("valor_recebido"),
+                        Troco = reader.GetFloat("troco"),
+                        Cliente = reader.GetInt32("cliente_id"),
+                        Funcionario = reader.GetInt32("funcionario_id")
                     });
+                    //vendas.Add(new Venda()
+                    //{
+                    //    Id = reader.GetInt32("Id_Vend"),
+                    //    Data = reader.GetDateTime("Data_Vend"),
+                    //    SubTotal = reader.GetFloat("Subtotal_Vend"),
+                    //    Desconto = reader.GetFloat("Desconto_Vend"),
+                    //    Troco = reader.GetFloat("Troco_Vend"),
+                    //    ValorASerPago = reader.GetFloat("Valor_Total_Vend")
+                    //});
                 }
 
                 return vendas;
@@ -93,7 +104,78 @@ namespace projeto_sgp_WPFversion.Models
             }
             finally
             {
-                con.close();
+                con.Close();
+            }
+        }
+
+        public List<Produto> ListProd()
+        {
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+
+                var query = con.Query();
+                query.CommandText = "SELECT * FROM produtos";
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    produtos.Add(new Produto
+                    {
+                        Id = reader.GetUInt32("id"),
+                        Nome = reader.GetString("nome"),
+                        Marca = reader.GetString("preco_compra"),
+                        PrecoVenda = reader.GetFloat("preco_venda"),
+                        Quantidade = reader.GetUInt32("quantidade")
+                    });
+                }
+
+                return produtos;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Produto> ListVendaProd()
+        {
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+                
+
+                //var query = con.Query();
+                //query.CommandText = "SELECT * FROM produtos";
+
+                //MySqlDataReader reader = query.ExecuteReader();
+
+                //while (reader.Read())
+                //{
+                //    produtos.Add(new Produto
+                //    {
+                //        Id = reader.GetUInt32("id"),
+                //        Nome = reader.GetString("nome"),
+                //        Marca = reader.GetString("preco_compra"),
+                //        PrecoVenda = reader.GetFloat("preco_venda"),
+                //        Quantidade = reader.GetUInt32("quantidade")
+                //    });
+                //}
+
+                return produtos;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
             }
         }
 

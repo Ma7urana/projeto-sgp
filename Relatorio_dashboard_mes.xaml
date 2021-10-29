@@ -65,17 +65,17 @@
             <TextBlock Text="Usuário:" FontSize="15" Foreground="White" />
             <Label  Content="Delzely Barros" FontSize="15" Foreground="White" Height="35" />
         </StackPanel>
-        <StackPanel Margin="-10,0,158,21" Grid.Row="1">
+        <StackPanel Margin="-10,192,158,21" Grid.RowSpan="2">
             <TextBlock Text="Relátorios:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btn_mes_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btnvendedor_Click"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnValor_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btn_mes_Click" Height="24"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btnvendedor_Click" Height="24"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnValor_Click" Height="29"/>
         </StackPanel>
-        <StackPanel Margin="-10,124,163,10" Grid.RowSpan="3" Grid.Row="1">
+        <StackPanel Margin="-10,118,163,0" Grid.RowSpan="3" Grid.Row="1">
             <TextBlock Text="Dashboard:" FontSize="15" Foreground="White" />
-            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnDashmes_Click"/>
-            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btndashvendedor_Click"/>
-            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtndashValor_Click"/>
+            <Button Content="Vendedor destaque do mês" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtnDashmes_Click" Height="26"/>
+            <Button Content="Produtos vendidos por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="Btndashvendedor_Click" Height="26"/>
+            <Button Content="Valor vendido por vendedor" Background="#FFD5B03C" Foreground="White" Margin="10,10,10,0" ContextMenuOpening="BtndashValor_Click" Height="27"/>
         </StackPanel>
         <StackPanel Grid.ColumnSpan="4" Margin="265,106,42,0" Grid.RowSpan="3">
 

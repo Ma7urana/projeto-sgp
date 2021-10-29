@@ -4,11 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using projeto_sgp_WPFversion.Interface;
+using projeto_sgp_WPFversion.DataBase;
+using MySql.Data.MySqlClient;
 
 namespace projeto_sgp_WPFversion.Models
 {
     class ProdutoDAO : IDAO<Produto>
     {
+        private readonly Conexao con;
+
+        public ProdutoDAO()
+        {
+            con = new Conexao();
+        }
+
         public void Delete(Produto t)
         {
             throw new NotImplementedException();
@@ -21,12 +30,70 @@ namespace projeto_sgp_WPFversion.Models
 
         public void Insert(Produto t)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var query = con.Query();
+                query.CommandText = @"
+                    INSERT INTO produtos (nome, preco_compra, preco_venda, quantidade, fornecedor_id)
+                    VALUES (@nome, @preco_compra, @preco_venda, @quantidade, @fornecedor_id)
+                ";
+
+                query.Parameters.AddWithValue("@nome", t.Nome);
+                query.Parameters.AddWithValue("@data_inclusao", t.DataInclusao.ToString("dd-MM-yyyy"));
+                query.Parameters.AddWithValue("@marca", t.Marca);
+                query.Parameters.AddWithValue("@preco_compra", t.PrecoCompra);
+                query.Parameters.AddWithValue("@preco_venda", t.PrecoVenda);
+                query.Parameters.AddWithValue("@quantidade", t.Quantidade);
+                query.Parameters.AddWithValue("@fornecedor_id", t.FornecedorId);
+
+                var result = query.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         public List<Produto> List()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Produto> produtos = new List<Produto>();
+
+                var query = con.Query();
+                query.CommandText = "SELECT * FROM produtos";
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    produtos.Add(new Produto
+                    {
+                        Id = reader.GetUInt32("id"),
+                        Nome = reader.GetString("nome"),
+                        DataInclusao = reader.GetDateTime("data_inclusao"),
+                        Marca = reader.GetString("marca"),
+                        PrecoCompra = reader.GetFloat("preco_compra"),
+                        PrecoVenda = reader.GetFloat("preco_venda"),
+                        Quantidade = reader.GetUInt32("quantidade"),
+                        FornecedorId = reader.GetUInt32("fornecedor_id")
+                    });
+                }
+
+                return produtos;
+            } 
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
         public void Update(Produto t)

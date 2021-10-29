@@ -47,8 +47,8 @@
             </Button.Background>
         </Button>
 
-        <GroupBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,0,0,0"
-                  Width="330" Height="250"
+        <GroupBox Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30,58,0,33"
+                  Width="330" Height="275"
                   Header="MENU DE RELATÓRIOS" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 
                   FontWeight="Bold" BorderBrush="{x:Null}" Background="#FF394047" BorderThickness="0">
             <GroupBox.HeaderTemplate>
@@ -84,15 +84,15 @@
 
         </GroupBox>
 
-        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,20,0,0">PESQUISAR</Label>
-        <TextBox Grid.Row="1" Background="#ffffff" Grid.Column="1" Width="180" Height="30" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,20,0,0"/>
+        <Label Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="30,28,0,0">PESQUISAR</Label>
+        <TextBox Grid.Row="1" Background="#ffffff" Grid.Column="1" Width="180" Height="30" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,24,0,0"/>
         <Button x:Name="btnPesquisar" Height="25" Width="25" Grid.Column="1" Grid.Row="1" BorderThickness="1"
-                        VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,22,0,0" Cursor="Hand">
+                        VerticalAlignment="Top" HorizontalAlignment="Left" Margin="252,28,0,0" Cursor="Hand">
             <Button.Background>
                 <ImageBrush ImageSource="images/pesquise3.png"/>
             </Button.Background>
         </Button>
-        
+
         <!--<ComboBox Grid.Row="1" Grid.Column="1" Width="200" Height="35" VerticalAlignment="Top" Margin="0,20,0,0" 
                   IsEditable="True" Text="INSIRA O NOME DO RELATÓRIO" AllowDrop="True" IsTextSearchEnabled="True" TextSearch.TextPath="Content" Foreground="#FFC7C7C7" >
             <Button x:Name="btnRelVendedorValor" BorderBrush="{x:Null}" Background="{x:Null}" 

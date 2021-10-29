@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using projeto_sgp_WPFversion.Models;
 
 namespace projeto_sgp_WPFversion
 {
@@ -57,10 +58,22 @@ namespace projeto_sgp_WPFversion
             this.Close();
         }
 
-        private void save(object sender, RoutedEventArgs e)
+        private void salvar(object sender, RoutedEventArgs e)
         {
-            Tela_cad_concluido cadConcluido = new Tela_cad_concluido();
-            cadConcluido.ShowDialog();
+            ProdutoDAO dao = new ProdutoDAO();
+
+            Produto produto = new Produto
+            {
+                Nome = txtNome.Text,
+                DataInclusao = txtData.SelectedDate.Value,
+                Marca = txtMarca.Text,
+                PrecoCompra = float.Parse(txtPrecoCompra.Text),
+                PrecoVenda = float.Parse(txtPrecoVenda.Text),
+                Quantidade = uint.Parse(txtQuantidade.Text),
+                FornecedorId = uint.Parse(txtFornecedor.Text),
+            };
+
+            dao.Insert(produto);
         }
     }
 }

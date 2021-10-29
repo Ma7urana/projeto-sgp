@@ -66,14 +66,14 @@
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="98" Margin="10,42,0,0" Stroke="Black" VerticalAlignment="Top" Width="692" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="5" Grid.RowSpan="2"/>
         <StackPanel  Grid.Column="0" Margin="15,41,0,0" VerticalAlignment="Top" Height="94" Grid.RowSpan="2">
             <TextBlock Text="Nome:" Height="23" />
-            <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged_1"/>
+            <TextBox x:Name="Txt_Nome" Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged_1"/>
             <TextBlock Text="Cidade:" Height="23" />
             <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
         </StackPanel>
 
         <StackPanel  Grid.Column="1" Margin="5,41,0,0" VerticalAlignment="Top" Height="94" Grid.RowSpan="2">
             <TextBlock Height="23" ><Run Text="Nome"/><Run Text=" Fantasia"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1"  Width="100" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Txt_NomeFan" Height="22" TextWrapping="Wrap" Margin="1"  Width="100" HorizontalAlignment="Left" TextChanged="TextBox_TextChanged_2"/>
             <TextBlock Text="Bairro:" Height="23" />
             <TextBox Height="22" TextWrapping="Wrap" Text="" Margin="1,1,0,1"  Width="100" HorizontalAlignment="Left"/>
         </StackPanel>
@@ -81,14 +81,14 @@
         <Rectangle Grid.ColumnSpan="4" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="72" Margin="10,28,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="401"/>
         <StackPanel  Grid.Column="2" Margin="5,42,0,0" VerticalAlignment="Top" Height="93" Grid.RowSpan="2" RenderTransformOrigin="0.5,0.5">
             <TextBlock Height="23" ><Run Text="Razão social"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" TextWrapping="Wrap" Margin="1"  Width="120" HorizontalAlignment="Left"/>
+            <TextBox x:Name="Txt_Razaosocial" Height="22" TextWrapping="Wrap" Margin="1"  Width="120" HorizontalAlignment="Left"/>
             <TextBlock Text="Logradouro:" Height="23" />
             <TextBox Height="22" TextWrapping="Wrap" Margin="1,1,0,1"  Width="120" HorizontalAlignment="Left"/>
         </StackPanel>
 
         <StackPanel  Grid.Column="3" Margin="10,42,0,0" VerticalAlignment="Top" Height="98" Grid.RowSpan="2">
-            <TextBlock Height="20" ><Run Text="CNPJ/CEP"/><Run Text=":"/></TextBlock>
-            <TextBox Height="22" Width="100" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="1"/>
+            <TextBlock Height="20" ><Run Text="CNPJ/CPF"/><Run Text=":"/><LineBreak/><Run/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="Txt_cpf" Height="22" Width="100" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Margin="1" TextChanged="TextBox_TextChanged_2"/>
             <TextBlock Height="23" ><Run Text="Complemento"/><Run Text=":"/></TextBlock>
             <TextBox Height="22" TextWrapping="Wrap" Margin="1"  Width="100" HorizontalAlignment="Left"/>
         </StackPanel>
@@ -99,38 +99,34 @@
         </StackPanel>
 
         <StackPanel Margin="0,29,22,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="353" Height="80" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="3">
-            <RadioButton Margin="8,8,240,8">Juridica</RadioButton>
-            <RadioButton Margin="8,8,240,8">Física</RadioButton>
+            <RadioButton x:Name="Ju" Margin="8,8,240,8">Juridica</RadioButton>
+            <RadioButton x:Name="TxtFi" Margin="8,8,240,8">Física</RadioButton>
 
         </StackPanel>
         <StackPanel Grid.Column="1" Margin="10,37,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="72" Grid.Row="1" Grid.RowSpan="3">
             <Label Content="Inscrição Municipal:" RenderTransformOrigin="0.501,0.846" />
-            <TextBox Height="23" TextWrapping="Wrap" Margin="10,0,0,0"/>
+            <TextBox x:Name="Txt_Municipal" Height="23" TextWrapping="Wrap" Margin="10,0,0,0"/>
 
         </StackPanel>
         <StackPanel Grid.Column="2" Margin="12,37,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="115" Height="72" Grid.Row="1" Grid.RowSpan="3">
-            <Label Content="Inscrição Municipal:" RenderTransformOrigin="0.501,0.846" Height="24" />
-            <TextBox Height="25" TextWrapping="Wrap" Margin="10,0,5,0"/>
+            <Label Content="Inscrição Estadual:" RenderTransformOrigin="0.501,0.846" Height="24" />
+            <TextBox x:Name="Txt_Estadual" Height="25" TextWrapping="Wrap" Margin="10,0,5,0"/>
         </StackPanel>
 
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="194" Margin="10,2,0,0" Stroke="Black" VerticalAlignment="Top" Width="401" RenderTransformOrigin="0.367,0.59" Grid.ColumnSpan="4" Grid.Row="3" Grid.RowSpan="4"/>
         <StackPanel Margin="12,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="375" Height="190" Grid.Row="3" Grid.RowSpan="4" Grid.ColumnSpan="3">
             <TextBlock TextWrapping="Wrap" Text="Contato/Representante:" Margin="10,0,-41,0"/>
-            <TextBox Height="23" TextWrapping="Wrap" Margin="10,0,210,0"/>
-            <TextBlock TextWrapping="Wrap" Text="Status de Fornecedor:" Margin="10,0,-16,0" Height="20"/>
-            <ComboBox Margin="10,0,210,0" />
+            <TextBox x:Name="Txt_Representante" Height="23" TextWrapping="Wrap" Margin="10,0,210,0"/>
             <TextBlock Text="Tipo de Contribuinte:" Margin="10,0,-41,0" Height="20" />
-            <ComboBox Margin="10,0,210,0" />
+            <TextBox  x:Name="Txt_contribuinte" Height="20" TextWrapping="Wrap" Margin="10,0,210,0" TextChanged="Txt_contribuinte_TextChanged"/>
             <TextBlock TextWrapping="Wrap" Text="Email:" Margin="10,0,-41,0"/>
-            <TextBox Height="23" TextWrapping="Wrap" Margin="10,0,45,0"/>
+            <TextBox x:Name="Txt_Email" Height="23" TextWrapping="Wrap" Margin="10,0,45,0"/>
         </StackPanel>
         <StackPanel Grid.Row="3" Margin="85,6,66,65" Grid.Column="1" Grid.RowSpan="4" Grid.ColumnSpan="2">
-            <TextBlock TextWrapping="Wrap" Text="Email:" Margin="10,0" Height="21"/>
-            <TextBox Height="23" TextWrapping="Wrap" Margin="10,0"/>
-            <TextBlock TextWrapping="Wrap" Text="Email:" Margin="10,0" Height="15"/>
-            <TextBox Height="20" TextWrapping="Wrap" Margin="10,0"/>
-            <TextBlock TextWrapping="Wrap" Text="Email:" Margin="10,0,38,0" Height="15"/>
-            <TextBox Height="19" TextWrapping="Wrap" Margin="10,0"/>
+            <TextBlock TextWrapping="Wrap" Text="Telefone:" Margin="10,0" Height="21"/>
+            <TextBox x:Name="Txt_Telefone" Height="23" TextWrapping="Wrap" Margin="10,0"/>
+            <TextBlock TextWrapping="Wrap" Text="fax:" Margin="10,0" Height="15"/>
+            <TextBox  x:Name="Txt_FAX" Height="20" TextWrapping="Wrap" Margin="10,0"/>
 
         </StackPanel>
 
@@ -139,7 +135,7 @@
             <Button x:Name="Cancelar" Content="Cancelar" Margin="10,2,20,2" Width="120" Height="28" Click="BtnCancel"  Background="#FFD5B03C"  Foreground="White" />
             <Button x:Name="Concluir" Content="Concluir" Margin="10,4,0,0" Width="120" Height="28" Click="Btnconclui" Background="#FFD5B03C" Foreground="White" VerticalAlignment="Top"/>
         </StackPanel>
-        <TextBox Grid.Column="3" HorizontalAlignment="Left" Height="214" Margin="55,50,0,0" Grid.Row="1" Grid.RowSpan="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="Txt_Observacao" Grid.Column="3" HorizontalAlignment="Left" Height="214" Margin="55,50,0,0" Grid.Row="1" Grid.RowSpan="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" TextChanged="TextBox_TextChanged" RenderTransformOrigin="0.5,0.5">
         </TextBox>
         <TextBlock Grid.Column="3" HorizontalAlignment="Left" Margin="31,29,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="87"><Run Text="Observação"/><Run Text=":"/></TextBlock>
 
@@ -147,3 +143,4 @@
 
 
 </Window>
+
