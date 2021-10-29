@@ -15,7 +15,7 @@
         FontFamily="{DynamicResource MaterialDesignFont}" Height="286.047" Width="524.943">
 
     <Grid>
-        <DataGrid x:Name="dg_EscolherProdutos" IsReadOnly="False" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="206" VerticalAlignment="Top" Width="516" FontFamily="Arial">
+        <DataGrid x:Name="dg_EscolherProdutos" IsReadOnly="True" AutoGenerateColumns="False" AlternatingRowBackground="#FFE5E5E5" AlternationCount="2" HorizontalAlignment="Left" Height="206" VerticalAlignment="Top" Width="516" FontFamily="Arial">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Nome do produto" Binding="{Binding Nome}"/>
@@ -27,9 +27,8 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
-                                        Content="{materialDesign:PackIcon Kind=Select}"
-                                        ToolTip="Visualizar Registro" Margin="0 0 5 0"/>
+                                <CheckBox x:Name="btn_SelecionarProduto" Style="{StaticResource MaterialDesignActionCheckBox}" Click="btn_SelecionarProduto_Click"
+                                          ToolTip="Selecionar Produto" Margin="0 0 5 0"/>
                                 <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
                                         Content="{materialDesign:PackIcon Kind=Delete}"/>
                             </StackPanel>

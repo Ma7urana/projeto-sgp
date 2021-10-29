@@ -31,9 +31,9 @@
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">
-                                <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
+                                <Button x:Name="btn_UpdateVendas" Style="{StaticResource MaterialDesignIconForegroundButton}"
                                         Content="{materialDesign:PackIcon Kind=Eye}"
-                                        ToolTip="Visualizar Registro" Margin="0 0 5 0"/>
+                                        ToolTip="Visualizar Registro" Margin="0 0 5 0" Click="btn_UpdateVendas_Click"/>
                                 <Button Style="{StaticResource MaterialDesignIconForegroundButton}"
                                         Content="{materialDesign:PackIcon Kind=Delete}"/>
                             </StackPanel>

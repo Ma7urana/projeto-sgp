@@ -46,5 +46,12 @@ namespace projeto_sgp_WPFversion
                 MessageBox.Show(ex.Message, "Exceção", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void btn_UpdateVendas_Click(object sender, RoutedEventArgs e)
+        {
+            var venda = dg_ReadVendas.SelectedItem as Venda;
+
+            MessageBox.Show(venda.Id.ToString());
+        }
     }
 }

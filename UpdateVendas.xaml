@@ -1,0 +1,38 @@
+﻿<Page x:Class="projeto_sgp_WPFversion.UpdateVendas"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:projeto_sgp_WPFversion"
+      mc:Ignorable="d"
+      Title="UpdateVendas"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}" Height="212" Width="612">
+
+    <Grid Background="White" Height="200" Width="600">
+        <Label Content="Id Venda:" Margin="29,25,506,153" />
+        <TextBox x:Name="txt_id" BorderThickness="2" Margin="32,45,506,133" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Data:" Margin="151,25,411,153" RenderTransformOrigin="2.885,0.636" />
+        <DatePicker x:Name="dp_Data" Margin="151,45,343,133" RenderTransformOrigin="1.189,-1.083" Height="22"/>
+        <TextBox x:Name="txt_Subtotal" BorderThickness="2" Margin="41,126,478,52" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Subtotal:" Margin="38,104,503,74" RenderTransformOrigin="1.731,1.5" />
+        <TextBox x:Name="txt_Desconto" BorderThickness="2" Margin="153,126,375,52" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Desconto:" Margin="150,104,386,74" RenderTransformOrigin="1.731,1.5" />
+        <TextBox x:Name="txt_ValorRecebido" BorderThickness="2" Margin="267,126,226,52" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Valor Recebido:" Margin="261,104,241,74" RenderTransformOrigin="1.731,1.5" />
+        <TextBox x:Name="txt_Troco" BorderThickness="2" Margin="417,126,76,52" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Troco:" Margin="417,104,136,74" RenderTransformOrigin="1.731,1.5" />
+        <TextBox x:Name="txt_Cliente" BorderThickness="2" Margin="338,45,209,133" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Cliente:" Margin="338,25,209,153" RenderTransformOrigin="1.731,1.5" />
+        <TextBox x:Name="txt_Funcionario" BorderThickness="2" Margin="479,45,65,133" RenderTransformOrigin="-3.65,-2.091"/>
+        <Label Content="Funcionário:" Margin="468,25,55,153" RenderTransformOrigin="1.731,1.5" />
+
+        <Button x:Name="Atualizar" Content="Atualizar" Margin="479,166,14,10" Height="Auto"/>
+        <Button x:Name="Cancelar" Content="Cancelar" Margin="372,166,121,10" Height="Auto"/>
+    </Grid>
+</Page>

@@ -60,5 +60,12 @@ namespace projeto_sgp_WPFversion
         {
 
         }
+
+        private void btn_SelecionarProduto_Click(object sender, RoutedEventArgs e)
+        {
+            var produto = dg_EscolherProdutos.SelectedItem as Produto;
+
+            MessageBox.Show(produto.Id.ToString());
+        }
     }
 }
