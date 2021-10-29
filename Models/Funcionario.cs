@@ -38,8 +38,5 @@ namespace projeto_sgp_WPFversion.Models
 
         public float Salario { get; set; }
 
-        public int Endereco { get; set; } 
- 
-        public float Salario { get; set; } 
     }
 }

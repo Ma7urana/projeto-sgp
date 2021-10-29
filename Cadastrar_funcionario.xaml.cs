@@ -23,6 +23,27 @@ namespace projeto_sgp_WPFversion
         public Cadastrar_funcionario()
         {
             InitializeComponent();
+            Loaded += Cadastrar_funcionario_Loaded;
+        }
+
+        private void Cadastrar_funcionario_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            LoadDataGrid();
+        }
+
+        private void LoadDataGrid(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+               var dao = new FuncionarioDAO();
+
+               dataGrid.ItemsSource = dao.List();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Excessão", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void btnClose_Click(object sender, RoutedEventArgs e)

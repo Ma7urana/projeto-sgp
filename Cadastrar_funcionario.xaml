@@ -9,17 +9,8 @@
         WindowStyle="None"
         ResizeMode="NoResize" WindowStartupLocation="CenterScreen" BorderThickness="2" BorderBrush="Black" WindowState="Normal" Background="#FFFFFF" Cursor="Hand" MouseLeftButtonDown="tela_MouseLeftButtonDown">
      <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="138"/>
-            <ColumnDefinition Width="112"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock x:Name="Cadastrar_Funionario" Grid.Row="0"  Grid.ColumnSpan="3" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" 
+        <DataGrid Grid.Row="2" Margin="5, 5, 5, 5" x:Name="dataGrid" IsReadOnly="true" AutoGenerateColimns="False" AlternatingRowBackground="@FFDEB887" AlternationCount="2" Grid.ColumnSpan="2">
+			 <TextBlock x:Name="Cadastrar_Funionario" Grid.Row="0"  Grid.ColumnSpan="3" FontSize="20" Padding="5" TextAlignment="Center" TextDecorations="None" FontFamily="Arial" Background="#FFD5B03C" HorizontalAlignment="Stretch" 
                    Height="30" TextWrapping="Wrap" Cursor="Arrow" Text="Cadastrar Funcionário" VerticalAlignment="Stretch"/>
         <Button x:Name="btnClose" Height="40" Width="40" Grid.Column="2" BorderThickness="0"
                         Click="btnClose_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" Cursor="Hand">
@@ -41,8 +32,7 @@
             </Button.Background>
 
         </Button>
-        <Button x:Name="btnMin" Height="39" Width="45" BorderThickness="0"
-                        Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,93,0"  Cursor="Hand" Grid.Column="2">
+        <Button x:Name="btnMin" Height="39" Width="45" BorderThickness="0" Click="btnMin_Click" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,93,0"  Cursor="Hand" Grid.Column="2">
 
             <Button.Background>
 
@@ -51,6 +41,7 @@
             </Button.Background>
 
         </Button>
+		
         <Label x:Name="Dados_Pessoais_Copy" Content="Dados Pessoais" HorizontalAlignment="Left" Margin="1,0,0,1" VerticalAlignment="Top" Height="23" Width="177" Grid.Column="2" Grid.Row="1"/>
         <Image  Height="75" VerticalAlignment="Top" Width="105" Source="images/perfil-funcionario.jpg" Margin="6,30,612,0" Grid.Row="1" Grid.Column="2" />
 		<Label Content="Perfíl/Foto" Grid.Column="2" HorizontalAlignment="Left" Margin="21,100,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.756,4.385"/>
@@ -117,5 +108,6 @@
         <Button x:Name="btn_Excluir" Content="Excluir" HorizontalAlignment="Left" Margin="10,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFFF8383" Click="btn_Excluir_Click"/>
         <Button x:Name="btn_Salvar" Content="Salvar" HorizontalAlignment="Left" Margin="16,474,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FF4AF571" Grid.Column="1" Click="btn_Salvar_Click"/>
         <Button x:Name="btn_Novo" Content="Novo" HorizontalAlignment="Left" Margin="10,230,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Background="#FFAB96CB"/>
+		</DataGrid>       
     </Grid>
 </Window>
