@@ -33,5 +33,9 @@ namespace projeto_sgp_WPFversion.Models
         public char ValeAlimentacao { get; set; }
 
         public char ValeTransporte { get; set; }
+
+        public int Endereco { get; set; }
+
+        public float Salario { get; set; }
     }
 }
